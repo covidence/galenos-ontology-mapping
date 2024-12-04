@@ -8,10 +8,7 @@
         "key": "BCIO:015416",
         "label": "mean human age population statistic",
         "variables": [
-          [
-            "age_mean",
-            "Mean age"
-          ]
+          "Mean age"
         ],
         "children": []
       },
@@ -24,42 +21,24 @@
             "key": "GMHO:0000131,GMHO:0000209",
             "label": "anhedonia symptom severity - measurement datum at baseline",
             "variables": [
-              [
-                "anhedonia_baseline_mean",
-                "Mean baseline anhedonia"
-              ],
-              [
-                "anhedonia_baseline_sd",
-                "Standard deviation of baseline anhedonia"
-              ],
-              [
-                "anhedonia_baseline_n",
-                "Number of participants for whom baseline anhedonia was measured"
-              ]
+              "Number of participants for whom baseline anhedonia was measured",
+              "Standard deviation of baseline anhedonia",
+              "Mean baseline anhedonia"
             ],
             "children": [
               {
                 "key": "GMHO:0000201,GMHO:0000212",
                 "label": "anhedonia scale - measurement scale at baseline",
                 "variables": [
-                  [
-                    "anhedonia_baseline_direction",
-                    "Baseline anhedonia scale directionality"
-                  ],
-                  [
-                    "anhedonia_baseline_scale",
-                    "Baseline anhedonia scale"
-                  ]
+                  "Baseline anhedonia scale directionality",
+                  "Baseline anhedonia scale"
                 ],
                 "children": [
                   {
                     "key": "GMHO:0000208",
                     "label": "scale directionality",
                     "variables": [
-                      [
-                        "anhedonia_baseline_direction",
-                        "Baseline anhedonia scale directionality"
-                      ]
+                      "Baseline anhedonia scale directionality"
                     ],
                     "children": []
                   }
@@ -69,10 +48,7 @@
                 "key": "OBI:0000679",
                 "label": "average value",
                 "variables": [
-                  [
-                    "anhedonia_baseline_mean",
-                    "Mean baseline anhedonia"
-                  ]
+                  "Mean baseline anhedonia"
                 ],
                 "children": []
               },
@@ -80,10 +56,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anhedonia_baseline_n",
-                    "Number of participants for whom baseline anhedonia was measured"
-                  ]
+                  "Number of participants for whom baseline anhedonia was measured"
                 ],
                 "children": []
               },
@@ -91,10 +64,7 @@
                 "key": "OBCS:0000077",
                 "label": "standard deviation",
                 "variables": [
-                  [
-                    "anhedonia_baseline_sd",
-                    "Standard deviation of baseline anhedonia"
-                  ]
+                  "Standard deviation of baseline anhedonia"
                 ],
                 "children": []
               }
@@ -104,38 +74,23 @@
             "key": "GMHO:0000143,GMHO:0000209",
             "label": "anxiety symptom severity - measurement datum at baseline",
             "variables": [
-              [
-                "anxiety_baseline_n",
-                "Number of participants for whom baseline anxiety was measured"
-              ],
-              [
-                "anxiety_baseline_mean",
-                "Mean baseline anxiety"
-              ],
-              [
-                "anxiety_baseline_sd",
-                "Standard deviation of baseline anxiety"
-              ]
+              "Number of participants for whom baseline anxiety was measured",
+              "Standard deviation of baseline anxiety",
+              "Mean baseline anxiety"
             ],
             "children": [
               {
                 "key": "GMHO:0000202,GMHO:0000212",
                 "label": "anxiety scale - measurement scale at baseline",
                 "variables": [
-                  [
-                    "anxiety_baseline_direction",
-                    "Baseline anxiety scale directionality"
-                  ]
+                  "Baseline anxiety scale directionality"
                 ],
                 "children": [
                   {
                     "key": "GMHO:0000208",
                     "label": "scale directionality",
                     "variables": [
-                      [
-                        "anxiety_baseline_direction",
-                        "Baseline anxiety scale directionality"
-                      ]
+                      "Baseline anxiety scale directionality"
                     ],
                     "children": []
                   }
@@ -145,10 +100,7 @@
                 "key": "OBI:0000679",
                 "label": "average value",
                 "variables": [
-                  [
-                    "anxiety_baseline_mean",
-                    "Mean baseline anxiety"
-                  ]
+                  "Mean baseline anxiety"
                 ],
                 "children": []
               },
@@ -156,10 +108,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anxiety_baseline_n",
-                    "Number of participants for whom baseline anxiety was measured"
-                  ]
+                  "Number of participants for whom baseline anxiety was measured"
                 ],
                 "children": []
               },
@@ -167,10 +116,7 @@
                 "key": "OBCS:0000077",
                 "label": "standard deviation",
                 "variables": [
-                  [
-                    "anxiety_baseline_sd",
-                    "Standard deviation of baseline anxiety"
-                  ]
+                  "Standard deviation of baseline anxiety"
                 ],
                 "children": []
               }
@@ -189,24 +135,15 @@
         "key": "GMHO:0000047,GMHO:0000204",
         "label": "adverse event following an intervention - measurement datum at followup",
         "variables": [
-          [
-            "adverse_event_n",
-            "Number of participants with measurement for adverse events following intervention"
-          ],
-          [
-            "adverse_event_e",
-            "Number of participants with adverse events following intervention"
-          ]
+          "Number of participants with measurement for adverse events following intervention",
+          "Number of participants with adverse events following intervention"
         ],
         "children": [
           {
             "key": "GMHO:0000214",
             "label": "number of participants with specific outcome",
             "variables": [
-              [
-                "adverse_event_e",
-                "Number of participants with adverse events following intervention"
-              ]
+              "Number of participants with adverse events following intervention"
             ],
             "children": []
           },
@@ -214,10 +151,7 @@
             "key": "GMHO:0000206",
             "label": "number of participants with measurement",
             "variables": [
-              [
-                "adverse_event_n",
-                "Number of participants with measurement for adverse events following intervention"
-              ]
+              "Number of participants with measurement for adverse events following intervention"
             ],
             "children": []
           },
@@ -225,24 +159,15 @@
             "key": "GMHO:0000233,GMHO:0000204",
             "label": "agitation following intervention - measurement datum at followup",
             "variables": [
-              [
-                "agitation_n",
-                "Number of participants with measurement for agitation following intervention"
-              ],
-              [
-                "agitation_e",
-                "Number of participants with agitation following intervention"
-              ]
+              "Number of participants with agitation following intervention",
+              "Number of participants with measurement for agitation following intervention"
             ],
             "children": [
               {
                 "key": "GMHO:0000214",
                 "label": "number of participants with specific outcome",
                 "variables": [
-                  [
-                    "agitation_e",
-                    "Number of participants with agitation following intervention"
-                  ]
+                  "Number of participants with agitation following intervention"
                 ],
                 "children": []
               },
@@ -250,10 +175,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "agitation_n",
-                    "Number of participants with measurement for agitation following intervention"
-                  ]
+                  "Number of participants with measurement for agitation following intervention"
                 ],
                 "children": []
               }
@@ -263,24 +185,15 @@
             "key": "GMHO:0000221,GMHO:0000204",
             "label": "anticholinergic symptom following intervention - measurement datum at followup",
             "variables": [
-              [
-                "anticholinergic_symptom_n",
-                "Number of participants with measurements for anticholinergic symptom following intervention"
-              ],
-              [
-                "anticholinergic_symptom_e",
-                "Number of participants with anticholinergic symptom following intervention"
-              ]
+              "Number of participants with measurements for anticholinergic symptom following intervention",
+              "Number of participants with anticholinergic symptom following intervention"
             ],
             "children": [
               {
                 "key": "GMHO:0000214",
                 "label": "number of participants with specific outcome",
                 "variables": [
-                  [
-                    "anticholinergic_symptom_e",
-                    "Number of participants with anticholinergic symptom following intervention"
-                  ]
+                  "Number of participants with anticholinergic symptom following intervention"
                 ],
                 "children": []
               },
@@ -288,10 +201,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anticholinergic_symptom_n",
-                    "Number of participants with measurements for anticholinergic symptom following intervention"
-                  ]
+                  "Number of participants with measurements for anticholinergic symptom following intervention"
                 ],
                 "children": []
               }
@@ -301,28 +211,16 @@
             "key": "GMHO:0000238,GMHO:0000204",
             "label": "anxiousness following intervention - measurement datum at followup",
             "variables": [
-              [
-                "anxiety_e",
-                "Number of participants with anxiety following intervention"
-              ],
-              [
-                "anxiety_n",
-                "Number of participants with measurement for anxiety following intervention"
-              ]
+              "Number of participants with anxiety following intervention",
+              "Number of participants with measurement for anxiety following intervention"
             ],
             "children": [
               {
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anxiety_n",
-                    "Number of participants with measurement for anxiety following intervention"
-                  ],
-                  [
-                    "anxiety_e",
-                    "Number of participants with anxiety following intervention"
-                  ]
+                  "Number of participants with measurement for anxiety following intervention",
+                  "Number of participants with anxiety following intervention"
                 ],
                 "children": []
               }
@@ -337,24 +235,15 @@
                 "key": "GMHO:0000051,GMHO:0000204",
                 "label": "akathisia following pharmacological intervention - measurement datum at followup",
                 "variables": [
-                  [
-                    "akathisia_n",
-                    "Number of participants with measurement for akathisia following intervention"
-                  ],
-                  [
-                    "akathisia_e",
-                    "Number of participants with akathisia following intervention"
-                  ]
+                  "Number of participants with measurement for akathisia following intervention",
+                  "Number of participants with akathisia following intervention"
                 ],
                 "children": [
                   {
                     "key": "GMHO:0000214",
                     "label": "number of participants with specific outcome",
                     "variables": [
-                      [
-                        "akathisia_e",
-                        "Number of participants with akathisia following intervention"
-                      ]
+                      "Number of participants with akathisia following intervention"
                     ],
                     "children": []
                   },
@@ -362,10 +251,7 @@
                     "key": "GMHO:0000206",
                     "label": "number of participants with measurement",
                     "variables": [
-                      [
-                        "akathisia_n",
-                        "Number of participants with measurement for akathisia following intervention"
-                      ]
+                      "Number of participants with measurement for akathisia following intervention"
                     ],
                     "children": []
                   }
@@ -384,46 +270,25 @@
             "key": "GMHO:0000131,GMHO:0000204",
             "label": "anhedonia symptom severity - measurement datum at followup",
             "variables": [
-              [
-                "anhedonia_followup_type",
-                "Followup anhedonia data type"
-              ],
-              [
-                "anhedonia_followup_sd",
-                "Standard deviation of followup anhedonia"
-              ],
-              [
-                "anhedonia_followup_n",
-                "Number of participants for whom followup anhedonia was measured"
-              ],
-              [
-                "anhedonia_followup_mean",
-                "Mean followup anhedonia"
-              ]
+              "Number of participants for whom followup anhedonia was measured",
+              "Mean followup anhedonia",
+              "Standard deviation of followup anhedonia",
+              "Followup anhedonia data type"
             ],
             "children": [
               {
                 "key": "GMHO:0000201,GMHO:0000205",
                 "label": "anhedonia scale - measurement scale at followup",
                 "variables": [
-                  [
-                    "anhedonia_followup_scale",
-                    "Followup anhedonia scale"
-                  ],
-                  [
-                    "anhedonia_followup_direction",
-                    "Followup anhedonia scale directionality"
-                  ]
+                  "Followup anhedonia scale directionality",
+                  "Followup anhedonia scale"
                 ],
                 "children": [
                   {
                     "key": "GMHO:0000208",
                     "label": "scale directionality",
                     "variables": [
-                      [
-                        "anhedonia_followup_direction",
-                        "Followup anhedonia scale directionality"
-                      ]
+                      "Followup anhedonia scale directionality"
                     ],
                     "children": []
                   }
@@ -433,10 +298,7 @@
                 "key": "OBI:0000679",
                 "label": "average value",
                 "variables": [
-                  [
-                    "anhedonia_followup_mean",
-                    "Mean followup anhedonia"
-                  ]
+                  "Mean followup anhedonia"
                 ],
                 "children": []
               },
@@ -444,10 +306,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anhedonia_followup_n",
-                    "Number of participants for whom followup anhedonia was measured"
-                  ]
+                  "Number of participants for whom followup anhedonia was measured"
                 ],
                 "children": []
               },
@@ -455,10 +314,7 @@
                 "key": "OBCS:0000077",
                 "label": "standard deviation",
                 "variables": [
-                  [
-                    "anhedonia_followup_sd",
-                    "Standard deviation of followup anhedonia"
-                  ]
+                  "Standard deviation of followup anhedonia"
                 ],
                 "children": []
               },
@@ -466,10 +322,7 @@
                 "key": "GMHO:0000203",
                 "label": "information on available followup data",
                 "variables": [
-                  [
-                    "anhedonia_followup_type",
-                    "Followup anhedonia data type"
-                  ]
+                  "Followup anhedonia data type"
                 ],
                 "children": []
               }
@@ -479,46 +332,25 @@
             "key": "GMHO:0000143,GMHO:0000204",
             "label": "anxiety symptom severity - measurement datum at followup",
             "variables": [
-              [
-                "anxiety_followup_n",
-                "Number of participants for whom followup anxiety was measured"
-              ],
-              [
-                "anxiety_followup_type",
-                "Followup anxiety data type"
-              ],
-              [
-                "anxiety_followup_mean",
-                "Mean followup anxiety"
-              ],
-              [
-                "anxiety_followup_sd",
-                "Standard deviation of followup anxiety"
-              ]
+              "Number of participants for whom followup anxiety was measured",
+              "Mean followup anxiety",
+              "Standard deviation of followup anxiety",
+              "Followup anxiety data type"
             ],
             "children": [
               {
                 "key": "GMHO:0000202,GMHO:0000205",
                 "label": "anxiety scale - measurement scale at followup",
                 "variables": [
-                  [
-                    "anxiety_followup_scale",
-                    "Followup anxiety scale"
-                  ],
-                  [
-                    "anxiety_followup_direction",
-                    "Followup anxiety scale directionality"
-                  ]
+                  "Followup anxiety scale directionality",
+                  "Followup anxiety scale"
                 ],
                 "children": [
                   {
                     "key": "GMHO:0000208",
                     "label": "scale directionality",
                     "variables": [
-                      [
-                        "anxiety_followup_direction",
-                        "Followup anxiety scale directionality"
-                      ]
+                      "Followup anxiety scale directionality"
                     ],
                     "children": []
                   }
@@ -528,10 +360,7 @@
                 "key": "OBI:0000679",
                 "label": "average value",
                 "variables": [
-                  [
-                    "anxiety_followup_mean",
-                    "Mean followup anxiety"
-                  ]
+                  "Mean followup anxiety"
                 ],
                 "children": []
               },
@@ -539,10 +368,7 @@
                 "key": "GMHO:0000206",
                 "label": "number of participants with measurement",
                 "variables": [
-                  [
-                    "anxiety_followup_n",
-                    "Number of participants for whom followup anxiety was measured"
-                  ]
+                  "Number of participants for whom followup anxiety was measured"
                 ],
                 "children": []
               },
@@ -550,10 +376,7 @@
                 "key": "OBCS:0000077",
                 "label": "standard deviation",
                 "variables": [
-                  [
-                    "anxiety_followup_sd",
-                    "Standard deviation of followup anxiety"
-                  ]
+                  "Standard deviation of followup anxiety"
                 ],
                 "children": []
               },
@@ -561,10 +384,7 @@
                 "key": "GMHO:0000203",
                 "label": "information on available followup data",
                 "variables": [
-                  [
-                    "anxiety_followup_type",
-                    "Followup anxiety data type"
-                  ]
+                  "Followup anxiety data type"
                 ],
                 "children": []
               }
