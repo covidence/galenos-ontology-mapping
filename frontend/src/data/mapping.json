@@ -21,9 +21,9 @@
             "key": "GMHO:0000131,GMHO:0000209",
             "label": "anhedonia symptom severity - measurement datum at baseline",
             "variables": [
-              "Number of participants for whom baseline anhedonia was measured",
               "Standard deviation of baseline anhedonia",
-              "Mean baseline anhedonia"
+              "Mean baseline anhedonia",
+              "Number of participants for whom baseline anhedonia was measured"
             ],
             "children": [
               {
@@ -135,8 +135,8 @@
         "key": "GMHO:0000047,GMHO:0000204",
         "label": "adverse event following an intervention - measurement datum at followup",
         "variables": [
-          "Number of participants with measurement for adverse events following intervention",
-          "Number of participants with adverse events following intervention"
+          "Number of participants with adverse events following intervention",
+          "Number of participants with measurement for adverse events following intervention"
         ],
         "children": [
           {
@@ -185,8 +185,8 @@
             "key": "GMHO:0000221,GMHO:0000204",
             "label": "anticholinergic symptom following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurements for anticholinergic symptom following intervention",
-              "Number of participants with anticholinergic symptom following intervention"
+              "Number of participants with anticholinergic symptom following intervention",
+              "Number of participants with measurements for anticholinergic symptom following intervention"
             ],
             "children": [
               {
@@ -270,18 +270,18 @@
             "key": "GMHO:0000131,GMHO:0000204",
             "label": "anhedonia symptom severity - measurement datum at followup",
             "variables": [
-              "Number of participants for whom followup anhedonia was measured",
+              "Followup anhedonia data type",
               "Mean followup anhedonia",
-              "Standard deviation of followup anhedonia",
-              "Followup anhedonia data type"
+              "Number of participants for whom followup anhedonia was measured",
+              "Standard deviation of followup anhedonia"
             ],
             "children": [
               {
                 "key": "GMHO:0000201,GMHO:0000205",
                 "label": "anhedonia scale - measurement scale at followup",
                 "variables": [
-                  "Followup anhedonia scale directionality",
-                  "Followup anhedonia scale"
+                  "Followup anhedonia scale",
+                  "Followup anhedonia scale directionality"
                 ],
                 "children": [
                   {
@@ -332,18 +332,18 @@
             "key": "GMHO:0000143,GMHO:0000204",
             "label": "anxiety symptom severity - measurement datum at followup",
             "variables": [
-              "Number of participants for whom followup anxiety was measured",
               "Mean followup anxiety",
               "Standard deviation of followup anxiety",
-              "Followup anxiety data type"
+              "Followup anxiety data type",
+              "Number of participants for whom followup anxiety was measured"
             ],
             "children": [
               {
                 "key": "GMHO:0000202,GMHO:0000205",
                 "label": "anxiety scale - measurement scale at followup",
                 "variables": [
-                  "Followup anxiety scale directionality",
-                  "Followup anxiety scale"
+                  "Followup anxiety scale",
+                  "Followup anxiety scale directionality"
                 ],
                 "children": [
                   {
