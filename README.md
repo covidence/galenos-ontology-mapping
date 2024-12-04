@@ -18,6 +18,11 @@ python process_mapping.py
 
 The frontend app renders a hierarchy of ontology terms on the left to select which data extraction columns to display on the right.
 
+### Navigate to frontend folder
+```
+cd frontend
+```
+
 ### Install dependencies
 ```
 npm install

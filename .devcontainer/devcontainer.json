@@ -1,6 +1,10 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-  },
-  "postCreateCommand": "pip install -r requirements.txt && cd frontend && npm install && npm start"
+  "features": {},
+  "postCreateCommand": "pip install -r requirements.txt && cd frontend && npm install && npm start",
+  "customizations": {
+    "vscode": {
+      "extensions": ["janisdd.vscode-edit-csv"]
+    }
+  }
 }
