@@ -9,6 +9,8 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
   const isExpanded = expanded[node.key];
   const checkboxRef = useRef();
 
+  const [showTooltip, setShowTooltip] = useState(false);
+
   const getNodeState = (node) => {
     const nodeVariables = node.variables || [];
     const allVariablesSelected = nodeVariables.every(variable => selectedColumns.includes(variable));
@@ -67,35 +69,70 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
     }
   };
 
+  const renderCheckbox = () => (
+    <>
+      <input
+        type="checkbox"
+        ref={checkboxRef}
+        checked={nodeState === 'selected'}
+        onChange={() => toggleNodeVariables(node)}
+        className="mr-2 ml-1"
+      />
+      {showTooltip && renderTooltip()}
+    </>
+  );
+
+  const renderTooltip = () => (
+    <div
+      className="absolute bg-white text-sm border p-2 rounded shadow-lg z-10"
+      style={{ top: checkboxRef.current.offsetTop + 20, left: checkboxRef.current.offsetLeft + 50 }}
+    >
+      <table className="w-full">
+        <thead>
+          <tr>
+            <th className="p-1 border">ID</th>
+            <th className="p-1 border">Label</th>
+            <th className="p-1 border">Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          {node.classes.map((cls) => (
+            <tr key={cls.id} className="border">
+              <td className="p-2 border font-semibold">{cls.id}</td>
+              <td className="p-2 border">{cls.label}</td>
+              <td className="p-2 border">{cls.definition}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+
   return (
     <div key={node.key} className="pl-2 mt-3">
       {hasChildren ? (
-        <div className="flex items-center cursor-pointer hover:bg-gray-100">
+        <div
+          className="flex items-center cursor-pointer hover:bg-gray-100"
+          onMouseEnter={() => node.classes.length && setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+        >
           {isExpanded ? (
             <ChevronDown onClick={() => toggleExpand(node)} size={16} />
           ) : (
             <ChevronRight onClick={() => toggleExpand(node)} size={16} />
           )}
-          <input
-            type="checkbox"
-            ref={checkboxRef}
-            checked={nodeState === 'selected'}
-            onChange={() => toggleNodeVariables(node)}
-            className="mr-2 ml-1"
-          />
+          {renderCheckbox()}
           <span className={`font-semibold ${nodeState === 'selected' ? 'text-blue-600' : ''}`}>
             {node.label}
           </span>
         </div>
       ) : (
-        <div className="flex items-center">
-          <input
-            type="checkbox"
-            ref={checkboxRef}
-            checked={nodeState === 'selected'}
-            onChange={() => toggleNodeVariables(node)}
-            className="mr-2 ml-1"
-          />
+        <div
+          className="flex items-center"
+          onMouseEnter={() => node.classes.length && setShowTooltip(true)}
+          onMouseLeave={() => setShowTooltip(false)}
+        >
+          {renderCheckbox()}
           <span>{node.label}</span>
         </div>
       )}

@@ -54,6 +54,17 @@ def get_current_variables(current_mapping, node_classes, parent):
 
     return current_variables
 
+def get_ontology_items(classes: list):
+    return [
+        {
+            "id": class_id,
+            "label": ontology[class_id]["label"],
+            "definition": ontology[class_id]["definition"],
+        }
+        for class_id in classes
+    ]
+
+
 def append_children(node: dict, ontology_mapping: list):
     key = node["key"].strip()
     for mapping in ontology_mapping:
@@ -72,6 +83,7 @@ def append_children(node: dict, ontology_mapping: list):
 
                 current_node = {
                     "key": child_key,
+                    "classes": get_ontology_items(classes),
                     "label": child_label,
                     "variables": list(current_variables),
                     "children": [],
@@ -99,6 +111,7 @@ def process_mapping():
         for category in PICO:
             current_node = {
                 "key": category,
+                "classes": [],
                 "label": category,
                 "variables": [],
                 "children": [],
