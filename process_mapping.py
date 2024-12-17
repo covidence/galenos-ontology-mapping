@@ -9,8 +9,9 @@ extraction_variables: dict[str, str] = {
 }
 hierarchy: list[dict] = []
 ontology: dict[str, dict] = {}
+label_to_class: dict[str, list] = {}
 
-def populate_ontology(
+def process_ontology_mapping(
     ontology_mapping,
 ):
     for mapping in ontology_mapping:
@@ -26,6 +27,15 @@ def populate_ontology(
             ontology[mapping["Class ID"]]["variables"].add(
                 mapping["Understandable label for database"]
             )
+
+        if mapping["Understandable label for database"] not in label_to_class:
+            label_to_class[mapping["Understandable label for database"]] = [
+                mapping["Class ID"]
+            ]
+        else:
+            label = mapping["Understandable label for database"]
+            if mapping["Class ID"] not in label_to_class[label]:
+                label_to_class[label].append(mapping["Class ID"])
 
         if mapping["Variable to extract"] not in extraction_variables:
             extraction_variables[mapping["Variable to extract"]] = mapping[
@@ -94,8 +104,7 @@ def append_children(node: dict, ontology_mapping: list):
                 append_children(current_node, ontology_mapping_copy)
 
 
-def process_mapping():
-    script_dir = os.path.dirname(__file__)
+def process_mapping(script_dir):
     file_path = os.path.join(script_dir, "ontology_mapping.csv")
     output_path = "frontend/src/data/mapping.json"
 
@@ -103,7 +112,7 @@ def process_mapping():
         ontology_mapping = list(csv.DictReader(csvfile))
 
         print("Parsing ontology classes and mapping of extraction variables...")
-        populate_ontology(ontology_mapping)
+        process_ontology_mapping(ontology_mapping)
 
         PICO = ["Population", "Outcome"]
 
@@ -123,6 +132,22 @@ def process_mapping():
             json.dump(hierarchy, json_file, indent=2)
             print(f"Hierarchy saved to {output_path}")
 
+def store_dictionary(script_dir):
+    output_path = "frontend/src/data/dictionary.json"
+    with open(os.path.join(script_dir, output_path), "w") as json_file:
+        serializable_ontology = ontology.copy()
+
+        for class_id, class_data in serializable_ontology.items():
+            class_data["variables"] = list(class_data["variables"])
+
+        dictionary = {
+            "ontology": ontology,
+            "label_to_class": label_to_class,
+        }
+
+        print("Storing dictionary...")
+        json.dump(dictionary, json_file, indent=4)
+
 
 def merge_lsr_data():
     directory_path = "./data"
@@ -133,5 +158,7 @@ def merge_lsr_data():
     merge_files_into_json(directory_path, lsr_files, output_path, extraction_variables)
 
 if __name__ == "__main__":
-    process_mapping()
+    script_dir = os.path.dirname(__file__)
+    process_mapping(script_dir)
+    store_dictionary(script_dir)
     merge_lsr_data()

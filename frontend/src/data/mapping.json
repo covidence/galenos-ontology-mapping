@@ -48,9 +48,9 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at baseline",
             "variables": [
-              "Number of participants for whom baseline anhedonia was measured",
               "Mean baseline anhedonia",
-              "Standard deviation of baseline anhedonia"
+              "Standard deviation of baseline anhedonia",
+              "Number of participants for whom baseline anhedonia was measured"
             ],
             "children": [
               {
@@ -153,9 +153,9 @@
             ],
             "label": "anxiety symptom severity - measurement datum at baseline",
             "variables": [
+              "Number of participants for whom baseline anxiety was measured",
               "Standard deviation of baseline anxiety",
-              "Mean baseline anxiety",
-              "Number of participants for whom baseline anxiety was measured"
+              "Mean baseline anxiety"
             ],
             "children": [
               {
@@ -267,8 +267,8 @@
         ],
         "label": "adverse event following an intervention - measurement datum at followup",
         "variables": [
-          "Number of participants with measurement for adverse events following intervention",
-          "Number of participants with adverse events following intervention"
+          "Number of participants with adverse events following intervention",
+          "Number of participants with measurement for adverse events following intervention"
         ],
         "children": [
           {
@@ -317,8 +317,8 @@
             ],
             "label": "agitation following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for agitation following intervention",
-              "Number of participants with agitation following intervention"
+              "Number of participants with agitation following intervention",
+              "Number of participants with measurement for agitation following intervention"
             ],
             "children": [
               {
@@ -421,8 +421,8 @@
             ],
             "label": "anxiousness following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for anxiety following intervention",
-              "Number of participants with anxiety following intervention"
+              "Number of participants with anxiety following intervention",
+              "Number of participants with measurement for anxiety following intervention"
             ],
             "children": [
               {
@@ -436,8 +436,8 @@
                 ],
                 "label": "number of participants with measurement",
                 "variables": [
-                  "Number of participants with measurement for anxiety following intervention",
-                  "Number of participants with anxiety following intervention"
+                  "Number of participants with anxiety following intervention",
+                  "Number of participants with measurement for anxiety following intervention"
                 ],
                 "children": []
               }
@@ -471,8 +471,8 @@
                 ],
                 "label": "akathisia following pharmacological intervention - measurement datum at followup",
                 "variables": [
-                  "Number of participants with measurement for akathisia following intervention",
-                  "Number of participants with akathisia following intervention"
+                  "Number of participants with akathisia following intervention",
+                  "Number of participants with measurement for akathisia following intervention"
                 ],
                 "children": [
                   {
@@ -539,10 +539,10 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at followup",
             "variables": [
-              "Followup anhedonia data type",
               "Mean followup anhedonia",
               "Standard deviation of followup anhedonia",
-              "Number of participants for whom followup anhedonia was measured"
+              "Number of participants for whom followup anhedonia was measured",
+              "Followup anhedonia data type"
             ],
             "children": [
               {
@@ -561,8 +561,8 @@
                 ],
                 "label": "anhedonia scale - measurement scale at followup",
                 "variables": [
-                  "Followup anhedonia scale",
-                  "Followup anhedonia scale directionality"
+                  "Followup anhedonia scale directionality",
+                  "Followup anhedonia scale"
                 ],
                 "children": [
                   {
@@ -660,9 +660,9 @@
             ],
             "label": "anxiety symptom severity - measurement datum at followup",
             "variables": [
-              "Standard deviation of followup anxiety",
               "Mean followup anxiety",
               "Followup anxiety data type",
+              "Standard deviation of followup anxiety",
               "Number of participants for whom followup anxiety was measured"
             ],
             "children": [
@@ -682,8 +682,8 @@
                 ],
                 "label": "anxiety scale - measurement scale at followup",
                 "variables": [
-                  "Followup anxiety scale directionality",
-                  "Followup anxiety scale"
+                  "Followup anxiety scale",
+                  "Followup anxiety scale directionality"
                 ],
                 "children": [
                   {

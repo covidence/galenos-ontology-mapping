@@ -1,7 +1,41 @@
-import { useState, useRef, useEffect } from 'react';
-import { ChevronRight, ChevronDown } from 'lucide-react';
-import hierarchyData from './data/mapping.json';
-import mergedData from './data/merged_data.json';
+import { forwardRef, useState, useRef, useEffect } from "react";
+import { ChevronRight, ChevronDown } from "lucide-react";
+import hierarchyData from "./data/mapping.json";
+import mergedData from "./data/merged_data.json";
+import ontologyDictionary from "./data/dictionary.json";
+
+const TooltipTable = forwardRef(({ classes, position, visible }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className="absolute bg-white text-sm border p-2 rounded shadow-lg z-10"
+      style={{
+        top: position.top,
+        left: position.left,
+        visibility: visible ? "visible" : "hidden",
+      }}
+    >
+      <table className="w-full">
+        <thead>
+          <tr>
+            <th className="p-1 border">ID</th>
+            <th className="p-1 border">Label</th>
+            <th className="p-1 border">Definition</th>
+          </tr>
+        </thead>
+        <tbody>
+          {classes.map((cls) => (
+            <tr key={`tooltip-${cls.id}`} className="border">
+              <td className="p-2 border font-semibold">{cls.id}</td>
+              <td className="p-2 border">{cls.label}</td>
+              <td className="p-2 border">{cls.definition}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+});
 
 // Node Component for recursive rendering
 const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
@@ -13,26 +47,34 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
 
   const getNodeState = (node) => {
     const nodeVariables = node.variables || [];
-    const allVariablesSelected = nodeVariables.every(variable => selectedColumns.includes(variable));
-    const someVariablesSelected = nodeVariables.some(variable => selectedColumns.includes(variable));
+    const allVariablesSelected = nodeVariables.every((variable) =>
+      selectedColumns.includes(variable)
+    );
+    const someVariablesSelected = nodeVariables.some((variable) =>
+      selectedColumns.includes(variable)
+    );
 
     const childrenStates = (node.children || []).map(getNodeState);
-    const allChildrenSelected = childrenStates.every(state => state === 'selected');
-    const someChildrenSelected = childrenStates.some(state => state === 'selected' || state === 'indeterminate');
+    const allChildrenSelected = childrenStates.every(
+      (state) => state === "selected"
+    );
+    const someChildrenSelected = childrenStates.some(
+      (state) => state === "selected" || state === "indeterminate"
+    );
 
     if (allVariablesSelected && allChildrenSelected) {
-      return 'selected';
+      return "selected";
     } else if (someVariablesSelected || someChildrenSelected) {
-      return 'indeterminate';
+      return "indeterminate";
     }
-    return 'unselected';
+    return "unselected";
   };
 
   const nodeState = getNodeState(node);
 
   useEffect(() => {
     if (checkboxRef.current) {
-      checkboxRef.current.indeterminate = nodeState === 'indeterminate';
+      checkboxRef.current.indeterminate = nodeState === "indeterminate";
     }
   }, [nodeState]);
 
@@ -43,7 +85,7 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
     }));
 
     if (children && node.children) {
-      node.children.forEach(child => {
+      node.children.forEach((child) => {
         toggleExpand(child, children);
       });
     }
@@ -61,7 +103,7 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
     };
 
     const allVariables = getAllVariables(node);
-    const selected = nodeState !== 'selected';
+    const selected = nodeState !== "selected";
     onToggle(allVariables, selected);
 
     if (selected && !isExpanded) {
@@ -74,38 +116,21 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
       <input
         type="checkbox"
         ref={checkboxRef}
-        checked={nodeState === 'selected'}
+        checked={nodeState === "selected"}
         onChange={() => toggleNodeVariables(node)}
         className="mr-2 ml-1"
       />
-      {showTooltip && renderTooltip()}
+      {showTooltip && (
+        <TooltipTable
+          classes={node.classes}
+          position={{
+            top: checkboxRef.current?.offsetTop + 20,
+            left: checkboxRef.current?.offsetLeft + 50,
+          }}
+          visible={showTooltip}
+        />
+      )}
     </>
-  );
-
-  const renderTooltip = () => (
-    <div
-      className="absolute bg-white text-sm border p-2 rounded shadow-lg z-10"
-      style={{ top: checkboxRef.current.offsetTop + 20, left: checkboxRef.current.offsetLeft + 50 }}
-    >
-      <table className="w-full">
-        <thead>
-          <tr>
-            <th className="p-1 border">ID</th>
-            <th className="p-1 border">Label</th>
-            <th className="p-1 border">Definition</th>
-          </tr>
-        </thead>
-        <tbody>
-          {node.classes.map((cls) => (
-            <tr key={cls.id} className="border">
-              <td className="p-2 border font-semibold">{cls.id}</td>
-              <td className="p-2 border">{cls.label}</td>
-              <td className="p-2 border">{cls.definition}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
   );
 
   return (
@@ -122,13 +147,17 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
             <ChevronRight onClick={() => toggleExpand(node)} size={16} />
           )}
           {renderCheckbox()}
-          <span className={`font-semibold ${nodeState === 'selected' ? 'text-blue-600' : ''}`}>
+          <span
+            className={`font-semibold ${
+              nodeState === "selected" ? "text-blue-600" : ""
+            }`}
+          >
             {node.label}
           </span>
         </div>
       ) : (
         <div
-          className="flex items-center"
+          className="flex items-center hover:bg-gray-100"
           onMouseEnter={() => node.classes.length && setShowTooltip(true)}
           onMouseLeave={() => setShowTooltip(false)}
         >
@@ -174,11 +203,75 @@ const CheckboxTree = ({ data, selectedColumns, onToggle }) => {
 };
 
 const CSVDataViewer = ({ data, selectedColumns }) => {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [tooltipContent, setTooltipContent] = useState([]);
+  const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
+  const tooltipRef = useRef(null);
+  const headerRef = useRef(null);
+
   if (!data || data.length === 0 || selectedColumns.length === 0) {
     return <div>Select columns to view data</div>;
   }
 
-  const columnsToRender = ['LSR #', 'Study name', ...selectedColumns];
+  const columnsToRender = ["LSR #", "Study name", ...selectedColumns];
+
+  const handleMouseEnter = (e, column) => {
+    const classIds = ontologyDictionary["label_to_class"][column];
+    if (!classIds) return;
+    const classes = classIds.map((id) => {
+      const ontologyClass = ontologyDictionary["ontology"][id];
+      return {
+        id,
+        label: ontologyClass.label,
+        definition: ontologyClass.definition,
+      };
+    });
+
+    const rect = e.target.getBoundingClientRect();
+    setTooltipContent(classes);
+    setShowTooltip(true);
+
+    setTimeout(() => {
+      if (tooltipRef.current) {
+        const tooltipRect = tooltipRef.current.getBoundingClientRect();
+        const tooltipWidth = tooltipRect.width;
+        const tooltipHeight = tooltipRect.height;
+
+        let top = rect.top + window.scrollY + 120;
+        let left = rect.left + window.scrollX - 50;
+
+        if (left + tooltipWidth > window.innerWidth) {
+          left = window.innerWidth - tooltipWidth - 10;
+        }
+        if (left < 0) {
+          left = 10;
+        }
+        if (top + tooltipHeight > window.innerHeight + window.scrollY) {
+          top = rect.top + window.scrollY - tooltipHeight - 10;
+        }
+
+        setTooltipPosition({ top, left });
+      }
+    }, 0);
+  };
+
+  const handleMouseLeave = (e) => {
+    const relatedTarget = e.relatedTarget;
+    const NODE_TYPE_ELEMENT = 1;
+
+    if (relatedTarget && relatedTarget.nodeType === NODE_TYPE_ELEMENT) {
+      if (
+        !headerRef.current.contains(relatedTarget) &&
+        !tooltipRef.current.contains(relatedTarget)
+      ) {
+        setShowTooltip(false);
+        setTooltipContent([]);
+      }
+    } else {
+      setShowTooltip(false);
+      setTooltipContent([]);
+    }
+  };
 
   return (
     <div className="overflow-x-auto">
@@ -186,7 +279,13 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
         <thead>
           <tr>
             {columnsToRender.map((column) => (
-              <th key={column} className="border p-2 bg-gray-100">
+              <th
+                key={column}
+                ref={headerRef}
+                className="border p-2 bg-gray-100 hover:bg-blue-100"
+                onMouseEnter={(e) => handleMouseEnter(e, column)}
+                onMouseLeave={handleMouseLeave}
+              >
                 {column}
               </th>
             ))}
@@ -194,13 +293,17 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
         </thead>
         <tbody>
           {data
-            .filter((row) => selectedColumns.some((column) => row[column] !== null))
+            .filter((row) =>
+              selectedColumns.some((column) => row[column] !== null)
+            )
             .map((row, index) => (
               <tr key={index} className="border-b">
                 {columnsToRender.map((column) => (
                   <td
                     key={`${index}-${column}`}
-                    className={`border p-2 ${row[column] === null ? 'no-data' : ''}`}
+                    className={`border p-2 ${
+                      row[column] === null ? "no-data" : ""
+                    }`}
                   >
                     {row[column]}
                   </td>
@@ -209,6 +312,18 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
             ))}
         </tbody>
       </table>
+
+      <div
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={handleMouseLeave}
+      >
+        <TooltipTable
+          ref={tooltipRef}
+          classes={tooltipContent}
+          position={tooltipPosition}
+          visible={showTooltip}
+        />
+      </div>
     </div>
   );
 };
@@ -225,7 +340,10 @@ const HierarchicalDataViewer = () => {
               ...columns.map((col) => JSON.stringify(col)),
             ]),
           ].map((col) => JSON.parse(col)) // Convert the strings back to original objects/arrays
-        : prev.filter((col) => !columns.some((c) => JSON.stringify(c) === JSON.stringify(col)));
+        : prev.filter(
+            (col) =>
+              !columns.some((c) => JSON.stringify(c) === JSON.stringify(col))
+          );
       return newSelection;
     });
   };

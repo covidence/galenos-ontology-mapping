@@ -1,0 +1,392 @@
+{
+    "ontology": {
+        "GMHO:0000047": {
+            "label": "adverse event following an intervention",
+            "definition": "A pathological bodily process that occurs after the intervention delivery starts.",
+            "variables": [
+                "Number of participants with measurement for adverse events following intervention",
+                "Number of participants with adverse events following intervention"
+            ]
+        },
+        "GMHO:0000214": {
+            "label": "number of participants with specific outcome",
+            "definition": "Number of intervention participants for whom an outcome has been identified within a study.",
+            "variables": [
+                "Number of participants with agitation following intervention",
+                "Number of participants with anticholinergic symptom following intervention",
+                "Number of participants with adverse events following intervention",
+                "Number of participants with akathisia following intervention"
+            ]
+        },
+        "GMHO:0000204": {
+            "label": "measurement datum at followup",
+            "definition": "Measurement datum that was recorded as followup data in a study.",
+            "variables": [
+                "Number of participants with agitation following intervention",
+                "Mean followup anxiety",
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for anxiety following intervention",
+                "Number of participants with adverse events following intervention",
+                "Number of participants with measurement for akathisia following intervention",
+                "Followup anhedonia data type",
+                "Number of participants with anticholinergic symptom following intervention",
+                "Mean followup anhedonia",
+                "Number of participants for whom followup anhedonia was measured",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Standard deviation of followup anhedonia",
+                "Number of participants for whom followup anxiety was measured",
+                "Standard deviation of followup anxiety",
+                "Followup anxiety data type",
+                "Number of participants with akathisia following intervention",
+                "Number of participants with measurement for adverse events following intervention"
+            ]
+        },
+        "GMHO:0000206": {
+            "label": "number of participants with measurement",
+            "definition": "Number of intervention participants for whom a measurement was made.",
+            "variables": [
+                "Number of participants for whom baseline anxiety was measured",
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for anxiety following intervention",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Number of participants with measurement for akathisia following intervention",
+                "Number of participants for whom followup anxiety was measured",
+                "Number of participants for whom followup anhedonia was measured",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants with measurement for adverse events following intervention"
+            ]
+        },
+        "BCIO:015416": {
+            "label": "mean human age population statistic",
+            "definition": "The mean of human age in a population.",
+            "variables": [
+                "Mean age"
+            ]
+        },
+        "GMHO:0000233": {
+            "label": "agitation following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing agitation.",
+            "variables": [
+                "Number of participants with agitation following intervention",
+                "Number of participants with measurement for agitation following intervention"
+            ]
+        },
+        "GMHO:0000051": {
+            "label": "akathisia following pharmacological intervention",
+            "definition": "A drug-induced movement disorder following intervention that involves feeling restlessness, increased urges to move and reduced capability to suppress such urges.",
+            "variables": [
+                "Number of participants with akathisia following intervention",
+                "Number of participants with measurement for akathisia following intervention"
+            ]
+        },
+        "GMHO:0000201": {
+            "label": "anhedonia scale",
+            "definition": "A measurement scale that is used to measure anhedonia symptom severity.",
+            "variables": [
+                "Followup anhedonia scale directionality",
+                "Baseline anhedonia scale directionality",
+                "Followup anhedonia scale",
+                "Baseline anhedonia scale"
+            ]
+        },
+        "GMHO:0000212": {
+            "label": "measurement scale at baseline",
+            "definition": "A measurement scale used to measure baseline data in a study.",
+            "variables": [
+                "Baseline anhedonia scale directionality",
+                "Baseline anxiety scale directionality",
+                "Baseline anhedonia scale"
+            ]
+        },
+        "GMHO:0000208": {
+            "label": "scale directionality",
+            "definition": "An information content entity about the orientation of a measurement's scoring system in which higher numerical levels can indicate higher or lower levels of a construct. ",
+            "variables": [
+                "Followup anhedonia scale directionality",
+                "Baseline anhedonia scale directionality",
+                "Baseline anxiety scale directionality",
+                "Followup anxiety scale directionality"
+            ]
+        },
+        "GMHO:0000131": {
+            "label": "anhedonia symptom severity",
+            "definition": "Symptom severity that is associated with anhedonia.",
+            "variables": [
+                "Mean baseline anhedonia",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Followup anhedonia data type",
+                "Mean followup anhedonia",
+                "Number of participants for whom followup anhedonia was measured",
+                "Standard deviation of baseline anhedonia",
+                "Standard deviation of followup anhedonia"
+            ]
+        },
+        "OBI:0000679": {
+            "label": "average value",
+            "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data.",
+            "variables": [
+                "Mean followup anhedonia",
+                "Mean followup anxiety",
+                "Mean baseline anhedonia",
+                "Mean baseline anxiety"
+            ]
+        },
+        "GMHO:0000209": {
+            "label": "measurement datum at baseline",
+            "definition": "Measurement datum that was recorded as baseline data in a study.",
+            "variables": [
+                "Number of participants for whom baseline anxiety was measured",
+                "Standard deviation of baseline anxiety",
+                "Mean baseline anhedonia",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Mean baseline anxiety",
+                "Standard deviation of baseline anhedonia"
+            ]
+        },
+        "OBCS:0000077": {
+            "label": "standard deviation",
+            "definition": "A quantitative confidence value that measures the variability of data around the mean.",
+            "variables": [
+                "Standard deviation of baseline anxiety",
+                "Standard deviation of baseline anhedonia",
+                "Standard deviation of followup anhedonia",
+                "Standard deviation of followup anxiety"
+            ]
+        },
+        "GMHO:0000205": {
+            "label": "measurement scale at followup",
+            "definition": "A measurement scale used to measure followup data in a study.",
+            "variables": [
+                "Followup anhedonia scale directionality",
+                "Followup anhedonia scale",
+                "Followup anxiety scale",
+                "Followup anxiety scale directionality"
+            ]
+        },
+        "GMHO:0000203": {
+            "label": "information on available followup data",
+            "definition": "An information content entity about the followup data available for a study.",
+            "variables": [
+                "Followup anxiety data type",
+                "Followup anhedonia data type"
+            ]
+        },
+        "GMHO:0000221": {
+            "label": "anticholinergic symptom following intervention",
+            "definition": "An adverse event following an intervention that involves symptoms associated with anticholinergic drugs.",
+            "variables": [
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants with anticholinergic symptom following intervention"
+            ]
+        },
+        "GMHO:0000202": {
+            "label": "anxiety scale",
+            "definition": "A measurement scale that is used to measure anxiety symptom severity.",
+            "variables": [
+                "Followup anxiety scale",
+                "Baseline anxiety scale directionality",
+                "Followup anxiety scale directionality"
+            ]
+        },
+        "GMHO:0000143": {
+            "label": "anxiety symptom severity",
+            "definition": "Symptom severity that is associated with an anxiety symptom.",
+            "variables": [
+                "Mean followup anxiety",
+                "Number of participants for whom baseline anxiety was measured",
+                "Standard deviation of baseline anxiety",
+                "Followup anxiety data type",
+                "Mean baseline anxiety",
+                "Number of participants for whom followup anxiety was measured",
+                "Standard deviation of followup anxiety"
+            ]
+        },
+        "GMHO:0000238": {
+            "label": "anxiousness following intervention",
+            "definition": "An adverse event following an intervention that involves feeling anxiety.",
+            "variables": [
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for anxiety following intervention"
+            ]
+        },
+        "GMHO:0000087 (Population)": {
+            "label": "symptom severity",
+            "definition": "symptom severity",
+            "variables": []
+        },
+        "GMHO:0000087 (Outcome)": {
+            "label": "symptom severity",
+            "definition": "symptom severity",
+            "variables": []
+        },
+        "GMHO:0000063": {
+            "label": "drug-induced movement following intervention",
+            "definition": "drug-induced movement following intervention",
+            "variables": []
+        }
+    },
+    "label_to_class": {
+        "Number of participants with adverse events following intervention": [
+            "GMHO:0000047",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for adverse events following intervention": [
+            "GMHO:0000047",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean age": [
+            "BCIO:015416"
+        ],
+        "Number of participants with agitation following intervention": [
+            "GMHO:0000233",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for agitation following intervention": [
+            "GMHO:0000233",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with akathisia following intervention": [
+            "GMHO:0000051",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for akathisia following intervention": [
+            "GMHO:0000051",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Baseline anhedonia scale directionality": [
+            "GMHO:0000201",
+            "GMHO:0000212",
+            "GMHO:0000208"
+        ],
+        "Mean baseline anhedonia": [
+            "GMHO:0000131",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Number of participants for whom baseline anhedonia was measured": [
+            "GMHO:0000131",
+            "GMHO:0000209",
+            "GMHO:0000206"
+        ],
+        "Baseline anhedonia scale": [
+            "GMHO:0000201",
+            "GMHO:0000212"
+        ],
+        "Standard deviation of baseline anhedonia": [
+            "GMHO:0000131",
+            "GMHO:0000209",
+            "OBCS:0000077"
+        ],
+        "Followup anhedonia scale directionality": [
+            "GMHO:0000201",
+            "GMHO:0000205",
+            "GMHO:0000208"
+        ],
+        "Mean followup anhedonia": [
+            "GMHO:0000131",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom followup anhedonia was measured": [
+            "GMHO:0000131",
+            "GMHO:0000204",
+            "GMHO:0000206"
+        ],
+        "Followup anhedonia scale": [
+            "GMHO:0000201",
+            "GMHO:0000205"
+        ],
+        "Standard deviation of followup anhedonia": [
+            "GMHO:0000131",
+            "GMHO:0000204",
+            "OBCS:0000077"
+        ],
+        "Followup anhedonia data type": [
+            "GMHO:0000131",
+            "GMHO:0000203",
+            "GMHO:0000204"
+        ],
+        "Number of participants with anticholinergic symptom following intervention": [
+            "GMHO:0000221",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurements for anticholinergic symptom following intervention": [
+            "GMHO:0000221",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Baseline anxiety scale directionality": [
+            "GMHO:0000202",
+            "GMHO:0000212",
+            "GMHO:0000208"
+        ],
+        "Mean baseline anxiety": [
+            "GMHO:0000143",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Number of participants for whom baseline anxiety was measured": [
+            "GMHO:0000143",
+            "GMHO:0000209",
+            "GMHO:0000206"
+        ],
+        "Standard deviation of baseline anxiety": [
+            "GMHO:0000143",
+            "GMHO:0000209",
+            "OBCS:0000077"
+        ],
+        "Number of participants with anxiety following intervention": [
+            "GMHO:0000238",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Followup anxiety scale directionality": [
+            "GMHO:0000202",
+            "GMHO:0000205",
+            "GMHO:0000208"
+        ],
+        "Mean followup anxiety": [
+            "GMHO:0000143",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom followup anxiety was measured": [
+            "GMHO:0000143",
+            "GMHO:0000204",
+            "GMHO:0000206"
+        ],
+        "Followup anxiety scale": [
+            "GMHO:0000202",
+            "GMHO:0000205"
+        ],
+        "Standard deviation of followup anxiety": [
+            "GMHO:0000143",
+            "GMHO:0000204",
+            "OBCS:0000077"
+        ],
+        "Followup anxiety data type": [
+            "GMHO:0000143",
+            "GMHO:0000203",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for anxiety following intervention": [
+            "GMHO:0000238",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "": [
+            "GMHO:0000087 (Population)",
+            "GMHO:0000087 (Outcome)",
+            "GMHO:0000063"
+        ]
+    }
+}
