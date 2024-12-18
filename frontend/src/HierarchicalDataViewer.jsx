@@ -8,7 +8,7 @@ const TooltipTable = forwardRef(({ classes, position, visible }, ref) => {
   return (
     <div
       ref={ref}
-      className="absolute bg-white text-sm border p-2 rounded shadow-lg z-10"
+      className="absolute bg-white text-sm border p-2 rounded shadow-lg z-10 max-w-xl"
       style={{
         top: position.top,
         left: position.left,
@@ -237,8 +237,8 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
         const tooltipWidth = tooltipRect.width;
         const tooltipHeight = tooltipRect.height;
 
-        let top = rect.top + window.scrollY + 120;
-        let left = rect.left + window.scrollX - 50;
+        let top = rect.bottom + window.scrollY;
+        let left = rect.left + window.scrollX;
 
         if (left + tooltipWidth > window.innerWidth) {
           left = window.innerWidth - tooltipWidth - 10;
@@ -261,8 +261,8 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
 
     if (relatedTarget && relatedTarget.nodeType === NODE_TYPE_ELEMENT) {
       if (
-        !headerRef.current.contains(relatedTarget) &&
-        !tooltipRef.current.contains(relatedTarget)
+        !headerRef.current?.contains(relatedTarget) &&
+        !tooltipRef.current?.contains(relatedTarget)
       ) {
         setShowTooltip(false);
         setTooltipContent([]);
@@ -359,7 +359,12 @@ const HierarchicalDataViewer = () => {
         />
       </div>
       <div className="w-2/3 p-4">
-        <h2 className="text-xl font-bold mb-4">Data Table</h2>
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-xl font-bold">Data Table</h2>
+          <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+            Download CSV
+          </button>
+        </div>
         <CSVDataViewer data={mergedData} selectedColumns={selectedColumns} />
       </div>
     </div>
