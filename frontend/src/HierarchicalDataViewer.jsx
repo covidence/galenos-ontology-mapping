@@ -4,6 +4,8 @@ import hierarchyData from "./data/mapping.json";
 import mergedData from "./data/merged_data.json";
 import ontologyDictionary from "./data/dictionary.json";
 
+const MISSING_VALUES = ["", "NA", null, undefined];
+
 const TooltipTable = forwardRef(({ classes, position, visible }, ref) => {
   return (
     <div
@@ -206,6 +208,9 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
   const [showTooltip, setShowTooltip] = useState(false);
   const [tooltipContent, setTooltipContent] = useState([]);
   const [tooltipPosition, setTooltipPosition] = useState({ top: 0, left: 0 });
+  const [filterMissing, setFilterMissing] = useState(
+    selectedColumns.reduce((acc, col) => ({ ...acc, [col]: false }), {})
+  );
   const tooltipRef = useRef(null);
   const headerRef = useRef(null);
 
@@ -213,7 +218,11 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
     return <div>Select columns to view data</div>;
   }
 
-  const columnsToRender = ["LSR #", "Study name", ...selectedColumns];
+  const columnsToRender = ["LSR number", "Study name", ...selectedColumns];
+
+  const handleFilterToggle = (column) => {
+    setFilterMissing((prev) => ({ ...prev, [column]: !prev[column] }));
+  };
 
   const handleMouseEnter = (e, column) => {
     const classIds = ontologyDictionary["label_to_class"][column];
@@ -273,6 +282,18 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
     }
   };
 
+  // Filter the data based on both the "Filter missing values" checkbox and always filtering out rows with no data
+  const filteredData = data.filter(
+    (row) =>
+      !selectedColumns.every((column) =>
+        MISSING_VALUES.includes(row[column])
+      ) &&
+      !selectedColumns.some(
+        (column) =>
+          filterMissing[column] && MISSING_VALUES.includes(row[column])
+      )
+  );
+
   return (
     <div className="overflow-x-auto">
       <table className="min-w-full bg-white border">
@@ -286,30 +307,46 @@ const CSVDataViewer = ({ data, selectedColumns }) => {
                 onMouseEnter={(e) => handleMouseEnter(e, column)}
                 onMouseLeave={handleMouseLeave}
               >
-                {column}
+                <div className="flex flex-col items-center">
+                  <span>{column}</span>
+                  <label className="flex items-center font-normal text-sm mt-5">
+                    <input
+                      type="checkbox"
+                      checked={filterMissing[column] || false}
+                      onChange={() => handleFilterToggle(column)}
+                      className="mr-2"
+                    />
+                    Filter missing values
+                  </label>
+                </div>
               </th>
             ))}
           </tr>
         </thead>
         <tbody>
-          {data
-            .filter((row) =>
-              selectedColumns.some((column) => row[column] !== null)
-            )
-            .map((row, index) => (
-              <tr key={index} className="border-b">
-                {columnsToRender.map((column) => (
-                  <td
-                    key={`${index}-${column}`}
-                    className={`border p-2 ${
-                      row[column] === null ? "no-data" : ""
-                    }`}
-                  >
-                    {row[column]}
-                  </td>
-                ))}
-              </tr>
-            ))}
+          {filteredData.map((row, index) => (
+            <tr key={index} className="border-b">
+              {columnsToRender.map((column, columnIndex) => (
+                <td
+                  key={`${index}-${column}`}
+                  className={`border p-2 ${
+                    row[column] === null ? "no-data" : ""
+                  }`}
+                >
+                  {columnIndex === 0 ? (
+                    // Render HTML content for the first column
+                    <div
+                      className="cursor-pointer"
+                      dangerouslySetInnerHTML={{ __html: row[column] }}
+                    />
+                  ) : (
+                    // Render plain text for other columns
+                    row[column]
+                  )}
+                </td>
+              ))}
+            </tr>
+          ))}
         </tbody>
       </table>
 
