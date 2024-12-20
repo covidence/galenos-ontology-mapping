@@ -130,7 +130,7 @@ const Node = ({ node, expanded, setExpanded, selectedColumns, onToggle }) => {
           classes={node.classes}
           position={{
             top: checkboxRef.current?.offsetTop + 20,
-            left: checkboxRef.current?.offsetLeft + 50,
+            left: window.innerWidth * 0.2,
           }}
           visible={showTooltip}
         />
@@ -390,7 +390,7 @@ const HierarchicalDataViewer = () => {
 
   return (
     <div className="flex h-screen">
-      <div className="w-1/3 p-4 overflow-y-auto border-r">
+      <div className="w-1/4 p-4 border-r">
         <h2 className="text-xl font-bold mb-4">Column Selection</h2>
         <CheckboxTree
           data={hierarchyData}
@@ -398,7 +398,7 @@ const HierarchicalDataViewer = () => {
           onToggle={toggleColumns}
         />
       </div>
-      <div className="w-2/3 p-4">
+      <div className="w-3/4 p-4">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-xl font-bold">Data Table</h2>
           <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
