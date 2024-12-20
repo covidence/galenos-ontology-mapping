@@ -17,6 +17,9 @@ const TooltipTable = forwardRef(({ classes, position, visible }, ref) => {
         visibility: visible ? "visible" : "hidden",
       }}
     >
+      <p className="text-gray-600 mb-2">
+        The following ontology classes are associated with this term:
+      </p>
       <table className="w-full">
         <thead>
           <tr>
