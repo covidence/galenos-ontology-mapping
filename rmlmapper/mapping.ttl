@@ -1,0 +1,101 @@
+@base <http://example.org/> .
+@prefix : <http://example.org/rules/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix grel: <http://users.ugent.be/~bjdmeest/function/grel.ttl#> .
+@prefix fno: <http://w3id.org/function/ontology#> .
+@prefix fnml: <http://semweb.mmlab.be/ns/fnml#> .
+
+:ExtractionVariablesContainer a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [ a csvw:Table; csvw:url "ontology_mapping.csv" ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:constant <extractionVariablesContainer>
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :containerID;
+    rr:objectMap [ rr:constant <extractionVariablesContainer> ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant :Container ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :containsExtractionVariables;
+    rr:objectMap [
+      rr:parentTriplesMap :TriplesMap_Variable;
+      rr:joinCondition [
+        rr:child "Variable to extract";
+        rr:parent "Variable to extract"
+      ]
+    ]
+  ].
+
+:TriplesMap_Variable a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [ a csvw:Table; csvw:url "ontology_mapping.csv" ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "variable/{Variable to extract}"
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :variableToExtract;
+    rr:objectMap [ rr:column "Variable to extract" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :understandableLabel;
+    rr:objectMap [ rr:column "Understandable label for database" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant :ExtractionVariable ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :hasClass;
+    rr:objectMap [
+      rr:parentTriplesMap :TriplesMap_Class;
+      rr:joinCondition [
+        rr:child "Variable to extract";
+        rr:parent "Variable to extract"
+      ]
+    ]
+  ].
+
+:TriplesMap_Class a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source [ a csvw:Table; csvw:url "ontology_mapping.csv" ];
+    rml:referenceFormulation ql:CSV
+  ];
+  rr:subjectMap [
+    rr:template "class/{Class ID}";
+    fnml:functionValue [
+      rr:predicateObjectMap [
+        rr:predicate fno:executes ;
+        rr:objectMap [ rr:constant grel:string_replace ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate grel:valueParameter ;
+        rr:objectMap [ rml:reference "Class ID" ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate grel:p_string_find ;
+        rr:objectMap [ rr:constant ":" ]
+      ];
+      rr:predicateObjectMap [
+        rr:predicate grel:p_string_replace ;
+        rr:objectMap [ rr:constant "_" ]
+      ]
+    ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate :classLabel;
+    rr:objectMap [ rr:column "Class  label" ]
+  ];
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [ rr:constant :OntologyClass ]
+  ].

@@ -1,0 +1,20 @@
+<http://example.org/GMHO_0000047> <http://example.org/rules/classLabel> "adverse event following an intervention" .
+<http://example.org/GMHO_0000047> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/OntologyClass> .
+<http://example.org/GMHO_0000204> <http://example.org/rules/classLabel> "measurement datum at followup" .
+<http://example.org/GMHO_0000204> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/OntologyClass> .
+<http://example.org/GMHO_0000214> <http://example.org/rules/classLabel> "number of participants with specific outcome" .
+<http://example.org/GMHO_0000214> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/OntologyClass> .
+<http://example.org/extractionVariablesContainer> <http://example.org/rules/containerID> <http://example.org/extractionVariablesContainer> .
+<http://example.org/extractionVariablesContainer> <http://example.org/rules/containsExtractionVariables> <http://example.org/variable/adverse_event_e> .
+<http://example.org/extractionVariablesContainer> <http://example.org/rules/containsExtractionVariables> <http://example.org/variable/adverse_event_n> .
+<http://example.org/extractionVariablesContainer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/Container> .
+<http://example.org/variable/adverse_event_e> <http://example.org/rules/hasClass> <http://example.org/GMHO_0000047> .
+<http://example.org/variable/adverse_event_e> <http://example.org/rules/hasClass> <http://example.org/GMHO_0000204> .
+<http://example.org/variable/adverse_event_e> <http://example.org/rules/hasClass> <http://example.org/GMHO_0000214> .
+<http://example.org/variable/adverse_event_e> <http://example.org/rules/understandableLabel> "Number of participants with adverse events following intervention" .
+<http://example.org/variable/adverse_event_e> <http://example.org/rules/variableToExtract> "adverse_event_e" .
+<http://example.org/variable/adverse_event_e> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/ExtractionVariable> .
+<http://example.org/variable/adverse_event_n> <http://example.org/rules/hasClass> <http://example.org/GMHO_0000047> .
+<http://example.org/variable/adverse_event_n> <http://example.org/rules/understandableLabel> "Number of participants with measurement for adverse events following intervention" .
+<http://example.org/variable/adverse_event_n> <http://example.org/rules/variableToExtract> "adverse_event_n" .
+<http://example.org/variable/adverse_event_n> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://example.org/rules/ExtractionVariable> .

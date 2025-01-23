@@ -1,0 +1,22 @@
+{
+  "containerID": "ex:extractionVariablesContainer",
+  "containsExtractionVariables": [
+    {
+      "variableToExtract": "adverse_event_e",
+      "understandableLabel": "Number of participants with adverse events following intervention",
+      "hasClass": [
+        "ex:GMHO_0000047",
+        "ex:GMHO_0000204",
+        "ex:GMHO_0000214"
+      ]
+    },
+    {
+      "variableToExtract": "adverse_event_n",
+      "understandableLabel": "Number of participants with measurement for adverse events following intervention",
+      "hasClass": [
+        "ex:GMHO_0000047"
+      ]
+    }
+  ],
+  "@type": "Container"
+}

@@ -1,0 +1,60 @@
+id: mental-health-ontology
+name: mental-health-ontology
+description: Ontology for mental health outcomes and measurements
+default_prefix: ex
+imports:
+  - linkml:types
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  ex: http://example.org/
+  rules: http://example.org/rules/
+
+classes:
+  Container:
+    class_uri: rules:Container
+    tree_root: true
+    attributes:
+      containerID:
+        slot_uri: rules:containerID
+        range: string
+        identifier: true
+      containsExtractionVariables:
+        slot_uri: rules:containsExtractionVariables
+        range: ExtractionVariable
+        multivalued: true
+        inlined: true
+        inlined_as_list: true
+
+  OntologyClass:
+    class_uri: rules:OntologyClass
+    attributes:
+      classID:
+        slot_uri: rules:classID
+        range: string
+        identifier: true
+        required: true
+      classLabel:
+        slot_uri: rules:classLabel
+        range: string
+        required: true
+
+  ExtractionVariable:
+    class_uri: rules:ExtractionVariable
+    attributes:
+      variableToExtract:
+        slot_uri: rules:variableToExtract
+        description: Class ID
+        range: string
+        identifier: true
+        required: true
+      understandableLabel:
+        slot_uri: rules:understandableLabel
+        description: Class label
+        range: string
+      hasClass:
+        slot_uri: rules:hasClass
+        description: Classes
+        range: OntologyClass
+        multivalued: true
+        inlined: false
