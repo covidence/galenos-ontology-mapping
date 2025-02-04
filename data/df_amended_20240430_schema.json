@@ -1,0 +1,198 @@
+{
+  "@context": ["http://www.w3.org/ns/csvw", { "@language": "en" }],
+  "tables": [
+    {
+      "url": "df_amended_20240430.csv",
+      "tableSchema": {
+        "columns": [
+          { "name": "studlab", "datatype": "string" },
+          { "name": "year", "datatype": "integer" },
+          { "name": "n_randomised", "datatype": "number", "null": "NA" },
+          { "name": "treatment_details", "datatype": "string", "null": "" },
+          { "name": "treatment", "datatype": "string" },
+          {
+            "name": "age_mean",
+            "datatype": "number",
+            "null": "NA",
+            "dc:subject": [
+              "http://purl.obolibrary.org/obo/PATO_0000011",
+              "http://purl.obolibrary.org/obo/STATO_0000287"
+            ]
+          },
+          { "name": "female_n", "datatype": "number", "null": "NA" },
+          { "name": "dose_delivered_min", "datatype": "number", "null": "NA" },
+          { "name": "dose_delivered_mean", "datatype": "number", "null": "NA" },
+          { "name": "dose_delivered_max", "datatype": "number", "null": "NA" },
+          { "name": "dose_planned_min", "datatype": "number", "null": "NA" },
+          { "name": "dose_planned_max", "datatype": "number", "null": "NA" },
+          { "name": "tx_duration", "datatype": "number", "null": "NA" },
+          { "name": "study_duration", "datatype": "string" },
+          { "name": "r_acceptability", "datatype": "number", "null": "NA" },
+          { "name": "r_tolerability", "datatype": "number", "null": "NA" },
+          {
+            "name": "anhedonia_baseline_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_baseline_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_baseline_n",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_baseline_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_baseline_sd",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_n",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_sd",
+            "datatype": "number",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_type",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anhedonia_followup_time",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anxiety_baseline_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anxiety_baseline_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          { "name": "anxiety_baseline_n", "datatype": "number", "null": "NA" },
+          {
+            "name": "anxiety_baseline_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          { "name": "anxiety_baseline_sd", "datatype": "number", "null": "NA" },
+          {
+            "name": "anxiety_followup_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anxiety_followup_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          { "name": "anxiety_followup_n", "datatype": "number", "null": "NA" },
+          {
+            "name": "anxiety_followup_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          { "name": "anxiety_followup_sd", "datatype": "number", "null": "NA" },
+          {
+            "name": "anxiety_followup_type",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "anxiety_followup_time",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "reward_baseline_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "reward_baseline_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          { "name": "reward_baseline_n", "datatype": "number", "null": "NA" },
+          {
+            "name": "reward_baseline_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          { "name": "reward_baseline_sd", "datatype": "number", "null": "NA" },
+          {
+            "name": "reward_followup_scale",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "reward_followup_direction",
+            "datatype": "string",
+            "null": "NA"
+          },
+          { "name": "reward_followup_n", "datatype": "number", "null": "NA" },
+          {
+            "name": "reward_followup_mean",
+            "datatype": "number",
+            "null": "NA"
+          },
+          { "name": "reward_followup_sd", "datatype": "number", "null": "NA" },
+          {
+            "name": "reward_followup_type",
+            "datatype": "string",
+            "null": "NA"
+          },
+          {
+            "name": "reward_followup_time",
+            "datatype": "string",
+            "null": "NA"
+          },
+          { "name": "AE", "datatype": "string", "null": "NA" },
+          { "name": "female_prop", "datatype": "number", "null": "NA" },
+          { "name": "arm", "datatype": "string" },
+          { "name": "treatment_old", "datatype": "string" },
+          { "name": "nausea", "datatype": "number", "null": "NA" },
+          { "name": "headache", "datatype": "number", "null": "NA" },
+          { "name": "insomnia", "datatype": "number", "null": "NA" },
+          { "name": "dry_mouth", "datatype": "number", "null": "NA" },
+          { "name": "constipation", "datatype": "number", "null": "NA" },
+          { "name": "dizziness", "datatype": "number", "null": "NA" },
+          { "name": "vomiting", "datatype": "number", "null": "NA" }
+        ]
+      }
+    }
+  ],
+  "dialect": {
+    "header": true
+  }
+}
