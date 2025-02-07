@@ -15,30 +15,27 @@ def process_ontology_mapping(
     ontology_mapping,
 ):
     for mapping in ontology_mapping:
-        if mapping["Class ID"] not in ontology:
-            ontology[mapping["Class ID"]] = {
+        class_id = mapping["Class ID"].strip()
+        extraction_variable = mapping["Variable to extract"].strip()
+        variable_label = mapping["Understandable label for database"].strip()
+        if class_id not in ontology:
+            ontology[class_id] = {
                 "label": mapping["Class  label"],
                 "definition": mapping["Class definition"],
-                "variables": set([mapping["Understandable label for database"]])
-                if mapping["Variable to extract"]
-                else set(),
+                "variables": set([variable_label]) if extraction_variable else set(),
             }
         else:
-            ontology[mapping["Class ID"]]["variables"].add(
-                mapping["Understandable label for database"]
-            )
+            ontology[class_id]["variables"].add(variable_label)
 
-        if mapping["Understandable label for database"] not in label_to_class:
-            label_to_class[mapping["Understandable label for database"]] = [
-                mapping["Class ID"]
-            ]
+        if variable_label not in label_to_class:
+            label_to_class[variable_label] = [class_id]
         else:
-            label = mapping["Understandable label for database"]
-            if mapping["Class ID"] not in label_to_class[label]:
-                label_to_class[label].append(mapping["Class ID"])
+            label = variable_label
+            if class_id not in label_to_class[label]:
+                label_to_class[label].append(class_id)
 
-        if mapping["Variable to extract"] not in extraction_variables:
-            extraction_variables[mapping["Variable to extract"]] = mapping[
+        if extraction_variable not in extraction_variables:
+            extraction_variables[extraction_variable] = mapping[
                 "Understandable label for database"
             ]
 
@@ -46,9 +43,9 @@ def process_ontology_mapping(
 def get_current_variables(current_mapping, node_classes, parent):
     current_variables = ontology[node_classes[0]]["variables"]
 
-    if current_mapping["Is part of COMBO."]:
+    if current_mapping["COMBO"]:
         current_variables = [
-            ontology[class_id]["variables"] for class_id in node_classes
+            ontology[class_id.strip()]["variables"] for class_id in node_classes
         ]
 
         current_variables = list(
@@ -67,11 +64,12 @@ def get_current_variables(current_mapping, node_classes, parent):
 def get_ontology_items(classes: list):
     return [
         {
-            "id": class_id,
-            "label": ontology[class_id]["label"],
-            "definition": ontology[class_id]["definition"],
+            "id": stripped_id,
+            "label": ontology[stripped_id]["label"],
+            "definition": ontology[stripped_id]["definition"],
         }
         for class_id in classes
+        if (stripped_id := class_id.strip())
     ]
 
 
@@ -79,14 +77,14 @@ def append_children(node: dict, ontology_mapping: list):
     key = node["key"].strip()
     for mapping in ontology_mapping:
         if mapping["Organised under"].strip() == key:
-            child_key = (mapping["Is part of COMBO."] or mapping["Class ID"]).strip()
+            child_key = (mapping["COMBO"] or mapping["Class ID"]).strip()
 
             current_children = [child["key"] for child in node["children"]]
 
             if child_key not in current_children:
                 classes = child_key.split(",")
                 child_label = " - ".join(
-                    [ontology[class_id]["label"] for class_id in classes]
+                    [ontology[class_id.strip()]["label"] for class_id in classes]
                 )
 
                 current_variables = get_current_variables(mapping, classes, node)
