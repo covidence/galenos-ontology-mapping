@@ -5,57 +5,327 @@
             "definition": "A pathological bodily process that occurs after the intervention delivery starts.",
             "variables": [
                 "Number of participants with measurement for adverse events following intervention",
+                "Adverse event",
                 "Number of participants with adverse events following intervention"
-            ]
-        },
-        "GMHO:0000214": {
-            "label": "number of participants with specific outcome",
-            "definition": "Number of intervention participants for whom an outcome has been identified within a study.",
-            "variables": [
-                "Number of participants with agitation following intervention",
-                "Number of participants with anticholinergic symptom following intervention",
-                "Number of participants with adverse events following intervention",
-                "Number of participants with akathisia following intervention"
             ]
         },
         "GMHO:0000204": {
             "label": "measurement datum at followup",
             "definition": "Measurement datum that was recorded as followup data in a study.",
             "variables": [
-                "Number of participants with agitation following intervention",
-                "Mean followup anxiety",
-                "Number of participants with measurement for agitation following intervention",
-                "Number of participants with anxiety following intervention",
+                "Mean followup severity of functioning",
+                "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of PTSD symptom severity of the control group",
+                "Number of participants with measurement for sedation following intervention",
+                "Data type: endpoint vs. baseline difference in prolactin measurement",
                 "Number of participants with measurement for anxiety following intervention",
-                "Number of participants with adverse events following intervention",
-                "Number of participants with measurement for akathisia following intervention",
-                "Followup anhedonia data type",
-                "Number of participants with anticholinergic symptom following intervention",
-                "Mean followup anhedonia",
-                "Number of participants for whom followup anhedonia was measured",
-                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants with anxiety following intervention",
+                "Number of participants for whom serious adverse events were assessed",
+                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
+                "Mean followup anxiety",
+                "Number of participants with hyperprolactinemia following intervention",
+                "Insomnia",
+                "Number of participants with measurement for insomnia following intervention",
+                "Standard deviation of followup prolactin",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Number of participants with sedation following intervention",
+                "Number of participants with headache following intervention",
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Mean followup prolactin",
+                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
+                "Mean PTSD symptom severity of the treatment group",
                 "Standard deviation of followup anhedonia",
-                "Number of participants for whom followup anxiety was measured",
+                "Number of participants with adverse events following intervention",
+                "Mean PTSD symptom severity of the control group",
+                "Data type: endpoint vs. baseline difference in human functioning",
+                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+                "Number of participants with measurement for adverse events following intervention",
+                "Data type: endpoint vs. baseline difference in depression symptom severity",
+                "Number of participants with extrapyrimidal symptoms following intervention",
+                "Mean followup reward sensitivity",
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in anxiety symptom severity",
+                "Standard deviation of followup weight",
+                "Number of participants with measurement for weight increase following intervention",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Number of participants for whom deaths were assessed",
+                "Number of participants for whom a response to treatment was measured",
+                "Number of participants with nausea following intervention",
+                "Number of participants for whom followup anhedonia was measured",
+                "Number of participants for whom followup reward sensitivity was measured",
+                "Number of participants with measurement for QTc prolongation following intervention",
+                "Mean followup weight",
+                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
+                "Headache",
+                "Number of participants who had a response to treatments",
+                "Number of participants with followup measurements for weight",
                 "Standard deviation of followup anxiety",
-                "Followup anxiety data type",
+                "Number of participants with QTc prolongation following intervention",
+                "Dizziness",
+                "Sample size of PTSD symptom severity of the control group",
+                "Data type: endpoint vs. baseline difference in mental processes",
+                "Number of participants with hypotension following intervention",
+                "Number of participant deaths",
                 "Number of participants with akathisia following intervention",
-                "Number of participants with measurement for adverse events following intervention"
+                "Number of participants with measurement for nausea following intervention",
+                "Standard deviation of followup cognition",
+                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                "Standard deviation of followup functioning",
+                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                "Number of participants with measurement for hyperprolactinemia following intervention",
+                "Mean followup depression",
+                "Adverse event",
+                "Number of participants who relapsed based on study criteria",
+                "Dry mouth",
+                "Sample size of PTSD symptom severity of the treatment group",
+                "Constipation",
+                "Number of participants with agitation following intervention",
+                "Followup reward sensitivity data type",
+                "Number of participants with dizziness following intervention",
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with followup measurements for cognition",
+                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for functioning",
+                "Standard deviation of followup reward sensitivity",
+                "Number of participants with measurement for hypotension following intervention",
+                "Mean followup anhedonia",
+                "Number of participants with measurement for dizziness following intervention",
+                "Data type: endpoint vs. baseline difference in weight",
+                "Number of participants with weight increase following intervention",
+                "Vomiting",
+                "Standard deviation of followup depression",
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for depression",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants for whom relapse was measured",
+                "Number of participants with measurement for akathisia following intervention",
+                "Number of participants with serious adverse events following intervention",
+                "Number of participants for whom followup anxiety was measured",
+                "Nausea",
+                "Number of participants with measurement for headache following intervention",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
+                "Number of participants with anticholinergic symptom following intervention",
+                "Number of participants with followup measurements for prolactin",
+                "Number of participants with insomnia following intervention",
+                "Mean followup cognition"
             ]
         },
-        "GMHO:0000206": {
-            "label": "number of participants with measurement",
-            "definition": "Number of intervention participants for whom a measurement was made.",
+        "GMHO:0000201": {
+            "label": "anhedonia scale",
+            "definition": "A measurement scale that is used to measure anhedonia symptom severity.",
             "variables": [
-                "Number of participants for whom baseline anxiety was measured",
-                "Number of participants with measurement for agitation following intervention",
-                "Number of participants with anxiety following intervention",
-                "Number of participants with measurement for anxiety following intervention",
+                "Followup anhedonia scale",
+                "Baseline anhedonia scale directionality",
+                "Baseline anhedonia scale",
+                "Followup anhedonia scale directionality"
+            ]
+        },
+        "GMHO:0000131": {
+            "label": "anhedonia symptom severity",
+            "definition": "Symptom severity that is associated with anhedonia.",
+            "variables": [
                 "Number of participants for whom baseline anhedonia was measured",
-                "Number of participants with measurement for akathisia following intervention",
-                "Number of participants for whom followup anxiety was measured",
+                "Standard deviation of followup anhedonia",
+                "Mean followup anhedonia",
                 "Number of participants for whom followup anhedonia was measured",
-                "Number of participants with measurements for anticholinergic symptom following intervention",
-                "Number of participants with measurement for adverse events following intervention"
+                "Mean baseline anhedonia",
+                "Standard deviation of baseline anhedonia",
+                "Timepoint of followup anhedonia measurement (weeks)",
+                "Data type: endpoint vs. baseline difference in anhedonia symptom severity"
+            ]
+        },
+        "GMHO:0000202": {
+            "label": "anxiety scale",
+            "definition": "A measurement scale that is used to measure anxiety symptom severity.",
+            "variables": [
+                "Baseline anxiety scale directionality",
+                "Followup anxiety scale directionality",
+                "Baseline anxiety scale",
+                "Followup anxiety scale"
+            ]
+        },
+        "GMHO:0000143": {
+            "label": "anxiety symptom severity",
+            "definition": "Symptom severity that is associated with an anxiety symptom.",
+            "variables": [
+                "Timepoint of followup anxiety measurement (weeks)",
+                "Data type: endpoint vs. baseline difference in anxiety symptom severity",
+                "Number of participants for whom baseline anxiety was measured",
+                "Number of participants for whom followup anxiety was measured",
+                "Standard deviation of baseline anxiety",
+                "Standard deviation of followup anxiety",
+                "Mean followup anxiety",
+                "Mean baseline anxiety"
+            ]
+        },
+        "OBI:0000679": {
+            "label": "average value",
+            "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data.",
+            "variables": [
+                "Mean dose delivered",
+                "Mean PTSD symptom severity of the treatment group",
+                "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of functioning",
+                "Mean followup anhedonia",
+                "Mean baseline reward sensitivity",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean PTSD symptom severity of the control group",
+                "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Mean baseline depression",
+                "Mean baseline anhedonia",
+                "Mean baseline cognition",
+                "Mean followup anxiety",
+                "Mean baseline functioning",
+                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                "Mean baseline anxiety",
+                "Mean followup reward sensitivity",
+                "Mean followup depression",
+                "Mean baseline prolactin",
+                "Mean baseline weight",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean drug dose delivered",
+                "Mean followup cognition",
+                "Mean followup weight",
+                "Mean followup prolactin"
+            ]
+        },
+        "GMHO:0000054": {
+            "label": "belief about intervention acceptability",
+            "definition": "A belief about whether the delivered intervention is appropriate based on anticipated or experienced responses to the intervention.",
+            "variables": [
+                "Acceptability of intervention"
+            ]
+        },
+        "GMHO:0000055": {
+            "label": "belief about tolerability of drug",
+            "definition": "A belief about the degree to which a drug results in unpleasant or bothersome bodily reactions.",
+            "variables": [
+                "Tolerability of intervention"
+            ]
+        },
+        "GMHO:0000257": {
+            "label": "constipation adverse event following intervention",
+            "definition": "A digestive system adverse event following an intervention that involves the abnormally delayed or infrequent passage of dry hardened feces.",
+            "variables": [
+                "Constipation"
+            ]
+        },
+        "GMHO:0000179": {
+            "label": "dizziness following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing dizziness.",
+            "variables": [
+                "Number of participants with dizziness following intervention",
+                "Dizziness",
+                "Number of participants with measurement for dizziness following intervention"
+            ]
+        },
+        "GMHO:0000001": {
+            "label": "dose of pharmacological substance",
+            "definition": "Dose of pharmacological substance delivered to an individual.",
+            "variables": [
+                "Maximum drug dose delivered",
+                "Mean drug dose delivered",
+                "Mean dose delivered",
+                "Minimum drug dose delivered"
+            ]
+        },
+        "GMHO:0000002": {
+            "label": "drug name",
+            "definition": "A written name intended to identify a particular drug. ",
+            "variables": [
+                "Treatment details",
+                "Treatment",
+                "Drug name"
+            ]
+        },
+        "GMHO:0000180": {
+            "label": "dry mouth following intervention",
+            "definition": "A digestive system adverse event following intervention that involves experiencing dry mouth.",
+            "variables": [
+                "Dry mouth"
+            ]
+        },
+        "GMHO:0000210": {
+            "label": "duration between baseline and followup measurement",
+            "definition": "A temporal interval between the time of data collection for pre-intervention data and followup data in a study.",
+            "variables": [
+                "Timepoint of followup reward sensitivity measurement (weeks)",
+                "Timepoint of followup anhedonia measurement (weeks)",
+                "Timepoint of followup anxiety measurement (weeks)"
+            ]
+        },
+        "GMHO:0000181": {
+            "label": "headache following intervention",
+            "definition": "A pain following intervention that has an outcome of headache.",
+            "variables": [
+                "Headache",
+                "Number of participants with measurement for headache following intervention",
+                "Number of participants with headache following intervention"
+            ]
+        },
+        "GMHO:0000256": {
+            "label": "data type for outcome",
+            "definition": "A datatype that indicates how outcomes of an intervention were obtained. ",
+            "variables": [
+                "Data type: endpoint vs. baseline difference in prolactin measurement",
+                "Data type: endpoint vs. baseline difference in human functioning",
+                "Data type: endpoint vs. baseline difference in anxiety symptom severity",
+                "Data type: endpoint vs. baseline difference in mental processes",
+                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in depression symptom severity",
+                "Data type: endpoint vs. baseline difference in weight"
+            ]
+        },
+        "GMHO:0000203": {
+            "label": "information on available followup data",
+            "definition": "An information content entity about the followup data available for a study.",
+            "variables": [
+                "Followup reward sensitivity data type"
+            ]
+        },
+        "GMHO:0000182": {
+            "label": "insomnia following intervention",
+            "definition": "An adverse event following an intervention in which there is an inability to fall asleep or to stay asleep as long as desired.",
+            "variables": [
+                "Insomnia",
+                "Number of participants with measurement for insomnia following intervention",
+                "Number of participants with insomnia following intervention"
+            ]
+        },
+        "GMHO:0000123": {
+            "label": "intervention arm",
+            "definition": "A study arm that is subject to evaluation in an intervention evaluation study.",
+            "variables": [
+                "Mean PTSD symptom severity of the treatment group",
+                "Number of intervention participants randomly allocated to an arm",
+                "Intervention details",
+                "Type of exercise carried out in the intervention arm",
+                "Exercise complemented with treatment as usual or therapy",
+                "Intervention arm",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Number of participants who dropped out of study arm (treatment group)",
+                "Sample size of PTSD symptom severity of the treatment group"
+            ]
+        },
+        "GMHO:0000005": {
+            "label": "intervention duration",
+            "definition": "A temporal interval between the start and end of an intervention.",
+            "variables": [
+                "Intervention duration",
+                "Intervention duration (weeks)"
+            ]
+        },
+        "STATO:0000151": {
+            "label": "maximum value",
+            "definition": "A data item which denotes the largest value found in a dataset or resulting from a calculation.",
+            "variables": [
+                "Maximum drug dose delivered",
+                "Maximum planned drug dose"
             ]
         },
         "BCIO:015416": {
@@ -65,112 +335,548 @@
                 "Mean age"
             ]
         },
-        "GMHO:0000233": {
-            "label": "agitation following intervention",
-            "definition": "An adverse event following an intervention that involves experiencing agitation.",
+        "GMHO:0000209": {
+            "label": "measurement datum at baseline",
+            "definition": "Measurement datum that was recorded as baseline data in a study.",
             "variables": [
-                "Number of participants with agitation following intervention",
-                "Number of participants with measurement for agitation following intervention"
-            ]
-        },
-        "GMHO:0000051": {
-            "label": "akathisia following pharmacological intervention",
-            "definition": "A drug-induced movement disorder following intervention that involves feeling restlessness, increased urges to move and reduced capability to suppress such urges.",
-            "variables": [
-                "Number of participants with akathisia following intervention",
-                "Number of participants with measurement for akathisia following intervention"
-            ]
-        },
-        "GMHO:0000201": {
-            "label": "anhedonia scale",
-            "definition": "A measurement scale that is used to measure anhedonia symptom severity.",
-            "variables": [
-                "Followup anhedonia scale directionality",
-                "Baseline anhedonia scale directionality",
-                "Followup anhedonia scale",
-                "Baseline anhedonia scale"
+                "Number of participants for whom baseline anhedonia was measured",
+                "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of baseline reward sensitivity",
+                "Mean baseline prolactin",
+                "Number of participants for whom baseline anxiety was measured",
+                "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Mean baseline depression",
+                "Standard deviation of baseline anxiety",
+                "Mean baseline anhedonia",
+                "Mean baseline reward sensitivity",
+                "Mean baseline cognition",
+                "Standard deviation of baseline anhedonia",
+                "Mean baseline weight",
+                "Mean baseline functioning",
+                "Number of participants for whom baseline reward sensitivity was measured",
+                "Mean baseline anxiety",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis"
             ]
         },
         "GMHO:0000212": {
             "label": "measurement scale at baseline",
             "definition": "A measurement scale used to measure baseline data in a study.",
             "variables": [
-                "Baseline anhedonia scale directionality",
+                "Baseline reward sensitivity scale directionality",
+                "Baseline anhedonia scale",
                 "Baseline anxiety scale directionality",
-                "Baseline anhedonia scale"
-            ]
-        },
-        "GMHO:0000208": {
-            "label": "scale directionality",
-            "definition": "An information content entity about the orientation of a measurement's scoring system in which higher numerical levels can indicate higher or lower levels of a construct. ",
-            "variables": [
-                "Followup anhedonia scale directionality",
-                "Baseline anhedonia scale directionality",
-                "Baseline anxiety scale directionality",
-                "Followup anxiety scale directionality"
-            ]
-        },
-        "GMHO:0000131": {
-            "label": "anhedonia symptom severity",
-            "definition": "Symptom severity that is associated with anhedonia.",
-            "variables": [
-                "Mean baseline anhedonia",
-                "Number of participants for whom baseline anhedonia was measured",
-                "Followup anhedonia data type",
-                "Mean followup anhedonia",
-                "Number of participants for whom followup anhedonia was measured",
-                "Standard deviation of baseline anhedonia",
-                "Standard deviation of followup anhedonia"
-            ]
-        },
-        "OBI:0000679": {
-            "label": "average value",
-            "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data.",
-            "variables": [
-                "Mean followup anhedonia",
-                "Mean followup anxiety",
-                "Mean baseline anhedonia",
-                "Mean baseline anxiety"
-            ]
-        },
-        "GMHO:0000209": {
-            "label": "measurement datum at baseline",
-            "definition": "Measurement datum that was recorded as baseline data in a study.",
-            "variables": [
-                "Number of participants for whom baseline anxiety was measured",
-                "Standard deviation of baseline anxiety",
-                "Mean baseline anhedonia",
-                "Number of participants for whom baseline anhedonia was measured",
-                "Mean baseline anxiety",
-                "Standard deviation of baseline anhedonia"
-            ]
-        },
-        "OBCS:0000077": {
-            "label": "standard deviation",
-            "definition": "A quantitative confidence value that measures the variability of data around the mean.",
-            "variables": [
-                "Standard deviation of baseline anxiety",
-                "Standard deviation of baseline anhedonia",
-                "Standard deviation of followup anhedonia",
-                "Standard deviation of followup anxiety"
+                "Baseline anxiety scale",
+                "Baseline reward sensitivity scale",
+                "Baseline anhedonia scale directionality"
             ]
         },
         "GMHO:0000205": {
             "label": "measurement scale at followup",
             "definition": "A measurement scale used to measure followup data in a study.",
             "variables": [
-                "Followup anhedonia scale directionality",
-                "Followup anhedonia scale",
+                "Followup reward sensitivity scale directionality",
+                "Followup anxiety scale directionality",
+                "Followup reward sensitivity scale",
                 "Followup anxiety scale",
-                "Followup anxiety scale directionality"
+                "Followup anhedonia scale",
+                "Followup anhedonia scale directionality"
             ]
         },
-        "GMHO:0000203": {
-            "label": "information on available followup data",
-            "definition": "An information content entity about the followup data available for a study.",
+        "STATO:0000150": {
+            "label": "minimum value",
+            "definition": "A data item which denotes the smallest value found in a dataset or resulting from a calculation.",
             "variables": [
-                "Followup anxiety data type",
-                "Followup anhedonia data type"
+                "Minimum planned drug dose",
+                "Minimum drug dose delivered"
+            ]
+        },
+        "GMHO:0000183": {
+            "label": "nausea following intervention",
+            "definition": "A digestive system adverse event following intervention that has an outcome of nausea, a gastric discomfort associated with the inclination to vomit",
+            "variables": [
+                "Number of participants with measurement for nausea following intervention",
+                "Number of participants with nausea following intervention",
+                "Nausea"
+            ]
+        },
+        "GMHO:0000213": {
+            "label": "number of female biological sex",
+            "definition": "The number of female biological sex in a population.",
+            "variables": [
+                "Number of females in study",
+                "Number of female participants"
+            ]
+        },
+        "GMHO:0000206": {
+            "label": "number of participants with measurement",
+            "definition": "Number of intervention participants for whom a measurement was made.",
+            "variables": [
+                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for functioning",
+                "Number of participants with measurement for hypotension following intervention",
+                "Number of participants with followup measurements for weight",
+                "Number of participants with measurement for dizziness following intervention",
+                "Number of participants for whom baseline reward sensitivity was measured",
+                "Number of participants with measurement for sedation following intervention",
+                "Number of participants with measurement for anxiety following intervention",
+                "Sample size of PTSD symptom severity of the control group",
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Number of participants with anxiety following intervention",
+                "Number of participants for whom baseline anxiety was measured",
+                "Number of participants for whom serious adverse events were assessed",
+                "Number of participants with measurement for adverse events following intervention",
+                "Number of participants with followup measurements for depression",
+                "Number of participants with measurement for nausea following intervention",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
+                "Number of participants for whom relapse was measured",
+                "Number of participants with measurement for akathisia following intervention",
+                "Number of participants with measurement for hyperprolactinemia following intervention",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Number of participants with measurement for insomnia following intervention",
+                "Number of participants for whom followup anxiety was measured",
+                "Number of participants with measurement for weight increase following intervention",
+                "Number of participants with measurement for headache following intervention",
+                "Number of participants for whom deaths were assessed",
+                "Sample size of PTSD symptom severity of the treatment group",
+                "Number of participants for whom a response to treatment was measured",
+                "Number of participants with followup measurements for prolactin",
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with followup measurements for cognition",
+                "Number of participants for whom followup anhedonia was measured",
+                "Number of participants for whom followup reward sensitivity was measured",
+                "Number of participants with measurement for QTc prolongation following intervention",
+                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000154": {
+            "label": "number of randomised intervention participants",
+            "definition": "Number of intervention participants who were randomly allocated to study arms within an intervention.",
+            "variables": [
+                "Numerical",
+                "Number of intervention participants randomly acllocated to an arm",
+                "Number of participants randomised in study",
+                "Number of intervention participants randomly allocated to an arm"
+            ]
+        },
+        "GMHO:0000200": {
+            "label": "planned pharmacological substance dose",
+            "definition": "A plan specification about the dose of pharmacological substance.",
+            "variables": [
+                "Minimum planned drug dose",
+                "Maximum planned drug dose"
+            ]
+        },
+        "BCIO:015329": {
+            "label": "proportion female sex population statistic",
+            "definition": "The proportion of female biological sex in a population.",
+            "variables": [
+                "Proportion of female"
+            ]
+        },
+        "GMHO:0000120": {
+            "label": "publication year textual entity",
+            "definition": "A textual entity documenting the year in which some study was published.",
+            "variables": [
+                "Numerical",
+                "Year of publication"
+            ]
+        },
+        "GMHO:0000135": {
+            "label": "reward sensitivity",
+            "definition": "A bodily disposition to detect, pursue, learn from, and derive pleasure from stimuli perceived as positive.",
+            "variables": [
+                "Mean followup reward sensitivity",
+                "Standard deviation of followup reward sensitivity",
+                "Followup reward sensitivity data type",
+                "Timepoint of followup reward sensitivity measurement (weeks)",
+                "Mean baseline reward sensitivity",
+                "Number of participants for whom followup reward sensitivity was measured",
+                "Standard deviation of baseline reward sensitivity",
+                "Number of participants for whom baseline reward sensitivity was measured"
+            ]
+        },
+        "GMHO:0000207": {
+            "label": "reward sensitivity scale",
+            "definition": "A measurement scale that is used to measure reward sensitivity.",
+            "variables": [
+                "Followup reward sensitivity scale directionality",
+                "Baseline reward sensitivity scale directionality",
+                "Followup reward sensitivity scale",
+                "Baseline reward sensitivity scale"
+            ]
+        },
+        "GMHO:0000208": {
+            "label": "scale directionality",
+            "definition": "An information content entity about the orientation of a measurement's scoring system in which higher numerical levels can indicate higher or lower levels of a construct. ",
+            "variables": [
+                "Baseline reward sensitivity scale directionality",
+                "Baseline anxiety scale directionality",
+                "Followup reward sensitivity scale directionality",
+                "Followup anxiety scale directionality",
+                "Baseline anhedonia scale directionality",
+                "Followup anhedonia scale directionality"
+            ]
+        },
+        "OBCS:0000077": {
+            "label": "standard deviation",
+            "definition": "A quantitative confidence value that measures the variability of data around the mean.",
+            "variables": [
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup reward sensitivity",
+                "Standard deviation of followup anhedonia",
+                "Standard deviation of baseline reward sensitivity",
+                "Standard deviation of followup depression",
+                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup weight",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Standard deviation of baseline anxiety",
+                "Standard deviation of followup cognition",
+                "Standard deviation of followup anxiety",
+                "Standard deviation of followup prolactin",
+                "Standard deviation of baseline anhedonia",
+                "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup functioning",
+                "Standard deviation of PTSD symptom severity of the control group"
+            ]
+        },
+        "ICO:0000087": {
+            "label": "study duration measurement",
+            "definition": "A time measurement datum that measures the duration of a study.",
+            "variables": [
+                "Study duration"
+            ]
+        },
+        "GMHO:0000211": {
+            "label": "study identification",
+            "definition": "A textual entity intended to identify a particular study. ",
+            "variables": [
+                "Study identifier"
+            ]
+        },
+        "GMHO:0000185": {
+            "label": "vomiting following intervention",
+            "definition": "A digestive system adverse event following intervention that has an outcome of vomiting, the retrograde expulsion of gastric contents through the oral cavity.",
+            "variables": [
+                "Vomiting"
+            ]
+        },
+        "GMHO:0000004": {
+            "label": "intervention arm name",
+            "definition": "A written name intended to identify a particular intervention arm.",
+            "variables": [
+                "Intervention arm name"
+            ]
+        },
+        "ADDICTO:0001267": {
+            "label": "interventional study design",
+            "definition": "A study design that includes specification of some intervention as part of the study process.",
+            "variables": [
+                "Study design"
+            ]
+        },
+        "BCIO:015095": {
+            "label": "intervention population",
+            "definition": "A human population who are exposed to an intervention.",
+            "variables": [
+                "Intervention population"
+            ]
+        },
+        "GMHO:0000255": {
+            "label": "aggregate symptom severity",
+            "definition": "A data item that is about a collection of aggregate symptom severity.",
+            "variables": [
+                "Severity of condition"
+            ]
+        },
+        "GMHO:0000152": {
+            "label": "number of intervention participants",
+            "definition": "A data item that is about the number of participants in an intervention or part of an intervention at a timepoint.",
+            "variables": [
+                "",
+                "Number of intervention participants"
+            ]
+        },
+        "GMHO:0000076": {
+            "label": "positive intervention outcome",
+            "definition": "An intervention outcome that is positively influenced by the intervention. ",
+            "variables": [
+                "Number of participants for whom a response to treatment was measured",
+                "Number of participants who had a response to treatments"
+            ]
+        },
+        "GMHO:0000214": {
+            "label": "number of participants with specific outcome",
+            "definition": "Number of intervention participants for whom an outcome has been identified within a study.",
+            "variables": [
+                "Number of participants with extrapyrimidal symptoms following intervention",
+                "Number of participants with hyperprolactinemia following intervention",
+                "Number of participants with weight increase following intervention",
+                "Number of participants with nausea following intervention",
+                "Number of participants with serious adverse events following intervention",
+                "Number of participants with dizziness following intervention",
+                "Number of participants with hypotension following intervention",
+                "Number of participants who had a response to treatments",
+                "Number of participant deaths",
+                "Number of participants who relapsed based on study criteria",
+                "Number of participants with sedation following intervention",
+                "Number of participants with akathisia following intervention",
+                "Number of participants with insomnia following intervention",
+                "Number of participants with headache following intervention",
+                "Number of participants with QTc prolongation following intervention",
+                "Number of participants with adverse events following intervention",
+                "Number of participants with agitation following intervention",
+                "Number of participants with anticholinergic symptom following intervention"
+            ]
+        },
+        "ADDICTO:0001308": {
+            "label": "relapsed",
+            "definition": "A health status in which the symptoms of a person suffering from a disorder have reverted from a desired level to an undesired level.",
+            "variables": [
+                "Number of participants for whom relapse was measured",
+                "Number of participants who relapsed based on study criteria"
+            ]
+        },
+        "GMHO:0000075": {
+            "label": "number of participant drop-out from intervention",
+            "definition": "Number of intervention participants who withdraw from or cannot complete an intervention.",
+            "variables": [
+                "Number of participants who dropped out of study arm (control group)",
+                "Number of participants who dropped out of study",
+                "Number of participants who dropped out of study arm (treatment group)"
+            ]
+        },
+        "GMHO:0000258": {
+            "label": "number of participants with drop-out assessment",
+            "definition": "Number of intervention participants for whom a drop-out assessment was made.",
+            "variables": [
+                "Number of participants for whom drop out was assessed",
+                "Number of participants for whom drop out due to adverse events was assessed"
+            ]
+        },
+        "GMHO:0000072": {
+            "label": "number of participant drop-out due to adverse events",
+            "definition": "Number of participant drop-out from the intervention as a result the participants experiencing some adverse event.",
+            "variables": [
+                "Number of participants who dropped out of study due to adverse events"
+            ]
+        },
+        "GMHO:0000060": {
+            "label": "death following an intervention",
+            "definition": "A serious adverse event following an intervention that has an outcome of death.",
+            "variables": [
+                "Number of participants for whom deaths were assessed",
+                "Number of participant deaths"
+            ]
+        },
+        "GMHO:0000081": {
+            "label": "serious adverse event following an intervention",
+            "definition": "An adverse event following an intervention that results in death, a life-threatening event, a persistent or significant disability or a birth defect or requires hospitalisation or extends hospitalisation.",
+            "variables": [
+                "Number of participants for whom serious adverse events were assessed",
+                "Number of participants with serious adverse events following intervention"
+            ]
+        },
+        "GMHO:0000215": {
+            "label": "allocation risk of bias",
+            "definition": "An intervention evaluation study risk of bias or error associated with the allocation sequence generated and applied in a study.",
+            "variables": [
+                "Doman 1 risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000217": {
+            "label": "risk of bias associated with intervention",
+            "definition": "An intervention evaluation study risk of bias or error associated with the delivery of the  intervention.",
+            "variables": [
+                "Doman 2 risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000219": {
+            "label": "risk of bias associated with missing outcome data",
+            "definition": "An intervention evaluation study risk of bias or error associated with missing outcome data in a study.",
+            "variables": [
+                "Doman 3 risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000218": {
+            "label": "risk of bias associated with measurement of outcome data",
+            "definition": "An intervention evaluation study risk of bias or error associated with how outcome data was measured in a study.",
+            "variables": [
+                "Risk of bias associated with measurement of PTSD outcome data",
+                "Doman 4 risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000220": {
+            "label": "risk of bias associated with selective outcome reporting",
+            "definition": "An intervention evaluation study risk of bias or error associated with selective reporting of outcomes in the study report.",
+            "variables": [
+                "Doman 5 risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000216": {
+            "label": "intervention evaluation study risk of bias or error",
+            "definition": "An information content entity that is about the likelihood of the intervention evaluation finding misrepresenting the intervention outcome.",
+            "variables": [
+                "Overall risk of bias score (RoB2)"
+            ]
+        },
+        "GMHO:0000228": {
+            "label": "psychotic disorder symptom severity scale",
+            "definition": "A measurement scale that is used to measure psychotic disorder symptom severity.",
+            "variables": [
+                "Scale for symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000079": {
+            "label": "psychotic disorder symptom severity",
+            "definition": "Symptom severity that is associated with a psychotic disorder symptom.",
+            "variables": [
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+                "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000226": {
+            "label": "positive psychotic disorder symptom severity scale",
+            "definition": "A psychotic disorder symptom severity scale that that is associated with positive psychotic disorder symptoms.",
+            "variables": [
+                "Scale for positive symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000078": {
+            "label": "positive psychotic disorder symptom severity",
+            "definition": "Psychotic disorder symptom severity that is associated with positive psychotic disorder symptoms.",
+            "variables": [
+                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
+                "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000225": {
+            "label": "negative psychotic disorder symptom severity scale",
+            "definition": "A psychotic disorder symptom severity scale that is associated with negative psychotic disorder symptoms.",
+            "variables": [
+                "Scale for negative symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000070": {
+            "label": "negative psychotic disorder symptom severity",
+            "definition": "Psychotic disorder symptom severity that is associated with negative psychotic disorder symptoms.",
+            "variables": [
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis"
+            ]
+        },
+        "GMHO:0000224": {
+            "label": "human functioning scale",
+            "definition": "A measurement scale that is used to measure human functioning.",
+            "variables": [
+                "Scale for functioning"
+            ]
+        },
+        "GMHO:0000067": {
+            "label": "human functioning",
+            "definition": "A bodily disposition to realise processes that influence a person's life quality.",
+            "variables": [
+                "Number of participants with followup measurements for functioning",
+                "Data type: endpoint vs. baseline difference in human functioning",
+                "Mean followup severity of functioning",
+                "Standard deviation of followup functioning",
+                "Mean baseline functioning"
+            ]
+        },
+        "GMHO:0000259": {
+            "label": "mental process scale",
+            "definition": "A measurement scale that is used to measure mental processes.",
+            "variables": [
+                "Scale for cognition"
+            ]
+        },
+        "MF:0000020": {
+            "label": "mental process",
+            "definition": "A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.",
+            "variables": [
+                "",
+                "Data type: endpoint vs. baseline difference in mental processes",
+                "Standard deviation of followup cognition",
+                "Number of participants with followup measurements for cognition",
+                "Mean baseline cognition",
+                "Mean followup cognition"
+            ]
+        },
+        "GMHO:0000223": {
+            "label": "depression symptom severity scale",
+            "definition": "A measurement scale that is used to measure depression symptom severity.",
+            "variables": [
+                "Scale for depression"
+            ]
+        },
+        "GMHO:0000062": {
+            "label": "depression symptom severity",
+            "definition": "Symptom severity that is associated with a depression symptom.",
+            "variables": [
+                "Mean followup depression",
+                "Standard deviation of followup depression",
+                "Mean baseline depression",
+                "Number of participants with followup measurements for depression",
+                "Data type: endpoint vs. baseline difference in depression symptom severity"
+            ]
+        },
+        "GMHO:0000230": {
+            "label": "weight scale",
+            "definition": "A measurement scale that is used to measure weight.",
+            "variables": [
+                "Scale for weight"
+            ]
+        },
+        "PATO:0000128": {
+            "label": "weight",
+            "definition": "A physical quality inhering in a bearer that has mass near a gravitational body.",
+            "variables": [
+                "Standard deviation of followup weight",
+                "Number of participants with followup measurements for weight",
+                "Mean baseline weight",
+                "Mean followup weight",
+                "Data type: endpoint vs. baseline difference in weight"
+            ]
+        },
+        "GMHO:0000138": {
+            "label": "temporal reference associated with measurement in intervention",
+            "definition": "Time point at which a measurement is taken with reference to a temporal part of the intervention evaluation study.",
+            "variables": [
+                "Timepoint of measurement"
+            ]
+        },
+        "GMHO:0000227": {
+            "label": "prolactin scale",
+            "definition": "A measurement scale that is used to measure levels of prolactin.",
+            "variables": [
+                "Scale for prolactin"
+            ]
+        },
+        "EFO:0007003": {
+            "label": "prolactin measurement",
+            "definition": "Quantification of prolactin in a sample.",
+            "variables": [
+                "",
+                "Data type: endpoint vs. baseline difference in prolactin measurement",
+                "Number of participants with followup measurements for prolactin",
+                "Mean baseline prolactin",
+                "Mean followup prolactin"
+            ]
+        },
+        "GMHO:0000042": {
+            "label": "adverse change in prolactin measurement",
+            "definition": "An adverse change in a bodily measurement parameter relating to prolactin measurement.",
+            "variables": [
+                "Standard deviation of followup prolactin"
             ]
         },
         "GMHO:0000221": {
@@ -181,28 +887,6 @@
                 "Number of participants with anticholinergic symptom following intervention"
             ]
         },
-        "GMHO:0000202": {
-            "label": "anxiety scale",
-            "definition": "A measurement scale that is used to measure anxiety symptom severity.",
-            "variables": [
-                "Followup anxiety scale",
-                "Baseline anxiety scale directionality",
-                "Followup anxiety scale directionality"
-            ]
-        },
-        "GMHO:0000143": {
-            "label": "anxiety symptom severity",
-            "definition": "Symptom severity that is associated with an anxiety symptom.",
-            "variables": [
-                "Mean followup anxiety",
-                "Number of participants for whom baseline anxiety was measured",
-                "Standard deviation of baseline anxiety",
-                "Followup anxiety data type",
-                "Mean baseline anxiety",
-                "Number of participants for whom followup anxiety was measured",
-                "Standard deviation of followup anxiety"
-            ]
-        },
         "GMHO:0000238": {
             "label": "anxiousness following intervention",
             "definition": "An adverse event following an intervention that involves feeling anxiety.",
@@ -211,60 +895,1029 @@
                 "Number of participants with measurement for anxiety following intervention"
             ]
         },
-        "GMHO:0000087 (Population)": {
-            "label": "symptom severity",
-            "definition": "symptom severity",
+        "GMHO:0000229": {
+            "label": "tiredness following intervention",
+            "definition": "An adverse event following intervention that involves experiencing tiredness.",
+            "variables": [
+                "Number of participants with measurement for sedation following intervention",
+                "Number of participants with sedation following intervention"
+            ]
+        },
+        "GMHO:0000234": {
+            "label": "hyperprolactinemia following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing hyperprolactinemia.",
+            "variables": [
+                "Number of participants with hyperprolactinemia following intervention",
+                "Number of participants with measurement for hyperprolactinemia following intervention"
+            ]
+        },
+        "GMHO:0000231": {
+            "label": "QTc prolongation following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing a prolonged QTc.",
+            "variables": [
+                "Number of participants with QTc prolongation following intervention"
+            ]
+        },
+        "CMO:0000269": {
+            "label": "QTc interval",
+            "definition": "QT interval corrected for heart rate calculated by the QT interval divided by the square root of the interval from one QRS complex to the onset of the next QRS complex measured in seconds.",
+            "variables": [
+                "Number of participants with measurement for QTc prolongation following intervention",
+                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (milisecond)",
+                "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition"
+            ]
+        },
+        "GMHO:0000233": {
+            "label": "agitation following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing agitation.",
+            "variables": [
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with agitation following intervention"
+            ]
+        },
+        "GMHO:0000235": {
+            "label": "hypotension following intervention",
+            "definition": "An adverse event following an intervention that involves experiencing low blood pressure.",
+            "variables": [
+                "Number of participants with hypotension following intervention",
+                "Number of participants with measurement for hypotension following intervention"
+            ]
+        },
+        "GMHO:0000051": {
+            "label": "akathisia following pharmacological intervention",
+            "definition": "A drug-induced movement disorder following intervention that involves feeling restlessness, increased urges to move and reduced capability to suppress such urges.",
+            "variables": [
+                "Number of participants with measurement for akathisia following intervention",
+                "Number of participants with akathisia following intervention"
+            ]
+        },
+        "GMHO:0000063": {
+            "label": "drug-induced movement disorder following intervention",
+            "definition": "An adverse event following a pharmacological intervention that involves reduced abilities to control movements.",
+            "variables": [
+                "Number of participants with extrapyrimidal symptoms following intervention",
+                "Number of participants with measurement for extrapyrimidal symptoms following intervention"
+            ]
+        },
+        "GMHO:0000232": {
+            "label": "adverse increase in body weight",
+            "definition": "An adverse change in a body weight relating to weight gain.",
+            "variables": [
+                "Number of participants with weight increase following intervention",
+                "Number of participants with measurement for weight increase following intervention"
+            ]
+        },
+        "GMHO:0000236": {
+            "label": "midpoint estimate for the mean difference of an outcome between the intervention and comparison condition",
+            "definition": "A point estimate about the mean difference between an intervention and comparison condition in a study.",
+            "variables": [
+                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)",
+                "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition"
+            ]
+        },
+        "STATO:0000562": {
+            "label": "standard error of estimate",
+            "definition": "The standard error is a measure of dispersion applied to estimates across hypothetical repeated random samples. ",
+            "variables": [
+                "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition"
+            ]
+        },
+        "GMHO:0000237": {
+            "label": "number of sequential treatments",
+            "definition": "A data item about the number of sequential treatments delivered to participants in a study.",
+            "variables": [
+                "Number of crossover periods"
+            ]
+        },
+        "BCIO:015327": {
+            "label": "female biological sex population statistic",
+            "definition": "The aggregate of female biological sex in a population.",
+            "variables": []
+        },
+        "STATO:0000599": {
+            "label": "point estimate",
+            "definition": "a point estimate is a data item which provides a particular value evaluating a population parameter.",
+            "variables": []
+        },
+        "GMHO:0000036": {
+            "label": "adverse change in a bodily measurement parameter",
+            "definition": "An adverse event associated with a change in a person's bodily meeasurement parameters.",
+            "variables": []
+        },
+        "GMHO:0000049": {
+            "label": "affective psychotic disorder symptom",
+            "definition": "A psychotic disorder symptom is characterized by a person experiencing depression, anxiety or low moods.",
+            "variables": []
+        },
+        "GMHO:0000188": {
+            "label": "aggregate human age",
+            "definition": "The aggregate of human age in a population.",
+            "variables": []
+        },
+        "BCIO:026045": {
+            "label": "ambulance",
+            "definition": "A form of transporation which can transport patients for health treatment, and in some instances will also provide out-of-hospital healthcare to the patient.",
+            "variables": []
+        },
+        "GMHO:0000130": {
+            "label": "anhedonia",
+            "definition": "A mental disposition that is realised by experiencing low pleasure or interest in response to various positively valenced stimuli.",
+            "variables": []
+        },
+        "GMHO:0000011": {
+            "label": "Anxiety and depression subscale of Positive and Negative Syndrome Scale data item",
+            "definition": "Positive and Negative Syndrome Scale data item that is the recording of the output of the subscale about affective psychotic disorder symptoms.",
+            "variables": []
+        },
+        "GMHO:0000141": {
+            "label": "anxiety diagnosis severity",
+            "definition": "Diagnosis severity relating to an anxiety diagnosis.",
+            "variables": []
+        },
+        "GMHO:0000142": {
+            "label": "anxiety symptom",
+            "definition": "A symptom that related to an anxiety diagnosis.",
+            "variables": []
+        },
+        "OMRSE:00000061": {
+            "label": "architectural structure",
+            "definition": "A material entity that is a human made strcuture with firm connection between its foundation and the ground.",
+            "variables": []
+        },
+        "BCIO:006119": {
+            "label": "associative learning",
+            "definition": "Learning that involves changing the strength of association between two or more mental processes.",
+            "variables": []
+        },
+        "GMHO:0000145": {
+            "label": "autism spectrum disorder diagnosis severity",
+            "definition": "Diagnosis severity relating to an autism spectrum disorder diagnosis.",
+            "variables": []
+        },
+        "BCIO:050315": {
+            "label": "BCI attribute",
+            "definition": "A process attribute whose bearer is a behaviour change intervention.",
+            "variables": []
+        },
+        "ENVO:00000091": {
+            "label": "beach",
+            "definition": "A landform consisting of loose rock particles such as sand, gravel, shingle, pebbles, cobble, or even shell fragments along the shoreline of a body of wate",
+            "variables": []
+        },
+        "BCIO:010000": {
+            "label": "behaviour change intervention source",
+            "definition": "A role played by a person, population or organisation that provides a BCI.",
+            "variables": []
+        },
+        "GMHO:0000053": {
+            "label": "belief about drug-related adverse events",
+            "definition": "A belief about about the negative effects of a drug on a person.",
+            "variables": []
+        },
+        "BCIO:015105": {
+            "label": "biological sex",
+            "definition": "A bodily quality based on reproductive function or organs.",
+            "variables": []
+        },
+        "MF:0000032": {
+            "label": "bodily disposition",
+            "definition": "A bodily disposition is a disposition that inheres in some extended organism.",
+            "variables": []
+        },
+        "OGMS:0000060": {
+            "label": "bodily process",
+            "definition": "A process in which at least one bodily component of an organism participates.",
+            "variables": []
+        },
+        "MF:0000074": {
+            "label": "bodily quality",
+            "definition": "A bodily quality is a quality that inheres in some extended organism.",
+            "variables": []
+        },
+        "GMHO:0000056": {
+            "label": "body mass index",
+            "definition": "A data item that is derived by dividing the body weight be the square of the body height. ",
+            "variables": []
+        },
+        "GMHO:0000057": {
+            "label": "body weight",
+            "definition": "Weight of an organism.",
+            "variables": []
+        },
+        "BCIO:026017": {
+            "label": "care home facility",
+            "definition": "A healthcare facility that is run by a care home organization and is the bearer of a care home function.",
+            "variables": []
+        },
+        "CHEBI:35488": {
+            "label": "central nervous system depressant",
+            "definition": "A loosely defined group of drugs that tend to reduce the activity of the central nervous system.",
+            "variables": []
+        },
+        "CHEBI:35470": {
+            "label": "central nervous system drug",
+            "definition": "A class of drugs producing both physiological and psychological effects through a variety of mechanisms involving the central nervous system.",
+            "variables": []
+        },
+        "IAO:0000301": {
+            "label": "citation",
+            "definition": "A textual entity intended to identify a particular publication.",
+            "variables": []
+        },
+        "OGMS:0000123": {
+            "label": "clinical data item",
+            "definition": "A data item that is about a patient and is the specified output of a health care process assay or diagnostic process.",
+            "variables": []
+        },
+        "GMHO:0000016": {
+            "label": "Clinical Global Impression data item",
+            "definition": "A measurement datum that is the recording of the output of the Clinical Global Impression scale.",
+            "variables": []
+        },
+        "OGMS:0000015": {
+            "label": "clinical history",
+            "definition": "A series of statements representing health-relevant qualities of a patient and of a patient's family.",
+            "variables": []
+        },
+        "GMHO:0000091": {
+            "label": "clinical history of psychosis experience",
+            "definition": "A clinical history in which there is a history of psychosis experience.",
+            "variables": []
+        },
+        "CMO:0000000": {
+            "label": "clinical measurement",
+            "definition": "A quantitative or qualitative value which is the result of an act of assessing a morphological or physiological state or property in a single individual or sample or a group of individuals or samples, based on direct observation or experimental manipulation.",
+            "variables": []
+        },
+        "GMHO:0000020": {
+            "label": "Columbia-Suicide Severity Rating Scale ideation data item",
+            "definition": "Columbia-Suicide Severity Rating Scale data item about suicidal ideation.",
+            "variables": []
+        },
+        "GMHO:0000021": {
+            "label": "Columbia-Suicide Severity Rating Scale suicide attempt data item",
+            "definition": "Columbia-Suicide Severity Rating Scale data item about suicide attempts.",
+            "variables": []
+        },
+        "BCIO:026019": {
+            "label": "community healthcare facility",
+            "definition": "A clinic providing healthcare services to people in a certain area",
+            "variables": []
+        },
+        "BCIO:026020": {
+            "label": "community outpatient clinic facility",
+            "definition": "A healthcare facility to treat patients in the community without them staying overnight.",
+            "variables": []
+        },
+        "OBCS:0000070": {
+            "label": "confidence interval",
+            "definition": "A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. ",
+            "variables": []
+        },
+        "BCIO:026038": {
+            "label": "criminal justice facility",
+            "definition": "A facility where individuals are being reprimanded, detained or imprisoned.",
+            "variables": []
+        },
+        "ADDICTO:0001255": {
+            "label": "cross over design",
+            "definition": "A mixed study design in which two or more groups experience the same study processes but in a different order.",
+            "variables": []
+        },
+        "IAO:0000027": {
+            "label": "data item",
+            "definition": "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",
+            "variables": []
+        },
+        "OBI:0200000": {
+            "label": "data transformation",
+            "definition": "A planned process that produces output data from input data.",
+            "variables": []
+        },
+        "GMHO:0000058": {
+            "label": "death due to accidents following an intervention",
+            "definition": "A death following an intervention that involves a participant dying as a result of an accident.",
+            "variables": []
+        },
+        "GMHO:0000176": {
+            "label": "depression diagnosis",
+            "definition": "A diagnosis that involves the conclusion that a person meets pre-set criteria for depression as a result of a diagnostic process.",
+            "variables": []
+        },
+        "GMHO:0000061": {
+            "label": "depression symptom",
+            "definition": "A symptom that is related to a depression diagnosis.",
+            "variables": []
+        },
+        "EFO:0006842": {
+            "label": "diabetes mellitus biomarker",
+            "definition": "",
+            "variables": []
+        },
+        "GMHO:0000148": {
+            "label": "diagnosis severity",
+            "definition": "A data item that is about the severity dimension associated with a diagnosis.",
+            "variables": []
+        },
+        "IAO:0000033": {
+            "label": "directive information entity",
+            "definition": "An information content entity whose concretizations indicate to their bearer how to realize them in a process.",
+            "variables": []
+        },
+        "OBI:0000984": {
+            "label": "dose",
+            "definition": "A measurement datum that measures the quantity of something that may be administered to an organism or that an organism may be exposed to. Quantities of nutrients, drugs, vaccines and toxins are referred to as doses.",
+            "variables": []
+        },
+        "BCIO:026022": {
+            "label": "educational facility",
+            "definition": "A facility in which formal education is provided to a student population.",
+            "variables": []
+        },
+        "OBI:0500026": {
+            "label": "eligibility criterion",
+            "definition": "an eligibility criterion (rule) is_a selection criterion which defines and states the requirements (positive or negative) for an entity to be considered as suitable for a given task or participation in a process.",
+            "variables": []
+        },
+        "BCIO:035000": {
+            "label": "evaluation finding",
+            "definition": "A data item that is the output of an intervention evaluation study.",
+            "variables": []
+        },
+        "BCIO:050443": {
+            "label": "experience-related behaviour",
+            "definition": "An individual human behaviour that relates to some subjective experience of the behaving person.",
+            "variables": []
+        },
+        "EFO:0000001": {
+            "label": "experimental factor",
+            "definition": "An experimental factor in Array Express which are essentially the variable aspects of an experiment design which can be used to describe an experiment, or set of experiments, in an increasingly detailed manner. This upper level class is really used to give a root class from which applications can rely on and not be tied to upper ontology classses which do change.",
+            "variables": []
+        },
+        "OGMS:0000087": {
+            "label": "extended organism",
+            "definition": "An object aggregate consisting of an organism and all material entities located within the organism, overlapping the organism, or occupying sites formed in part by the organism.",
+            "variables": []
+        },
+        "OMRSE:00000062": {
+            "label": "facility",
+            "definition": "An architectural structure that bears some function.",
+            "variables": []
+        },
+        "BCIO:026039": {
+            "label": "factory facility",
+            "definition": "A facility of a building or group of buildings where goods are manufactured or assembled chiefly by machine",
+            "variables": []
+        },
+        "BFO:0000024": {
+            "label": "fiat object part",
+            "definition": "b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary.",
+            "variables": []
+        },
+        "PATO:0001035": {
+            "label": "force",
+            "definition": "A physical quality inhering in a bearer by virtue of the bearer's rate of change of momentum.",
+            "variables": []
+        },
+        "ENVO:00000111": {
+            "label": "forest",
+            "definition": "An area with a high density of trees. A small forest may be called a wood",
+            "variables": []
+        },
+        "BFO:0000034": {
+            "label": "function",
+            "definition": "A function is a disposition that exists in virtue of the bearer\ufffds physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. ",
+            "variables": []
+        },
+        "BFO:0000031": {
+            "label": "generically dependent continuant",
+            "definition": "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities.",
+            "variables": []
+        },
+        "GAZ:00000448": {
+            "label": "geographical location",
+            "definition": "A reference to a place on the Earth, by its name or by its geographical location",
+            "variables": []
+        },
+        "EFO:0004468": {
+            "label": "glucose measurement",
+            "definition": "Is any quantification of glucose.",
+            "variables": []
+        },
+        "ENVO:00000106": {
+            "label": "grassland",
+            "definition": "An area in which grasses (Graminae) are a significant component of the vegetation",
+            "variables": []
+        },
+        "EFO:0004541": {
+            "label": "HbA1c measurement",
+            "definition": "A quantification of glycated A1c hemoglobin in blood used as an index for blood glucose level over several months.",
+            "variables": []
+        },
+        "OGMS:0000096": {
+            "label": "health care process",
+            "definition": "A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient.",
+            "variables": []
+        },
+        "BCIO:015092": {
+            "label": "health status",
+            "definition": "A personal attribute that is the state of an individual's mental or physical condition.",
+            "variables": []
+        },
+        "GMHO:0000189": {
+            "label": "health status attribute",
+            "definition": "A personal attribute that is the state of an individual's mental or physical condition.",
+            "variables": []
+        },
+        "OMRSE:00000102": {
+            "label": "healthcare facility",
+            "definition": "A facility that\ufffds administered by a health care organisation for the purpose of providing health care to a patient population",
+            "variables": []
+        },
+        "CMO:0000230": {
+            "label": "heart electrical conduction measurement",
+            "definition": "Any measurement of components of the electrical conduction system of the heart.",
+            "variables": []
+        },
+        "EFO:0004612": {
+            "label": "high density lipoprotein cholesterol measurement",
+            "definition": "The measurement of HDL cholesterol in blood used as a risk indicator for heart disease.",
+            "variables": []
+        },
+        "CHEBI:47775": {
+            "label": "high-density lipoprotein cholesterol",
+            "definition": "Cholesterol esters and free cholesterol which are contained in or bound to high-density lipoproteins (HDL).",
+            "variables": []
+        },
+        "GMHO:0000065": {
+            "label": "homicide following an intervention",
+            "definition": "A death following an intervention that involves a participant being intentionally killed by another person.",
+            "variables": []
+        },
+        "EFO:0004730": {
+            "label": "hormone measurement",
+            "definition": "The determination of the amount of hormone present in a sample.",
+            "variables": []
+        },
+        "MF:0000016": {
+            "label": "human being",
+            "definition": "An extended organism that is a member of the species Homo sapiens.",
+            "variables": []
+        },
+        "BFO:0000141": {
+            "label": "immaterial entity",
+            "definition": " Immaterial entities are divided into two subgroups:boundaries and sites, which bound, or are demarcated in relation, to material entities, and which can thus change location, shape and size and as their material hosts move or change shape or size.",
+            "variables": []
+        },
+        "BCIO:036000": {
+            "label": "individual human behaviour",
+            "definition": "A bodily process of a human that involves co-ordinated contraction of striated muscles controlled by the brain.",
+            "variables": []
+        },
+        "BCIO:036100": {
+            "label": "individual human behaviour pattern",
+            "definition": "A uniform process aggregate whose member parts are behaviours of the same type and in the same person.",
+            "variables": []
+        },
+        "IAO:0000030": {
+            "label": "information content entity",
+            "definition": "A generically dependent continuant that is about some thing.",
+            "variables": [
+                ""
+            ]
+        },
+        "GMHO:0000150": {
+            "label": "insomnia symptom severity",
+            "definition": "Symptom severity that is associated with insomnia.",
+            "variables": []
+        },
+        "IAO:0000303": {
+            "label": "institutional identification",
+            "definition": "A textual entity intended to identify a particular institution.",
+            "variables": []
+        },
+        "BCIO:037000": {
+            "label": "intervention",
+            "definition": "A planned process that has the aim of influencing an outcome.",
+            "variables": []
+        },
+        "BCIO:023000": {
+            "label": "intervention evaluation finding",
+            "definition": "An evaluation finding that is the output of an intervention evaluation study.",
+            "variables": []
+        },
+        "BCIO:038000": {
+            "label": "intervention evaluation study ",
+            "definition": "A research study that aims to assess attributes of an intervention with regards to their positive or negative value.",
+            "variables": []
+        },
+        "EFO:0004529": {
+            "label": "lipid measurement",
+            "definition": "A measure of circulating lipid.",
+            "variables": []
+        },
+        "EFO:0005105": {
+            "label": "lipid or lipoprotein measurement",
+            "definition": "quantification of some lipid or lipoprotein",
+            "variables": []
+        },
+        "CHEBI:50404": {
+            "label": "lipoprotein cholesterol",
+            "definition": "Cholesterol esters and free cholesterol which are contained in or bound to lipoproteins.",
+            "variables": []
+        },
+        "BCIO:036026": {
+            "label": "locomotive behaviour",
+            "definition": "A position-related behaviour in which muscles are used by a person to move themselves relative to the immediate environment or part of it.",
+            "variables": []
+        },
+        "EFO:0004611": {
+            "label": "low density lipoprotein cholesterol measurement",
+            "definition": "The measurement of LDL cholesterol in blood used as a risk indicator for heart disease.",
+            "variables": []
+        },
+        "CHEBI:47774": {
+            "label": "low-density lipoprotein cholesterol",
+            "definition": "Cholesterol esters and free cholesterol which are contained in or bound to low-density lipoproteins (LDL).",
+            "variables": []
+        },
+        "BCIO:015107": {
+            "label": "male biological sex",
+            "definition": "A biological sex associated with the ability to produce male gametes.",
+            "variables": []
+        },
+        "BFO:0000040": {
+            "label": "material entity",
+            "definition": "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part.",
+            "variables": []
+        },
+        "MF:0000033": {
+            "label": "mental disposition",
+            "definition": "A mental disposition is a bodily disposition that is realized in a mental process.",
+            "variables": []
+        },
+        "BCIO:026040": {
+            "label": "military facility",
+            "definition": "A facility relating to or characteristic of soldiers or armed forces ",
+            "variables": []
+        },
+        "ADDICTO:0001265": {
+            "label": "mixed study design",
+            "definition": "A study design in which measurements taken on two or more groups of study participants at two or more times are compared allowing differences to be assessed between groups and over time.",
+            "variables": []
+        },
+        "BCIO:026044": {
+            "label": "mobile intervention venue",
+            "definition": "A form of transportation delivering interventions in transient locations.",
+            "variables": []
+        },
+        "GMHO:0000069": {
+            "label": "negative psychotic disorder symptom",
+            "definition": "A psychotic disorder symptom that is characterized by the absence or decrease in ability or motivation to initiate plans, speak, express emotion of find pleasure.",
+            "variables": []
+        },
+        "ADDICTO:0001292": {
+            "label": "n-of-1 study design",
+            "definition": "A repeated measures study design involving multiple repeated measurements taken in each of two or more conditions facilitating inferential statistical analyses to be undertaken to output statistical parameters from data sets for each individual participant. ",
+            "variables": []
+        },
+        "ADDICTO:0001258": {
+            "label": "non-interventional study design",
+            "definition": "A study design in which study participants are not planned to experience an intervention as a part of the study process.",
+            "variables": []
+        },
+        "BCIO:008515": {
+            "label": "number of contact events",
+            "definition": "A data item that is the number of contact events in an intervention temporal part.",
+            "variables": []
+        },
+        "BFO:0000027": {
+            "label": "object aggregate",
+            "definition": "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists.",
+            "variables": []
+        },
+        "BCIO:026037": {
+            "label": "office facility",
+            "definition": "A facility of a room, set of rooms, or building used as a place for commercial, professional, or bureaucratic work.",
+            "variables": []
+        },
+        "BFO:0000038": {
+            "label": "one-dimensional temporal region",
+            "definition": "A one-dimensional temporal region is a temporal region that is extended.",
+            "variables": []
+        },
+        "BCIO:026046": {
+            "label": "outdoor environment",
+            "definition": "A site which is an outdoor location outside of a building. ",
+            "variables": []
+        },
+        "GMHO:0000184": {
+            "label": "pain following intervention",
+            "definition": "An adverse event following an intervention that has an outcome of pain.",
+            "variables": []
+        },
+        "OBI:0500006": {
+            "label": "parallel group design",
+            "definition": "A parallel group design or independent measure design is a study design which uses unique experimental unit each experimental group, in other word no two individuals are shared between experimental groups, hence also known as parallel group design.",
+            "variables": []
+        },
+        "ENVO:00000562": {
+            "label": "park",
+            "definition": "A bounded area of land, or water, usually in its natural or semi-natural (landscaped) state and set aside for some purpose, usually to do with recreation or conservation",
+            "variables": []
+        },
+        "BCIO:026048": {
+            "label": "path or pavement",
+            "definition": "An outdoor environment for the passage of persons or cyclists on land",
+            "variables": []
+        },
+        "OGMS:0000061": {
+            "label": "pathological bodily process",
+            "definition": "A bodily process that is clinically abnormal.",
+            "variables": []
+        },
+        "GMHO:0000190": {
+            "label": "person",
+            "definition": "An extended organism that is a member of the species Homo sapiens.",
+            "variables": []
+        },
+        "BCIO:050300": {
+            "label": "personal attribute",
+            "definition": "A specifically dependent continuant that inheres in a person. Attributes included under this header are age, immigration, social and economic conditions.",
+            "variables": []
+        },
+        "PDRO:0000074": {
+            "label": "pharmacy facility",
+            "definition": "A health care facility whose function is to store, prepare, dispense, and monitor the usage of pharmaceutical drugs among patients in a given area or encountered in a given health care provider organization",
+            "variables": []
+        },
+        "PATO:0001241": {
+            "label": "physical object quality",
+            "definition": "A quality which inheres in a continuant.",
+            "variables": []
+        },
+        "PATO:0001018": {
+            "label": "physical quality",
+            "definition": "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.",
+            "variables": []
+        },
+        "IAO:0000104": {
+            "label": "plan specification",
+            "definition": "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.",
+            "variables": []
+        },
+        "OBI:0000011": {
+            "label": "planned process",
+            "definition": "A process that realizes a plan which is the concretization of a plan specification.",
+            "variables": []
+        },
+        "GMHO:0000077": {
+            "label": "positive psychotic disorder symptom",
+            "definition": "A psychotic disorder symptom that is characterized by the presence of hallucinations, delusions, or disorganised thoughts or behaviours.",
+            "variables": []
+        },
+        "GMHO:0000174": {
+            "label": "post-traumatic stress symptom",
+            "definition": "A symptom that is related to a post-traumatic stress disorder diagnosis.",
+            "variables": []
+        },
+        "STATO:0000412": {
+            "label": "prevalence ",
+            "definition": "prevalence is a ratio formed by the number of subjects diagnosed with a disease divided by the total population size.",
+            "variables": []
+        },
+        "GMHO:0000166": {
+            "label": "prevalence of diagnosis",
+            "definition": "Prevalence of people diagnosed with a specific disorder.",
+            "variables": []
+        },
+        "GMHO:0000167": {
+            "label": "prevalence of major depressive disorder diagnosis",
+            "definition": "Prevalence of diagnosis for major depressive disorder.",
+            "variables": []
+        },
+        "BCIO:026043": {
+            "label": "private transportation",
+            "definition": "A form of transportation owned by an individual for individual or group use.",
+            "variables": []
+        },
+        "BFO:0000015": {
+            "label": "process",
+            "definition": "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.",
+            "variables": []
+        },
+        "GMHO:0000187": {
+            "label": "psychosis diagnosis",
+            "definition": "A diagnosis that involves the conclusion that a person meets pre-set criteria for psychosis as a result of a diagnostic process.",
+            "variables": []
+        },
+        "GMHO:0000172": {
+            "label": "psychotic disorder symptom",
+            "definition": "A symptom that is related to a psychotic disorder diagnosis.",
+            "variables": []
+        },
+        "CHEBI:35471": {
+            "label": "psychotropic drug",
+            "definition": "A loosely defined grouping of drugs that have effects on psychological function.",
+            "variables": []
+        },
+        "BCIO:026042": {
+            "label": "public transportation",
+            "definition": "Forms of transportation that run on fixed routes and are available to the public, usually for a set fare",
+            "variables": []
+        },
+        "OBI:0000071": {
+            "label": "quantitative confidence value",
+            "definition": "A data item which is used to indicate the degree of uncertainty about a measurement.",
+            "variables": []
+        },
+        "STATO:0000184": {
+            "label": "ratio",
+            "definition": "A ratio is a data item which is formed with two numbers r and s is written r/s, where r is the numerator and s is the denominator.",
+            "variables": []
+        },
+        "IAO:0000640": {
+            "label": "related work textual entity",
+            "definition": "A textual entity that discusses work from other publications and expresses their relevancy to the content of a document.",
+            "variables": []
+        },
+        "ADDICTO:0001262": {
+            "label": "repeated measure design ",
+            "definition": "A study design in which measurements taken on the same study participants at two or more different times in different circumstances are compared.",
+            "variables": []
+        },
+        "GMHO:0000191": {
+            "label": "repeated measures study design",
+            "definition": "A study design in which measurements taken on the same study participants at two or more different times in different circumstances  are compared.",
+            "variables": []
+        },
+        "ENVO:00000469": {
+            "label": "research facility",
+            "definition": "A facility, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken",
+            "variables": []
+        },
+        "SEPIO:0000125": {
+            "label": "research study",
+            "definition": "A planned process that executes some study design or protocol to generate scientific data that is interpreted to test or generate a hypothesis.",
+            "variables": []
+        },
+        "OMRSE:00000191": {
+            "label": "residential facility",
+            "definition": "A facility that has at least one housing unit as part in which a person or persons live",
+            "variables": []
+        },
+        "BCIO:026036": {
+            "label": "retail facility",
+            "definition": "A facility used as an outlet for shopping.",
+            "variables": []
+        },
+        "ENVO:00000064": {
+            "label": "road",
+            "definition": "An open way for the passage of vehicles, persons, or animals on land",
+            "variables": []
+        },
+        "OBI:0001755": {
+            "label": "selection criterion",
+            "definition": "A directive information entity which defines and states a principle of standard by which selection process may take place.",
+            "variables": []
+        },
+        "ADDICTO:0000399": {
+            "label": "self-identity",
+            "definition": "An identity that a person has about themselves.",
+            "variables": []
+        },
+        "ADDICTO:0001271": {
+            "label": "sequential multiple randomised controlled trial design",
+            "definition": "A randomised controlled trial design in which participants are randomised to study on more than one occasion during the study.",
+            "variables": []
+        },
+        "BFO:0000029": {
+            "label": "site",
+            "definition": "b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof.",
+            "variables": []
+        },
+        "BFO:0000006": {
+            "label": "spatial region",
+            "definition": "A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. ",
+            "variables": []
+        },
+        "BFO:0000020": {
+            "label": "specifically dependent continuant",
+            "definition": "b is a specifically dependent continuant = Def. b is a continuant and there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b\ufffds existence. ",
+            "variables": []
+        },
+        "OPMI:0000326": {
+            "label": "status",
+            "definition": "",
+            "variables": []
+        },
+        "GMHO:0000127": {
+            "label": "study arm",
+            "definition": "An information content entity that is about an intervention scenario and designates it as part of an intervention evaluation study.",
+            "variables": []
+        },
+        "OBI:0500000": {
+            "label": "study design",
+            "definition": "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.",
+            "variables": []
+        },
+        "GMHO:0000168": {
+            "label": "substance use severity",
+            "definition": "A data item about the frequency of a substance use behaviour or the amount of psychoactive substance ingested into the body.",
+            "variables": []
+        },
+        "OGMS:0000020": {
+            "label": "symptom",
+            "definition": "A process experienced by the patient, which can only be experienced by the patient, that is hypothesized to be clinically relevant.",
+            "variables": []
+        },
+        "BFO:0000008": {
+            "label": "temporal region",
+            "definition": "A temporal region is an occurrent entity that is part of time as defined relative to some reference frame.",
+            "variables": []
+        },
+        "EFO:0004574": {
+            "label": "total cholesterol measurement",
+            "definition": "A total cholesterol measurement is the quantification of cholesterol in blood, total cholesterol is defined as the sum of HDL, LDL, and VLDL.",
+            "variables": []
+        },
+        "CHEBI:35473": {
+            "label": "tranquilizing drug",
+            "definition": "A traditional grouping of drugs said to have a soothing or calming effect on mood, thought or behaviour.",
+            "variables": []
+        },
+        "BCIO:026041": {
+            "label": "transportation",
+            "definition": "Methods of traveling from one place to another.",
+            "variables": []
+        },
+        "STATO:0000039": {
+            "label": "statistic",
+            "definition": "a statistic is a measurement datum to describe a dataset or a variable. It is generated by a calculation on set of observed data.",
+            "variables": []
+        },
+        "IAO:0000109": {
+            "label": "measurement datum",
+            "definition": "A measurement datum is an information content entity that is a recording of the output of a measurement such as produced by a device.",
+            "variables": []
+        },
+        "OBCS:0000011": {
+            "label": "measurement scale",
+            "definition": "An information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.",
+            "variables": []
+        },
+        "BCIO:015415": {
+            "label": "human age population statistic",
+            "definition": "The aggregate of human age in a population.",
+            "variables": []
+        },
+        "STATO:0000471": {
+            "label": "estimate",
+            "definition": "a estimate is a data item which is computed from a dataset to provide an approximated value (an estimator) for a 'statistical parameter' (a 'characteristics/parameter' of the true underlying distribution) of a real population.",
+            "variables": []
+        },
+        "BCIO:036042": {
+            "label": "physical performance behaviour",
+            "definition": "An individual human behaviour that involves maintenance or improvement of flexibility, strength, balance or cardiovascular fitness.",
+            "variables": [
+                "Intensity of physical exercise behaviour",
+                "Type of exercise carried out in the intervention arm"
+            ]
+        },
+        "GMHO:0000239": {
+            "label": "psychological treatment",
+            "definition": "Mental health intervention content that uses communication or recommended tasks to assess and improve a person\u2019s adaptive mental or behavioural functioning.",
+            "variables": [
+                "Type of psychological treatment"
+            ]
+        },
+        "GMHO:0000128": {
+            "label": "treatment as usual control arm",
+            "definition": "A control arm designation where the same content and delivery is already provided as standard practice.",
+            "variables": [
+                "Treatment as usual"
+            ]
+        },
+        "GMHO:0000241": {
+            "label": "mental health intervention content",
+            "definition": "An intervention content that is part of a mental health intervention.",
+            "variables": [
+                "Intervention details",
+                "Exercise complemented with treatment as usual or therapy"
+            ]
+        },
+        "GMHO:0000122": {
+            "label": "control arm",
+            "definition": "A study arm designation as a comparator to some intervention arm.",
+            "variables": [
+                "Control group details",
+                "Mean PTSD symptom severity of the control group",
+                "Standard deviation of PTSD symptom severity of the control group",
+                "Number of intervention participants randomly allocated to an arm",
+                "Sample size of PTSD symptom severity of the control group",
+                "Number of participants who dropped out of study arm (control group)"
+            ]
+        },
+        "GMHO:0000240": {
+            "label": "attention management control arm",
+            "definition": "A control arm designation where the same dose of interpersonal interaction is provided as in the intervention group, but without any additional content from the intervention.",
+            "variables": [
+                "Attention management control arm"
+            ]
+        },
+        "BCIO:050432": {
+            "label": "physical exertion expended on a behaviour",
+            "definition": "A behavioural attribute that is the level of musculoskeletal work expended on the behaviour to be enacted.",
+            "variables": [
+                "Intensity of physical exercise behaviour"
+            ]
+        },
+        "GMHO:0000173": {
+            "label": "post-traumatic stress symptom severity",
+            "definition": "Symptom severity relating to a post-traumatic stress symptom.",
+            "variables": [
+                "Mean PTSD symptom severity of the control group",
+                "Mean PTSD symptom severity of the treatment group",
+                "Risk of bias associated with measurement of PTSD outcome data",
+                "Sample size of PTSD symptom severity of the control group",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Sample size of PTSD symptom severity of the treatment group",
+                "Standard deviation of PTSD symptom severity of the control group"
+            ]
+        },
+        "BCIO:050435": {
+            "label": "behavioural attribute",
+            "definition": "A process attribute of an individual human behaviour.",
+            "variables": []
+        },
+        "GMHO:0000125": {
+            "label": "intervention content",
+            "definition": "A planned process that is part of an intervention and is intended to be causally active in influencing its target outcome or outcomes.",
+            "variables": []
+        },
+        "BCIO:041000": {
+            "label": "human population",
+            "definition": "An object aggregate that consists of two or more people.",
+            "variables": []
+        },
+        "GMHO:0000178": {
+            "label": "digestive system adverse event following intervention",
+            "definition": "An adverse event following an intervention that occurs in the digestive system.",
+            "variables": []
+        },
+        "GMHO:0000038": {
+            "label": "adverse change in body weight",
+            "definition": "An adverse change in a bodily measurement parameter relating to body weight.",
+            "variables": []
+        },
+        "OntoDT:487147": {
+            "label": "datatype",
+            "definition": "Set of distinct values, characterized by properties of those values, and by operations on those values.",
             "variables": []
         },
         "GMHO:0000087 (Outcome)": {
-            "label": "symptom severity",
-            "definition": "symptom severity",
+            "label": "Symptom severity ",
+            "definition": "A data item that is about the location on the dimension of a symptom.",
             "variables": []
         },
-        "GMHO:0000063": {
-            "label": "drug-induced movement following intervention",
-            "definition": "drug-induced movement following intervention",
+        "GMHO:0000087 (Population)": {
+            "label": "Symptom severity ",
+            "definition": "A data item that is about the location on the dimension of a symptom.",
+            "variables": []
+        },
+        "GMHO:0000123 (PTSD)": {
+            "label": "intervention arm",
+            "definition": "A study arm that is subject to evaluation in an intervention evaluation study.",
+            "variables": []
+        },
+        "GMHO:0000122 (PTSD)": {
+            "label": "control arm",
+            "definition": "A study arm designation as a comparator to some intervention arm.",
             "variables": []
         }
     },
     "label_to_class": {
-        "Number of participants with adverse events following intervention": [
+        "Adverse event": [
             "GMHO:0000047",
-            "GMHO:0000214",
-            "GMHO:0000204"
-        ],
-        "Number of participants with measurement for adverse events following intervention": [
-            "GMHO:0000047",
-            "GMHO:0000206",
-            "GMHO:0000204"
-        ],
-        "Mean age": [
-            "BCIO:015416"
-        ],
-        "Number of participants with agitation following intervention": [
-            "GMHO:0000233",
-            "GMHO:0000214",
-            "GMHO:0000204"
-        ],
-        "Number of participants with measurement for agitation following intervention": [
-            "GMHO:0000233",
-            "GMHO:0000206",
-            "GMHO:0000204"
-        ],
-        "Number of participants with akathisia following intervention": [
-            "GMHO:0000051",
-            "GMHO:0000214",
-            "GMHO:0000204"
-        ],
-        "Number of participants with measurement for akathisia following intervention": [
-            "GMHO:0000051",
-            "GMHO:0000206",
             "GMHO:0000204"
         ],
         "Baseline anhedonia scale directionality": [
             "GMHO:0000201",
             "GMHO:0000212",
             "GMHO:0000208"
+        ],
+        "Baseline anhedonia scale": [
+            "GMHO:0000201",
+            "GMHO:0000212"
+        ],
+        "Followup anhedonia scale directionality": [
+            "GMHO:0000201",
+            "GMHO:0000205",
+            "GMHO:0000208"
+        ],
+        "Followup anhedonia scale": [
+            "GMHO:0000201",
+            "GMHO:0000205"
         ],
         "Mean baseline anhedonia": [
             "GMHO:0000131",
@@ -276,19 +1929,10 @@
             "GMHO:0000209",
             "GMHO:0000206"
         ],
-        "Baseline anhedonia scale": [
-            "GMHO:0000201",
-            "GMHO:0000212"
-        ],
         "Standard deviation of baseline anhedonia": [
             "GMHO:0000131",
             "GMHO:0000209",
             "OBCS:0000077"
-        ],
-        "Followup anhedonia scale directionality": [
-            "GMHO:0000201",
-            "GMHO:0000205",
-            "GMHO:0000208"
         ],
         "Mean followup anhedonia": [
             "GMHO:0000131",
@@ -300,34 +1944,37 @@
             "GMHO:0000204",
             "GMHO:0000206"
         ],
-        "Followup anhedonia scale": [
-            "GMHO:0000201",
-            "GMHO:0000205"
-        ],
         "Standard deviation of followup anhedonia": [
             "GMHO:0000131",
             "GMHO:0000204",
             "OBCS:0000077"
         ],
-        "Followup anhedonia data type": [
+        "Timepoint of followup anhedonia measurement (weeks)": [
             "GMHO:0000131",
-            "GMHO:0000203",
-            "GMHO:0000204"
+            "GMHO:0000210"
         ],
-        "Number of participants with anticholinergic symptom following intervention": [
-            "GMHO:0000221",
-            "GMHO:0000214",
-            "GMHO:0000204"
-        ],
-        "Number of participants with measurements for anticholinergic symptom following intervention": [
-            "GMHO:0000221",
-            "GMHO:0000206",
+        "Data type: endpoint vs. baseline difference in anhedonia symptom severity": [
+            "GMHO:0000131",
+            "GMHO:0000256",
             "GMHO:0000204"
         ],
         "Baseline anxiety scale directionality": [
             "GMHO:0000202",
             "GMHO:0000212",
             "GMHO:0000208"
+        ],
+        "Baseline anxiety scale": [
+            "GMHO:0000202",
+            "GMHO:0000212"
+        ],
+        "Followup anxiety scale directionality": [
+            "GMHO:0000202",
+            "GMHO:0000205",
+            "GMHO:0000208"
+        ],
+        "Followup anxiety scale": [
+            "GMHO:0000202",
+            "GMHO:0000205"
         ],
         "Mean baseline anxiety": [
             "GMHO:0000143",
@@ -344,16 +1991,6 @@
             "GMHO:0000209",
             "OBCS:0000077"
         ],
-        "Number of participants with anxiety following intervention": [
-            "GMHO:0000238",
-            "GMHO:0000206",
-            "GMHO:0000204"
-        ],
-        "Followup anxiety scale directionality": [
-            "GMHO:0000202",
-            "GMHO:0000205",
-            "GMHO:0000208"
-        ],
         "Mean followup anxiety": [
             "GMHO:0000143",
             "OBI:0000679",
@@ -364,18 +2001,513 @@
             "GMHO:0000204",
             "GMHO:0000206"
         ],
-        "Followup anxiety scale": [
-            "GMHO:0000202",
-            "GMHO:0000205"
-        ],
         "Standard deviation of followup anxiety": [
             "GMHO:0000143",
             "GMHO:0000204",
             "OBCS:0000077"
         ],
-        "Followup anxiety data type": [
+        "Timepoint of followup anxiety measurement (weeks)": [
             "GMHO:0000143",
+            "GMHO:0000210"
+        ],
+        "Data type: endpoint vs. baseline difference in anxiety symptom severity": [
+            "GMHO:0000143",
+            "GMHO:0000256",
+            "GMHO:0000204"
+        ],
+        "Mean drug dose delivered": [
+            "OBI:0000679",
+            "GMHO:0000001"
+        ],
+        "Mean baseline reward sensitivity": [
+            "OBI:0000679",
+            "GMHO:0000209",
+            "GMHO:0000135"
+        ],
+        "Mean followup reward sensitivity": [
+            "OBI:0000679",
+            "GMHO:0000204",
+            "GMHO:0000135"
+        ],
+        "Acceptability of intervention": [
+            "GMHO:0000054"
+        ],
+        "Tolerability of intervention": [
+            "GMHO:0000055"
+        ],
+        "Constipation": [
+            "GMHO:0000257",
+            "GMHO:0000204"
+        ],
+        "Dizziness": [
+            "GMHO:0000179",
+            "GMHO:0000204"
+        ],
+        "Maximum drug dose delivered": [
+            "GMHO:0000001",
+            "STATO:0000151"
+        ],
+        "Minimum drug dose delivered": [
+            "GMHO:0000001",
+            "STATO:0000150"
+        ],
+        "Treatment": [
+            "GMHO:0000002"
+        ],
+        "Dry mouth": [
+            "GMHO:0000180",
+            "GMHO:0000204"
+        ],
+        "Timepoint of followup reward sensitivity measurement (weeks)": [
+            "GMHO:0000210",
+            "GMHO:0000135"
+        ],
+        "Headache": [
+            "GMHO:0000181",
+            "GMHO:0000204"
+        ],
+        "Followup reward sensitivity data type": [
             "GMHO:0000203",
+            "GMHO:0000204",
+            "GMHO:0000135"
+        ],
+        "Insomnia": [
+            "GMHO:0000182",
+            "GMHO:0000204"
+        ],
+        "Intervention arm": [
+            "GMHO:0000123"
+        ],
+        "Treatment details": [
+            "GMHO:0000002"
+        ],
+        "Intervention duration": [
+            "GMHO:0000005"
+        ],
+        "Maximum planned drug dose": [
+            "STATO:0000151",
+            "GMHO:0000200"
+        ],
+        "Mean age": [
+            "BCIO:015416"
+        ],
+        "Number of participants for whom baseline reward sensitivity was measured": [
+            "GMHO:0000209",
+            "GMHO:0000206",
+            "GMHO:0000135"
+        ],
+        "Standard deviation of baseline reward sensitivity": [
+            "GMHO:0000209",
+            "GMHO:0000135",
+            "OBCS:0000077"
+        ],
+        "Number of participants for whom followup reward sensitivity was measured": [
+            "GMHO:0000204",
+            "GMHO:0000206",
+            "GMHO:0000135"
+        ],
+        "Standard deviation of followup reward sensitivity": [
+            "GMHO:0000204",
+            "GMHO:0000135",
+            "OBCS:0000077"
+        ],
+        "Baseline reward sensitivity scale directionality": [
+            "GMHO:0000212",
+            "GMHO:0000207",
+            "GMHO:0000208"
+        ],
+        "Baseline reward sensitivity scale": [
+            "GMHO:0000212",
+            "GMHO:0000207"
+        ],
+        "Followup reward sensitivity scale directionality": [
+            "GMHO:0000205",
+            "GMHO:0000207",
+            "GMHO:0000208"
+        ],
+        "Followup reward sensitivity scale": [
+            "GMHO:0000205",
+            "GMHO:0000207"
+        ],
+        "Minimum planned drug dose": [
+            "STATO:0000150",
+            "GMHO:0000200"
+        ],
+        "Nausea": [
+            "GMHO:0000183",
+            "GMHO:0000204"
+        ],
+        "Number of females in study": [
+            "GMHO:0000213"
+        ],
+        "Numerical": [
+            "GMHO:0000154",
+            "GMHO:0000120"
+        ],
+        "Proportion of female": [
+            "BCIO:015329"
+        ],
+        "Study duration": [
+            "ICO:0000087"
+        ],
+        "Study identifier": [
+            "GMHO:0000211"
+        ],
+        "Vomiting": [
+            "GMHO:0000185",
+            "GMHO:0000204"
+        ],
+        "Intervention arm name": [
+            "GMHO:0000004"
+        ],
+        "Study design": [
+            "ADDICTO:0001267"
+        ],
+        "Drug name": [
+            "GMHO:0000002"
+        ],
+        "Mean dose delivered": [
+            "GMHO:0000001",
+            "OBI:0000679"
+        ],
+        "Intervention population": [
+            "BCIO:015095"
+        ],
+        "Severity of condition": [
+            "GMHO:0000255"
+        ],
+        "Number of intervention participants": [
+            "GMHO:0000152"
+        ],
+        "Number of intervention participants randomly acllocated to an arm": [
+            "GMHO:0000154"
+        ],
+        "Number of female participants": [
+            "GMHO:0000213"
+        ],
+        "Intervention duration (weeks)": [
+            "GMHO:0000005"
+        ],
+        "Number of participants who had a response to treatments": [
+            "GMHO:0000076",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom a response to treatment was measured": [
+            "GMHO:0000076",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants who relapsed based on study criteria": [
+            "ADDICTO:0001308",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom relapse was measured": [
+            "ADDICTO:0001308",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants who dropped out of study": [
+            "GMHO:0000075"
+        ],
+        "Number of participants for whom drop out was assessed": [
+            "GMHO:0000258"
+        ],
+        "Number of participants who dropped out of study due to adverse events": [
+            "GMHO:0000072"
+        ],
+        "Number of participants for whom drop out due to adverse events was assessed": [
+            "GMHO:0000258"
+        ],
+        "Number of participant deaths": [
+            "GMHO:0000060",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom deaths were assessed": [
+            "GMHO:0000060",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with serious adverse events following intervention": [
+            "GMHO:0000081",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants for whom serious adverse events were assessed": [
+            "GMHO:0000081",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Doman 1 risk of bias score (RoB2)": [
+            "GMHO:0000215"
+        ],
+        "Doman 2 risk of bias score (RoB2)": [
+            "GMHO:0000217"
+        ],
+        "Doman 3 risk of bias score (RoB2)": [
+            "GMHO:0000219"
+        ],
+        "Doman 4 risk of bias score (RoB2)": [
+            "GMHO:0000218"
+        ],
+        "Doman 5 risk of bias score (RoB2)": [
+            "GMHO:0000220"
+        ],
+        "Overall risk of bias score (RoB2)": [
+            "GMHO:0000216"
+        ],
+        "Scale for symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000228"
+        ],
+        "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000079",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline severity of symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000079",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup severity of symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000079",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000079",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity": [
+            "GMHO:0000256",
+            "GMHO:0000079",
+            "GMHO:0000204"
+        ],
+        "Scale for positive symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000226"
+        ],
+        "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000078",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000078",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup severity of positive symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000078",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000078",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity": [
+            "GMHO:0000256",
+            "GMHO:0000078",
+            "GMHO:0000204"
+        ],
+        "Scale for negative symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000225"
+        ],
+        "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000070",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000070",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup severity of negative symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000070",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis": [
+            "GMHO:0000070",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity": [
+            "GMHO:0000256",
+            "GMHO:0000070",
+            "GMHO:0000204"
+        ],
+        "Scale for functioning": [
+            "GMHO:0000224"
+        ],
+        "Number of participants with followup measurements for functioning": [
+            "GMHO:0000067",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline functioning": [
+            "GMHO:0000067",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup severity of functioning": [
+            "GMHO:0000067",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup functioning": [
+            "GMHO:0000067",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in human functioning": [
+            "GMHO:0000256",
+            "GMHO:0000067",
+            "GMHO:0000204"
+        ],
+        "Scale for cognition": [
+            "GMHO:0000259"
+        ],
+        "Number of participants with followup measurements for cognition": [
+            "MF:0000020",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline cognition": [
+            "MF:0000020",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup cognition": [
+            "MF:0000020",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup cognition": [
+            "MF:0000020",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in mental processes": [
+            "GMHO:0000256",
+            "MF:0000020",
+            "GMHO:0000204"
+        ],
+        "Scale for depression": [
+            "GMHO:0000223"
+        ],
+        "Number of participants with followup measurements for depression": [
+            "GMHO:0000062",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline depression": [
+            "GMHO:0000062",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup depression": [
+            "GMHO:0000062",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup depression": [
+            "GMHO:0000062",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in depression symptom severity": [
+            "GMHO:0000256",
+            "GMHO:0000062",
+            "GMHO:0000204"
+        ],
+        "Scale for weight": [
+            "GMHO:0000230"
+        ],
+        "Number of participants with followup measurements for weight": [
+            "PATO:0000128",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline weight": [
+            "PATO:0000128",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup weight": [
+            "PATO:0000128",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup weight": [
+            "PATO:0000128",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in weight": [
+            "GMHO:0000256",
+            "PATO:0000128",
+            "GMHO:0000204"
+        ],
+        "Timepoint of measurement": [
+            "GMHO:0000138"
+        ],
+        "Scale for prolactin": [
+            "GMHO:0000227"
+        ],
+        "Number of participants with followup measurements for prolactin": [
+            "EFO:0007003",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Mean baseline prolactin": [
+            "EFO:0007003",
+            "OBI:0000679",
+            "GMHO:0000209"
+        ],
+        "Mean followup prolactin": [
+            "EFO:0007003",
+            "OBI:0000679",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of followup prolactin": [
+            "GMHO:0000042",
+            "OBCS:0000077",
+            "GMHO:0000204"
+        ],
+        "Data type: endpoint vs. baseline difference in prolactin measurement": [
+            "GMHO:0000256",
+            "EFO:0007003",
+            "GMHO:0000204"
+        ],
+        "Number of participants with adverse events following intervention": [
+            "GMHO:0000047",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for adverse events following intervention": [
+            "GMHO:0000047",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with anticholinergic symptom following intervention": [
+            "GMHO:0000221",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurements for anticholinergic symptom following intervention": [
+            "GMHO:0000221",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with anxiety following intervention": [
+            "GMHO:0000238",
+            "GMHO:0000206",
             "GMHO:0000204"
         ],
         "Number of participants with measurement for anxiety following intervention": [
@@ -383,10 +2515,398 @@
             "GMHO:0000206",
             "GMHO:0000204"
         ],
+        "Number of participants with dizziness following intervention": [
+            "GMHO:0000179",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for dizziness following intervention": [
+            "GMHO:0000179",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with headache following intervention": [
+            "GMHO:0000181",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for headache following intervention": [
+            "GMHO:0000181",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with nausea following intervention": [
+            "GMHO:0000183",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for nausea following intervention": [
+            "GMHO:0000183",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with sedation following intervention": [
+            "GMHO:0000229",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for sedation following intervention": [
+            "GMHO:0000229",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with hyperprolactinemia following intervention": [
+            "GMHO:0000234",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for hyperprolactinemia following intervention": [
+            "GMHO:0000234",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with QTc prolongation following intervention": [
+            "GMHO:0000231",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for QTc prolongation following intervention": [
+            "CMO:0000269",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with agitation following intervention": [
+            "GMHO:0000233",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for agitation following intervention": [
+            "GMHO:0000233",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with hypotension following intervention": [
+            "GMHO:0000235",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for hypotension following intervention": [
+            "GMHO:0000235",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with insomnia following intervention": [
+            "GMHO:0000182",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for insomnia following intervention": [
+            "GMHO:0000182",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with akathisia following intervention": [
+            "GMHO:0000051",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for akathisia following intervention": [
+            "GMHO:0000051",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with extrapyrimidal symptoms following intervention": [
+            "GMHO:0000063",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for extrapyrimidal symptoms following intervention": [
+            "GMHO:0000063",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Number of participants with weight increase following intervention": [
+            "GMHO:0000232",
+            "GMHO:0000214",
+            "GMHO:0000204"
+        ],
+        "Number of participants with measurement for weight increase following intervention": [
+            "GMHO:0000232",
+            "GMHO:0000206",
+            "GMHO:0000204"
+        ],
+        "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)": [
+            "GMHO:0000236"
+        ],
+        "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (milisecond)": [
+            "CMO:0000269"
+        ],
+        "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition": [
+            "GMHO:0000236",
+            "CMO:0000269",
+            "STATO:0000562"
+        ],
+        "Number of crossover periods": [
+            "GMHO:0000237"
+        ],
         "": [
-            "GMHO:0000087 (Population)",
+            "BCIO:015327",
+            "STATO:0000599",
+            "GMHO:0000036",
+            "GMHO:0000049",
+            "GMHO:0000188",
+            "BCIO:026045",
+            "GMHO:0000130",
+            "GMHO:0000011",
+            "GMHO:0000141",
+            "GMHO:0000142",
+            "OMRSE:00000061",
+            "BCIO:006119",
+            "GMHO:0000145",
+            "BCIO:050315",
+            "ENVO:00000091",
+            "BCIO:010000",
+            "GMHO:0000053",
+            "BCIO:015105",
+            "MF:0000032",
+            "OGMS:0000060",
+            "MF:0000074",
+            "GMHO:0000056",
+            "GMHO:0000057",
+            "BCIO:026017",
+            "CHEBI:35488",
+            "CHEBI:35470",
+            "IAO:0000301",
+            "OGMS:0000123",
+            "GMHO:0000016",
+            "OGMS:0000015",
+            "GMHO:0000091",
+            "CMO:0000000",
+            "GMHO:0000020",
+            "GMHO:0000021",
+            "BCIO:026019",
+            "BCIO:026020",
+            "OBCS:0000070",
+            "BCIO:026038",
+            "ADDICTO:0001255",
+            "IAO:0000027",
+            "OBI:0200000",
+            "GMHO:0000058",
+            "GMHO:0000176",
+            "GMHO:0000061",
+            "EFO:0006842",
+            "GMHO:0000148",
+            "IAO:0000033",
+            "OBI:0000984",
+            "BCIO:026022",
+            "OBI:0500026",
+            "BCIO:035000",
+            "BCIO:050443",
+            "EFO:0000001",
+            "OGMS:0000087",
+            "OMRSE:00000062",
+            "BCIO:026039",
+            "BFO:0000024",
+            "PATO:0001035",
+            "ENVO:00000111",
+            "BFO:0000034",
+            "BFO:0000031",
+            "GAZ:00000448",
+            "EFO:0004468",
+            "ENVO:00000106",
+            "EFO:0004541",
+            "OGMS:0000096",
+            "BCIO:015092",
+            "GMHO:0000189",
+            "OMRSE:00000102",
+            "CMO:0000230",
+            "EFO:0004612",
+            "CHEBI:47775",
+            "GMHO:0000065",
+            "EFO:0004730",
+            "MF:0000016",
+            "BFO:0000141",
+            "BCIO:036000",
+            "BCIO:036100",
+            "IAO:0000030",
+            "GMHO:0000150",
+            "IAO:0000303",
+            "BCIO:037000",
+            "BCIO:023000",
+            "BCIO:038000",
+            "EFO:0004529",
+            "EFO:0005105",
+            "CHEBI:50404",
+            "BCIO:036026",
+            "EFO:0004611",
+            "CHEBI:47774",
+            "BCIO:015107",
+            "BFO:0000040",
+            "MF:0000033",
+            "MF:0000020",
+            "BCIO:026040",
+            "ADDICTO:0001265",
+            "BCIO:026044",
+            "GMHO:0000069",
+            "ADDICTO:0001292",
+            "ADDICTO:0001258",
+            "BCIO:008515",
+            "GMHO:0000152",
+            "BFO:0000027",
+            "BCIO:026037",
+            "BFO:0000038",
+            "BCIO:026046",
+            "GMHO:0000184",
+            "OBI:0500006",
+            "ENVO:00000562",
+            "BCIO:026048",
+            "OGMS:0000061",
+            "GMHO:0000190",
+            "BCIO:050300",
+            "PDRO:0000074",
+            "PATO:0001241",
+            "PATO:0001018",
+            "IAO:0000104",
+            "OBI:0000011",
+            "GMHO:0000077",
+            "GMHO:0000174",
+            "STATO:0000412",
+            "GMHO:0000166",
+            "GMHO:0000167",
+            "BCIO:026043",
+            "BFO:0000015",
+            "EFO:0007003",
+            "GMHO:0000187",
+            "GMHO:0000172",
+            "CHEBI:35471",
+            "BCIO:026042",
+            "OBI:0000071",
+            "STATO:0000184",
+            "IAO:0000640",
+            "ADDICTO:0001262",
+            "GMHO:0000191",
+            "ENVO:00000469",
+            "SEPIO:0000125",
+            "OMRSE:00000191",
+            "BCIO:026036",
+            "ENVO:00000064",
+            "OBI:0001755",
+            "ADDICTO:0000399",
+            "ADDICTO:0001271",
+            "BFO:0000029",
+            "BFO:0000006",
+            "BFO:0000020",
+            "OPMI:0000326",
+            "GMHO:0000127",
+            "OBI:0500000",
+            "GMHO:0000168",
+            "OGMS:0000020",
+            "BFO:0000008",
+            "EFO:0004574",
+            "CHEBI:35473",
+            "BCIO:026041",
+            "STATO:0000039",
+            "IAO:0000109",
+            "OBCS:0000011",
+            "BCIO:015415",
+            "STATO:0000471",
+            "BCIO:050435",
+            "GMHO:0000125",
+            "BCIO:041000",
+            "GMHO:0000178",
+            "GMHO:0000038",
+            "OntoDT:487147",
             "GMHO:0000087 (Outcome)",
-            "GMHO:0000063"
+            "GMHO:0000087 (Population)",
+            "GMHO:0000123 (PTSD)",
+            "GMHO:0000122 (PTSD)"
+        ],
+        "Type of exercise carried out in the intervention arm": [
+            "BCIO:036042",
+            "GMHO:0000123"
+        ],
+        "Type of psychological treatment": [
+            "GMHO:0000239"
+        ],
+        "Treatment as usual": [
+            "GMHO:0000128"
+        ],
+        "Year of publication": [
+            "GMHO:0000120"
+        ],
+        "Intervention details": [
+            "GMHO:0000241",
+            "GMHO:0000123"
+        ],
+        "Control group details": [
+            "GMHO:0000122"
+        ],
+        "Attention management control arm": [
+            "GMHO:0000240"
+        ],
+        "Intensity of physical exercise behaviour": [
+            "BCIO:036042",
+            "BCIO:050432"
+        ],
+        "Exercise complemented with treatment as usual or therapy": [
+            "GMHO:0000241",
+            "GMHO:0000123"
+        ],
+        "Number of participants randomised in study": [
+            "GMHO:0000154"
+        ],
+        "Number of participants who dropped out of study arm (treatment group)": [
+            "GMHO:0000075",
+            "GMHO:0000123"
+        ],
+        "Number of intervention participants randomly allocated to an arm": [
+            "GMHO:0000154",
+            "GMHO:0000123",
+            "GMHO:0000122"
+        ],
+        "Number of participants who dropped out of study arm (control group)": [
+            "GMHO:0000075",
+            "GMHO:0000122"
+        ],
+        "Mean PTSD symptom severity of the treatment group": [
+            "GMHO:0000173",
+            "OBI:0000679",
+            "GMHO:0000123",
+            "GMHO:0000204"
+        ],
+        "Sample size of PTSD symptom severity of the treatment group": [
+            "GMHO:0000173",
+            "GMHO:0000206",
+            "GMHO:0000123",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of PTSD symptom severity of the treatment group": [
+            "GMHO:0000173",
+            "OBCS:0000077",
+            "GMHO:0000123",
+            "GMHO:0000204"
+        ],
+        "Sample size of PTSD symptom severity of the control group": [
+            "GMHO:0000173",
+            "GMHO:0000206",
+            "GMHO:0000122",
+            "GMHO:0000204"
+        ],
+        "Mean PTSD symptom severity of the control group": [
+            "GMHO:0000173",
+            "OBI:0000679",
+            "GMHO:0000122",
+            "GMHO:0000204"
+        ],
+        "Standard deviation of PTSD symptom severity of the control group": [
+            "GMHO:0000173",
+            "OBCS:0000077",
+            "GMHO:0000122",
+            "GMHO:0000204"
+        ],
+        "Risk of bias associated with measurement of PTSD outcome data": [
+            "GMHO:0000218",
+            "GMHO:0000173"
         ]
     }
 }
