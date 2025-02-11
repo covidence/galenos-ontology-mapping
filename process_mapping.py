@@ -18,6 +18,7 @@ def process_ontology_mapping(
         class_id = mapping["Class ID"].strip()
         extraction_variable = mapping["Variable to extract"].strip()
         variable_label = mapping["Understandable label for database"].strip()
+
         if class_id not in ontology:
             ontology[class_id] = {
                 "label": mapping["Class  label"],
@@ -40,26 +41,47 @@ def process_ontology_mapping(
             ]
 
 
-def get_current_variables(current_mapping, node_classes, parent):
-    current_variables = ontology[node_classes[0]]["variables"]
+def get_current_variables(current_mapping, node_classes, parent, ontology_mapping_copy):
+    # current_variables = ontology[node_classes[0]]["variables"]
 
-    if current_mapping["COMBO"]:
-        current_variables = [
-            ontology[class_id.strip()]["variables"] for class_id in node_classes
-        ]
+    # if current_mapping["COMBO"]:
+    #     # get all variables that are common to both classes in the COMBO and store as first element of array
+    #     current_variables = [
+    #         ontology[class_id.strip()]["variables"] for class_id in node_classes
+    #     ]
 
-        current_variables = list(
-            set(current_variables[0]).intersection(*current_variables[1:])
-        )
-    elif parent["variables"]:
-        current_variables = list(
-            filter(
-                lambda variable: variable in parent["variables"],
-                current_variables,
-            )
-        )
+    #     # get the intersection of the variables in each class in the COMBO
+    #     current_variables = list(
+    #         set(current_variables[0]).intersection(*current_variables[1:])
+    #     )
+    # elif parent["variables"]:
+    #     current_variables = list(
+    #         filter(
+    #             lambda variable: variable in parent["variables"],
+    #             current_variables,
+    #         )
+    #     )
 
-    return current_variables
+    variables = set()
+
+    mapping_key = (current_mapping["COMBO"] or current_mapping["Class ID"]).strip()
+
+    for mapping in ontology_mapping_copy:
+        current_mapping_key = (mapping["COMBO"] or mapping["Class ID"]).strip()
+        if (
+            mapping_key == current_mapping_key
+            and mapping["Organised under"] == parent["key"]
+        ):
+            variable = mapping["Understandable label for database"].strip()
+            if variable:
+                variables.add(variable)
+
+    # mapped_variable = current_mapping["Understandable label for database"]
+
+    # if mapped_variable:
+    #     return [mapped_variable]
+
+    return variables
 
 def get_ontology_items(classes: list):
     return [
@@ -76,7 +98,8 @@ def get_ontology_items(classes: list):
 def append_children(node: dict, ontology_mapping: list):
     key = node["key"].strip()
     for mapping in ontology_mapping:
-        if mapping["Organised under"].strip() == key:
+        is_child = mapping["Organised under"].strip() == key
+        if is_child:
             child_key = (mapping["COMBO"] or mapping["Class ID"]).strip()
 
             current_children = [child["key"] for child in node["children"]]
@@ -87,7 +110,11 @@ def append_children(node: dict, ontology_mapping: list):
                     [ontology[class_id.strip()]["label"] for class_id in classes]
                 )
 
-                current_variables = get_current_variables(mapping, classes, node)
+                ontology_mapping_copy = ontology_mapping.copy()
+                # find variables for current node
+                current_variables = get_current_variables(
+                    mapping, classes, node, ontology_mapping_copy
+                )
 
                 current_node = {
                     "key": child_key,
@@ -97,7 +124,6 @@ def append_children(node: dict, ontology_mapping: list):
                     "children": [],
                 }
                 node["children"].append(current_node)
-                ontology_mapping_copy = ontology_mapping.copy()
                 ontology_mapping_copy.remove(mapping)
                 append_children(current_node, ontology_mapping_copy)
 

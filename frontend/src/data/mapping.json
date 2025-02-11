@@ -36,9 +36,9 @@
         ],
         "label": "reward sensitivity - measurement datum at baseline",
         "variables": [
-          "Standard deviation of baseline reward sensitivity",
+          "Mean baseline reward sensitivity",
           "Number of participants for whom baseline reward sensitivity was measured",
-          "Mean baseline reward sensitivity"
+          "Standard deviation of baseline reward sensitivity"
         ],
         "children": [
           {
@@ -72,7 +72,6 @@
             ],
             "label": "reward sensitivity scale - measurement scale at baseline",
             "variables": [
-              "Baseline reward sensitivity scale directionality",
               "Baseline reward sensitivity scale"
             ],
             "children": [
@@ -166,7 +165,6 @@
         ],
         "label": "number of intervention participants",
         "variables": [
-          "",
           "Number of intervention participants"
         ],
         "children": []
@@ -215,7 +213,9 @@
               }
             ],
             "label": "human functioning scale",
-            "variables": [],
+            "variables": [
+              "Scale for functioning"
+            ],
             "children": []
           }
         ]
@@ -264,7 +264,9 @@
               }
             ],
             "label": "mental process scale",
-            "variables": [],
+            "variables": [
+              "Scale for cognition"
+            ],
             "children": []
           }
         ]
@@ -313,7 +315,9 @@
               }
             ],
             "label": "weight scale",
-            "variables": [],
+            "variables": [
+              "Scale for weight"
+            ],
             "children": []
           }
         ]
@@ -377,8 +381,8 @@
             ],
             "label": "number of female biological sex",
             "variables": [
-              "Number of females in study",
-              "Number of female participants"
+              "Number of female participants",
+              "Number of females in study"
             ],
             "children": []
           },
@@ -427,9 +431,9 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at baseline",
             "variables": [
+              "Number of participants for whom baseline anhedonia was measured",
               "Standard deviation of baseline anhedonia",
-              "Mean baseline anhedonia",
-              "Number of participants for whom baseline anhedonia was measured"
+              "Mean baseline anhedonia"
             ],
             "children": [
               {
@@ -532,9 +536,9 @@
             ],
             "label": "anxiety symptom severity - measurement datum at baseline",
             "variables": [
+              "Number of participants for whom baseline anxiety was measured",
               "Mean baseline anxiety",
-              "Standard deviation of baseline anxiety",
-              "Number of participants for whom baseline anxiety was measured"
+              "Standard deviation of baseline anxiety"
             ],
             "children": [
               {
@@ -553,8 +557,8 @@
                 ],
                 "label": "anxiety scale - measurement scale at baseline",
                 "variables": [
-                  "Baseline anxiety scale directionality",
-                  "Baseline anxiety scale"
+                  "Baseline anxiety scale",
+                  "Baseline anxiety scale directionality"
                 ],
                 "children": [
                   {
@@ -699,7 +703,9 @@
                       }
                     ],
                     "label": "positive psychotic disorder symptom severity scale",
-                    "variables": [],
+                    "variables": [
+                      "Scale for positive symptoms related to psychotic disorder diagnosis"
+                    ],
                     "children": []
                   }
                 ]
@@ -748,7 +754,9 @@
                       }
                     ],
                     "label": "negative psychotic disorder symptom severity scale",
-                    "variables": [],
+                    "variables": [
+                      "Scale for negative symptoms related to psychotic disorder diagnosis"
+                    ],
                     "children": []
                   }
                 ]
@@ -763,7 +771,9 @@
                   }
                 ],
                 "label": "psychotic disorder symptom severity scale",
-                "variables": [],
+                "variables": [
+                  "Scale for symptoms related to psychotic disorder diagnosis"
+                ],
                 "children": []
               }
             ]
@@ -812,7 +822,9 @@
                   }
                 ],
                 "label": "depression symptom severity scale",
-                "variables": [],
+                "variables": [
+                  "Scale for depression"
+                ],
                 "children": []
               }
             ]
@@ -844,8 +856,8 @@
         "label": "adverse event following an intervention - measurement datum at followup",
         "variables": [
           "Number of participants with measurement for adverse events following intervention",
-          "Adverse event",
-          "Number of participants with adverse events following intervention"
+          "Number of participants with adverse events following intervention",
+          "Adverse event"
         ],
         "children": [
           {
@@ -937,9 +949,9 @@
             ],
             "label": "insomnia following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with insomnia following intervention",
+              "Number of participants with measurement for insomnia following intervention",
               "Insomnia",
-              "Number of participants with measurement for insomnia following intervention"
+              "Number of participants with insomnia following intervention"
             ],
             "children": [
               {
@@ -1212,8 +1224,8 @@
             ],
             "label": "anxiousness following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with anxiety following intervention",
-              "Number of participants with measurement for anxiety following intervention"
+              "Number of participants with measurement for anxiety following intervention",
+              "Number of participants with anxiety following intervention"
             ],
             "children": [
               {
@@ -1354,8 +1366,8 @@
             ],
             "label": "agitation following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for agitation following intervention",
-              "Number of participants with agitation following intervention"
+              "Number of participants with agitation following intervention",
+              "Number of participants with measurement for agitation following intervention"
             ],
             "children": [
               {
@@ -1406,8 +1418,8 @@
             ],
             "label": "hypotension following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with hypotension following intervention",
-              "Number of participants with measurement for hypotension following intervention"
+              "Number of participants with measurement for hypotension following intervention",
+              "Number of participants with hypotension following intervention"
             ],
             "children": [
               {
@@ -1458,8 +1470,8 @@
             ],
             "label": "drug-induced movement disorder following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with extrapyrimidal symptoms following intervention",
-              "Number of participants with measurement for extrapyrimidal symptoms following intervention"
+              "Number of participants with measurement for extrapyrimidal symptoms following intervention",
+              "Number of participants with extrapyrimidal symptoms following intervention"
             ],
             "children": [
               {
@@ -1574,9 +1586,9 @@
                 ],
                 "label": "headache following intervention - measurement datum at followup",
                 "variables": [
-                  "Headache",
                   "Number of participants with measurement for headache following intervention",
-                  "Number of participants with headache following intervention"
+                  "Number of participants with headache following intervention",
+                  "Headache"
                 ],
                 "children": [
                   {
@@ -1661,9 +1673,9 @@
                 ],
                 "label": "nausea following intervention - measurement datum at followup",
                 "variables": [
-                  "Number of participants with measurement for nausea following intervention",
                   "Number of participants with nausea following intervention",
-                  "Nausea"
+                  "Nausea",
+                  "Number of participants with measurement for nausea following intervention"
                 ],
                 "children": [
                   {
@@ -1748,8 +1760,8 @@
                 ],
                 "label": "adverse increase in body weight - measurement datum at followup",
                 "variables": [
-                  "Number of participants with weight increase following intervention",
-                  "Number of participants with measurement for weight increase following intervention"
+                  "Number of participants with measurement for weight increase following intervention",
+                  "Number of participants with weight increase following intervention"
                 ],
                 "children": [
                   {
@@ -1804,10 +1816,9 @@
         ],
         "label": "reward sensitivity - measurement datum at followup",
         "variables": [
-          "Followup reward sensitivity data type",
           "Mean followup reward sensitivity",
-          "Standard deviation of followup reward sensitivity",
-          "Number of participants for whom followup reward sensitivity was measured"
+          "Number of participants for whom followup reward sensitivity was measured",
+          "Standard deviation of followup reward sensitivity"
         ],
         "children": [
           {
@@ -1841,7 +1852,6 @@
             ],
             "label": "reward sensitivity scale - measurement scale at followup",
             "variables": [
-              "Followup reward sensitivity scale directionality",
               "Followup reward sensitivity scale"
             ],
             "children": [
@@ -1910,10 +1920,7 @@
         ],
         "label": "reward sensitivity - measurement datum at followup",
         "variables": [
-          "Followup reward sensitivity data type",
-          "Mean followup reward sensitivity",
-          "Standard deviation of followup reward sensitivity",
-          "Number of participants for whom followup reward sensitivity was measured"
+          "Followup reward sensitivity data type"
         ],
         "children": [
           {
@@ -1967,8 +1974,7 @@
             ],
             "label": "reward sensitivity scale - measurement scale at followup",
             "variables": [
-              "Followup reward sensitivity scale directionality",
-              "Followup reward sensitivity scale"
+              "Followup reward sensitivity scale directionality"
             ],
             "children": [
               {
@@ -2112,8 +2118,8 @@
         "variables": [
           "Mean followup severity of functioning",
           "Standard deviation of followup functioning",
-          "Number of participants with followup measurements for functioning",
-          "Data type: endpoint vs. baseline difference in human functioning"
+          "Data type: endpoint vs. baseline difference in human functioning",
+          "Number of participants with followup measurements for functioning"
         ],
         "children": [
           {
@@ -2126,7 +2132,9 @@
               }
             ],
             "label": "human functioning scale",
-            "variables": [],
+            "variables": [
+              "Scale for functioning"
+            ],
             "children": []
           },
           {
@@ -2209,8 +2217,8 @@
         "variables": [
           "Data type: endpoint vs. baseline difference in mental processes",
           "Standard deviation of followup cognition",
-          "Number of participants with followup measurements for cognition",
-          "Mean followup cognition"
+          "Mean followup cognition",
+          "Number of participants with followup measurements for cognition"
         ],
         "children": [
           {
@@ -2223,7 +2231,9 @@
               }
             ],
             "label": "mental process scale",
-            "variables": [],
+            "variables": [
+              "Scale for cognition"
+            ],
             "children": []
           },
           {
@@ -2304,10 +2314,10 @@
         ],
         "label": "weight - measurement datum at followup",
         "variables": [
+          "Data type: endpoint vs. baseline difference in weight",
           "Number of participants with followup measurements for weight",
           "Standard deviation of followup weight",
-          "Mean followup weight",
-          "Data type: endpoint vs. baseline difference in weight"
+          "Mean followup weight"
         ],
         "children": [
           {
@@ -2320,7 +2330,9 @@
               }
             ],
             "label": "weight scale",
-            "variables": [],
+            "variables": [
+              "Scale for weight"
+            ],
             "children": []
           },
           {
@@ -2402,8 +2414,8 @@
         "label": "prolactin measurement - measurement datum at followup",
         "variables": [
           "Mean followup prolactin",
-          "Data type: endpoint vs. baseline difference in prolactin measurement",
-          "Number of participants with followup measurements for prolactin"
+          "Number of participants with followup measurements for prolactin",
+          "Data type: endpoint vs. baseline difference in prolactin measurement"
         ],
         "children": [
           {
@@ -2416,7 +2428,9 @@
               }
             ],
             "label": "prolactin scale",
-            "variables": [],
+            "variables": [
+              "Scale for prolactin"
+            ],
             "children": []
           },
           {
@@ -2566,7 +2580,9 @@
             ],
             "label": "QTc interval - midpoint estimate for the mean difference of an outcome between the intervention and comparison condition",
             "variables": [
-              "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition"
+              "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (milisecond)",
+              "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition",
+              "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)"
             ],
             "children": [
               {
@@ -2616,10 +2632,10 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at followup",
             "variables": [
-              "Mean followup anhedonia",
-              "Standard deviation of followup anhedonia",
+              "Number of participants for whom followup anhedonia was measured",
               "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
-              "Number of participants for whom followup anhedonia was measured"
+              "Mean followup anhedonia",
+              "Standard deviation of followup anhedonia"
             ],
             "children": [
               {
@@ -2757,10 +2773,10 @@
             ],
             "label": "anxiety symptom severity - measurement datum at followup",
             "variables": [
+              "Number of participants for whom followup anxiety was measured",
               "Data type: endpoint vs. baseline difference in anxiety symptom severity",
-              "Mean followup anxiety",
               "Standard deviation of followup anxiety",
-              "Number of participants for whom followup anxiety was measured"
+              "Mean followup anxiety"
             ],
             "children": [
               {
@@ -2779,8 +2795,8 @@
                 ],
                 "label": "anxiety scale - measurement scale at followup",
                 "variables": [
-                  "Followup anxiety scale directionality",
-                  "Followup anxiety scale"
+                  "Followup anxiety scale",
+                  "Followup anxiety scale directionality"
                 ],
                 "children": [
                   {
@@ -2899,9 +2915,9 @@
             "label": "psychotic disorder symptom severity - measurement datum at followup",
             "variables": [
               "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
-              "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+              "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
               "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-              "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis"
+              "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity"
             ],
             "children": [
               {
@@ -2914,7 +2930,9 @@
                   }
                 ],
                 "label": "psychotic disorder symptom severity scale",
-                "variables": [],
+                "variables": [
+                  "Scale for symptoms related to psychotic disorder diagnosis"
+                ],
                 "children": []
               },
               {
@@ -2993,10 +3011,10 @@
                 ],
                 "label": "positive psychotic disorder symptom severity - measurement datum at followup",
                 "variables": [
-                  "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
-                  "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
                   "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                  "Mean followup severity of positive symptoms related to psychotic disorder diagnosis"
+                  "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                  "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                  "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis"
                 ],
                 "children": [
                   {
@@ -3009,7 +3027,9 @@
                       }
                     ],
                     "label": "positive psychotic disorder symptom severity scale",
-                    "variables": [],
+                    "variables": [
+                      "Scale for positive symptoms related to psychotic disorder diagnosis"
+                    ],
                     "children": []
                   },
                   {
@@ -3090,10 +3110,10 @@
                 ],
                 "label": "negative psychotic disorder symptom severity - measurement datum at followup",
                 "variables": [
-                  "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                  "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
                   "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
-                  "Mean followup severity of negative symptoms related to psychotic disorder diagnosis"
+                  "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                  "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                  "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis"
                 ],
                 "children": [
                   {
@@ -3106,7 +3126,9 @@
                       }
                     ],
                     "label": "negative psychotic disorder symptom severity scale",
-                    "variables": [],
+                    "variables": [
+                      "Scale for negative symptoms related to psychotic disorder diagnosis"
+                    ],
                     "children": []
                   },
                   {
@@ -3189,9 +3211,9 @@
             ],
             "label": "depression symptom severity - measurement datum at followup",
             "variables": [
+              "Data type: endpoint vs. baseline difference in depression symptom severity",
               "Number of participants with followup measurements for depression",
               "Standard deviation of followup depression",
-              "Data type: endpoint vs. baseline difference in depression symptom severity",
               "Mean followup depression"
             ],
             "children": [
@@ -3205,7 +3227,9 @@
                   }
                 ],
                 "label": "depression symptom severity scale",
-                "variables": [],
+                "variables": [
+                  "Scale for depression"
+                ],
                 "children": []
               },
               {
@@ -3286,12 +3310,12 @@
             ],
             "label": "post-traumatic stress symptom severity - measurement datum at followup",
             "variables": [
-              "Mean PTSD symptom severity of the control group",
-              "Mean PTSD symptom severity of the treatment group",
-              "Sample size of PTSD symptom severity of the control group",
               "Standard deviation of PTSD symptom severity of the treatment group",
-              "Sample size of PTSD symptom severity of the treatment group",
-              "Standard deviation of PTSD symptom severity of the control group"
+              "Sample size of PTSD symptom severity of the control group",
+              "Standard deviation of PTSD symptom severity of the control group",
+              "Mean PTSD symptom severity of the treatment group",
+              "Mean PTSD symptom severity of the control group",
+              "Sample size of PTSD symptom severity of the treatment group"
             ],
             "children": [
               {
@@ -3305,9 +3329,9 @@
                 ],
                 "label": "intervention arm",
                 "variables": [
-                  "Mean PTSD symptom severity of the treatment group",
                   "Standard deviation of PTSD symptom severity of the treatment group",
-                  "Sample size of PTSD symptom severity of the treatment group"
+                  "Sample size of PTSD symptom severity of the treatment group",
+                  "Mean PTSD symptom severity of the treatment group"
                 ],
                 "children": [
                   {
@@ -3320,7 +3344,9 @@
                       }
                     ],
                     "label": "intervention arm name",
-                    "variables": [],
+                    "variables": [
+                      "Intervention arm name"
+                    ],
                     "children": []
                   }
                 ]
@@ -3336,9 +3362,9 @@
                 ],
                 "label": "control arm",
                 "variables": [
-                  "Mean PTSD symptom severity of the control group",
                   "Standard deviation of PTSD symptom severity of the control group",
-                  "Sample size of PTSD symptom severity of the control group"
+                  "Sample size of PTSD symptom severity of the control group",
+                  "Mean PTSD symptom severity of the control group"
                 ],
                 "children": [
                   {
@@ -3351,7 +3377,9 @@
                       }
                     ],
                     "label": "treatment as usual control arm",
-                    "variables": [],
+                    "variables": [
+                      "Treatment as usual"
+                    ],
                     "children": []
                   },
                   {
@@ -3364,7 +3392,9 @@
                       }
                     ],
                     "label": "attention management control arm",
-                    "variables": [],
+                    "variables": [
+                      "Attention management control arm"
+                    ],
                     "children": []
                   }
                 ]
@@ -3392,32 +3422,7 @@
                     ],
                     "label": "average value",
                     "variables": [
-                      "Mean dose delivered",
-                      "Mean PTSD symptom severity of the treatment group",
-                      "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
-                      "Mean followup severity of functioning",
-                      "Mean followup anhedonia",
-                      "Mean baseline reward sensitivity",
-                      "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
-                      "Mean PTSD symptom severity of the control group",
-                      "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
-                      "Mean baseline depression",
-                      "Mean baseline anhedonia",
-                      "Mean baseline cognition",
-                      "Mean followup anxiety",
-                      "Mean baseline functioning",
-                      "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
-                      "Mean baseline anxiety",
-                      "Mean followup reward sensitivity",
-                      "Mean followup depression",
-                      "Mean baseline prolactin",
-                      "Mean baseline weight",
-                      "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-                      "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
-                      "Mean drug dose delivered",
-                      "Mean followup cognition",
-                      "Mean followup weight",
-                      "Mean followup prolactin"
+                      "Mean PTSD symptom severity of the treatment group"
                     ],
                     "children": []
                   },
@@ -3432,42 +3437,7 @@
                     ],
                     "label": "number of participants with measurement",
                     "variables": [
-                      "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                      "Number of participants with followup measurements for functioning",
-                      "Number of participants with measurement for hypotension following intervention",
-                      "Number of participants with followup measurements for weight",
-                      "Number of participants with measurement for dizziness following intervention",
-                      "Number of participants for whom baseline reward sensitivity was measured",
-                      "Number of participants with measurement for sedation following intervention",
-                      "Number of participants with measurement for anxiety following intervention",
-                      "Sample size of PTSD symptom severity of the control group",
-                      "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
-                      "Number of participants with anxiety following intervention",
-                      "Number of participants for whom baseline anxiety was measured",
-                      "Number of participants for whom serious adverse events were assessed",
-                      "Number of participants with measurement for adverse events following intervention",
-                      "Number of participants with followup measurements for depression",
-                      "Number of participants with measurement for nausea following intervention",
-                      "Number of participants with measurements for anticholinergic symptom following intervention",
-                      "Number of participants with measurement for extrapyrimidal symptoms following intervention",
-                      "Number of participants for whom relapse was measured",
-                      "Number of participants with measurement for akathisia following intervention",
-                      "Number of participants with measurement for hyperprolactinemia following intervention",
-                      "Number of participants for whom baseline anhedonia was measured",
-                      "Number of participants with measurement for insomnia following intervention",
-                      "Number of participants for whom followup anxiety was measured",
-                      "Number of participants with measurement for weight increase following intervention",
-                      "Number of participants with measurement for headache following intervention",
-                      "Number of participants for whom deaths were assessed",
-                      "Sample size of PTSD symptom severity of the treatment group",
-                      "Number of participants for whom a response to treatment was measured",
-                      "Number of participants with followup measurements for prolactin",
-                      "Number of participants with measurement for agitation following intervention",
-                      "Number of participants with followup measurements for cognition",
-                      "Number of participants for whom followup anhedonia was measured",
-                      "Number of participants for whom followup reward sensitivity was measured",
-                      "Number of participants with measurement for QTc prolongation following intervention",
-                      "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis"
+                      "Sample size of PTSD symptom severity of the treatment group"
                     ],
                     "children": []
                   },
@@ -3482,22 +3452,7 @@
                     ],
                     "label": "standard deviation",
                     "variables": [
-                      "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup reward sensitivity",
-                      "Standard deviation of followup anhedonia",
-                      "Standard deviation of baseline reward sensitivity",
-                      "Standard deviation of followup depression",
-                      "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup weight",
-                      "Standard deviation of PTSD symptom severity of the treatment group",
-                      "Standard deviation of baseline anxiety",
-                      "Standard deviation of followup cognition",
-                      "Standard deviation of followup anxiety",
-                      "Standard deviation of followup prolactin",
-                      "Standard deviation of baseline anhedonia",
-                      "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup functioning",
-                      "Standard deviation of PTSD symptom severity of the control group"
+                      "Standard deviation of PTSD symptom severity of the treatment group"
                     ],
                     "children": []
                   }
@@ -3526,42 +3481,7 @@
                     ],
                     "label": "number of participants with measurement",
                     "variables": [
-                      "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                      "Number of participants with followup measurements for functioning",
-                      "Number of participants with measurement for hypotension following intervention",
-                      "Number of participants with followup measurements for weight",
-                      "Number of participants with measurement for dizziness following intervention",
-                      "Number of participants for whom baseline reward sensitivity was measured",
-                      "Number of participants with measurement for sedation following intervention",
-                      "Number of participants with measurement for anxiety following intervention",
-                      "Sample size of PTSD symptom severity of the control group",
-                      "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
-                      "Number of participants with anxiety following intervention",
-                      "Number of participants for whom baseline anxiety was measured",
-                      "Number of participants for whom serious adverse events were assessed",
-                      "Number of participants with measurement for adverse events following intervention",
-                      "Number of participants with followup measurements for depression",
-                      "Number of participants with measurement for nausea following intervention",
-                      "Number of participants with measurements for anticholinergic symptom following intervention",
-                      "Number of participants with measurement for extrapyrimidal symptoms following intervention",
-                      "Number of participants for whom relapse was measured",
-                      "Number of participants with measurement for akathisia following intervention",
-                      "Number of participants with measurement for hyperprolactinemia following intervention",
-                      "Number of participants for whom baseline anhedonia was measured",
-                      "Number of participants with measurement for insomnia following intervention",
-                      "Number of participants for whom followup anxiety was measured",
-                      "Number of participants with measurement for weight increase following intervention",
-                      "Number of participants with measurement for headache following intervention",
-                      "Number of participants for whom deaths were assessed",
-                      "Sample size of PTSD symptom severity of the treatment group",
-                      "Number of participants for whom a response to treatment was measured",
-                      "Number of participants with followup measurements for prolactin",
-                      "Number of participants with measurement for agitation following intervention",
-                      "Number of participants with followup measurements for cognition",
-                      "Number of participants for whom followup anhedonia was measured",
-                      "Number of participants for whom followup reward sensitivity was measured",
-                      "Number of participants with measurement for QTc prolongation following intervention",
-                      "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis"
+                      "Sample size of PTSD symptom severity of the control group"
                     ],
                     "children": []
                   },
@@ -3576,32 +3496,7 @@
                     ],
                     "label": "average value",
                     "variables": [
-                      "Mean dose delivered",
-                      "Mean PTSD symptom severity of the treatment group",
-                      "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
-                      "Mean followup severity of functioning",
-                      "Mean followup anhedonia",
-                      "Mean baseline reward sensitivity",
-                      "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
-                      "Mean PTSD symptom severity of the control group",
-                      "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
-                      "Mean baseline depression",
-                      "Mean baseline anhedonia",
-                      "Mean baseline cognition",
-                      "Mean followup anxiety",
-                      "Mean baseline functioning",
-                      "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
-                      "Mean baseline anxiety",
-                      "Mean followup reward sensitivity",
-                      "Mean followup depression",
-                      "Mean baseline prolactin",
-                      "Mean baseline weight",
-                      "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-                      "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
-                      "Mean drug dose delivered",
-                      "Mean followup cognition",
-                      "Mean followup weight",
-                      "Mean followup prolactin"
+                      "Mean PTSD symptom severity of the control group"
                     ],
                     "children": []
                   },
@@ -3616,21 +3511,6 @@
                     ],
                     "label": "standard deviation",
                     "variables": [
-                      "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup reward sensitivity",
-                      "Standard deviation of followup anhedonia",
-                      "Standard deviation of baseline reward sensitivity",
-                      "Standard deviation of followup depression",
-                      "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup weight",
-                      "Standard deviation of PTSD symptom severity of the treatment group",
-                      "Standard deviation of baseline anxiety",
-                      "Standard deviation of followup cognition",
-                      "Standard deviation of followup anxiety",
-                      "Standard deviation of followup prolactin",
-                      "Standard deviation of baseline anhedonia",
-                      "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
-                      "Standard deviation of followup functioning",
                       "Standard deviation of PTSD symptom severity of the control group"
                     ],
                     "children": []

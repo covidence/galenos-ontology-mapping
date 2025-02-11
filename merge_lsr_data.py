@@ -14,22 +14,21 @@ def translate_and_combine_columns(df, translation_dict):
     Returns:
         pd.DataFrame: The modified DataFrame.
     """
+    new_cols = {}  # Store new columns separately
+
     for original_col, translation in translation_dict.items():
-        new_col = translation
-
         if original_col in df.columns:
-            # If the target column (new_col) already exists, combine the data
-            if new_col in df.columns:
+            if translation in df.columns:
                 raise ValueError(
-                    f"Column name conflict: both {original_col} and {new_col} are present."
+                    f"Column name conflict: both {original_col} and {translation} are present."
                 )
-            else:
-                # Rename the column to the new label
-                df[new_col] = df[original_col]
-            # Drop the original column after translation
-            df.drop(columns=[original_col], inplace=True)
+            new_cols[translation] = df[original_col]  # Collect new columns
 
-    return df
+    # Drop original columns
+    df = df.drop(columns=translation_dict.keys(), errors="ignore")
+
+    # Concatenate new columns efficiently
+    return pd.concat([df, pd.DataFrame(new_cols)], axis=1, copy=False)
 
 
 def read_file(filepath):
