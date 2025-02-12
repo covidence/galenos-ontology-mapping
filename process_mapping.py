@@ -138,7 +138,7 @@ def process_mapping(script_dir):
         print("Parsing ontology classes and mapping of extraction variables...")
         process_ontology_mapping(ontology_mapping)
 
-        PICO = ["Population", "Outcome"]
+        PICO = ["Population", "Intervention", "Outcome", "Research methods"]
 
         print("Generating hierarchy...")
         for category in PICO:
