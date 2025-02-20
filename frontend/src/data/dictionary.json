@@ -5,120 +5,120 @@
             "definition": "A pathological bodily process that occurs after the intervention delivery starts.",
             "variables": [
                 "Number of participants with adverse events following intervention",
-                "Adverse event",
-                "Number of participants with measurement for adverse events following intervention"
+                "Number of participants with measurement for adverse events following intervention",
+                "Adverse event"
             ]
         },
         "GMHO:0000204": {
             "label": "measurement datum at followup",
             "definition": "Measurement datum that was recorded as followup data in a study.",
             "variables": [
-                "Mean followup anhedonia",
-                "Data type: endpoint vs. baseline difference in human functioning",
-                "Mean followup weight",
-                "Standard deviation of followup weight",
-                "Mean followup anxiety",
-                "Standard deviation of followup functioning",
-                "Standard deviation of followup reward sensitivity",
-                "Standard deviation of followup prolactin",
-                "Number of participants with measurement for akathisia following intervention",
-                "Number of participants with followup measurements for prolactin",
-                "Number of participants for whom followup anxiety was measured",
-                "Number of participants with agitation following intervention",
-                "Dizziness",
                 "Number of participants with serious adverse events following intervention",
-                "Number of participants with measurement for hyperprolactinemia following intervention",
-                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
-                "Headache",
-                "Number of participants who relapsed based on study criteria",
-                "Number of participants for whom serious adverse events were assessed",
-                "Number of participants with measurement for weight increase following intervention",
-                "Number of participants for whom deaths were assessed",
+                "Number of participants with measurement for QTc prolongation following intervention",
+                "Number of participants with hypotension following intervention",
+                "Mean followup severity of functioning",
                 "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for functioning",
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Number of participants with measurement for hyperprolactinemia following intervention",
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with followup measurements for depression",
+                "Dizziness",
+                "Data type: endpoint vs. baseline difference in weight",
                 "Mean PTSD symptom severity of the treatment group",
+                "Mean followup weight",
+                "Number of participants for whom a response to treatment was measured",
+                "Number of participants with headache following intervention",
+                "Number of participants for whom followup anxiety was measured",
+                "Number of participant deaths",
+                "Number of participants with followup measurements for weight",
+                "Number of participants with weight increase following intervention",
+                "Number of participants with measurement for weight increase following intervention",
+                "Number of participants with anticholinergic symptom following intervention",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Number of participants who had a response to treatments",
                 "Data type: endpoint vs. baseline difference in prolactin measurement",
+                "Number of participants with measurement for dizziness following intervention",
+                "Number of participants with nausea following intervention",
+                "Number of participants with dizziness following intervention",
+                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for adverse events following intervention",
+                "Number of participants with followup measurements for cognition",
+                "Constipation",
+                "Mean followup depression",
+                "Nausea",
+                "Standard deviation of followup prolactin",
+                "Dry mouth",
+                "Followup reward sensitivity data type",
+                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
+                "Number of participants with hyperprolactinemia following intervention",
+                "Adverse event",
+                "Number of participants with measurement for akathisia following intervention",
+                "Insomnia",
                 "Mean followup cognition",
+                "Sample size of PTSD symptom severity of the control group",
+                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in mental processes",
+                "Number of participants with measurement for hypotension following intervention",
+                "Standard deviation of followup weight",
+                "Headache",
+                "Number of participants for whom followup reward sensitivity was measured",
+                "Mean followup prolactin",
+                "Number of participants with measurement for nausea following intervention",
+                "Mean followup anhedonia",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in anxiety symptom severity",
+                "Number of participants with measurement for insomnia following intervention",
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
+                "Standard deviation of followup anhedonia",
                 "Mean followup reward sensitivity",
                 "Number of participants with sedation following intervention",
-                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
-                "Data type: endpoint vs. baseline difference in depression symptom severity",
-                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                "Number of participants with measurements for anticholinergic symptom following intervention",
-                "Number of participants with extrapyrimidal symptoms following intervention",
-                "Followup reward sensitivity data type",
-                "Sample size of PTSD symptom severity of the treatment group",
-                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
-                "Data type: endpoint vs. baseline difference in weight",
-                "Standard deviation of followup anxiety",
-                "Number of participants with measurement for adverse events following intervention",
-                "Number of participants with weight increase following intervention",
-                "Number of participants with adverse events following intervention",
-                "Number of participants with hypotension following intervention",
-                "Vomiting",
-                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for cognition",
-                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
-                "Standard deviation of followup depression",
-                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
-                "Number of participants with insomnia following intervention",
-                "Constipation",
-                "Data type: endpoint vs. baseline difference in mental processes",
-                "Adverse event",
-                "Number of participants with measurement for QTc prolongation following intervention",
-                "Mean followup prolactin",
-                "Number of participants for whom followup reward sensitivity was measured",
-                "Number of participants with measurement for anxiety following intervention",
-                "Number of participants with hyperprolactinemia following intervention",
-                "Standard deviation of followup cognition",
-                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
-                "Number of participants with measurement for dizziness following intervention",
-                "Insomnia",
-                "Number of participant deaths",
-                "Dry mouth",
-                "Standard deviation of followup anhedonia",
-                "Number of participants with dizziness following intervention",
-                "Nausea",
-                "Number of participants with anticholinergic symptom following intervention",
+                "Number of participants for whom deaths were assessed",
+                "Standard deviation of followup functioning",
+                "Number of participants with followup measurements for prolactin",
                 "Number of participants for whom followup anhedonia was measured",
-                "Number of participants who had a response to treatments",
-                "Mean PTSD symptom severity of the control group",
-                "Number of participants with measurement for hypotension following intervention",
-                "Number of participants with measurement for headache following intervention",
-                "Number of participants with QTc prolongation following intervention",
-                "Number of participants with measurement for agitation following intervention",
-                "Mean followup depression",
-                "Number of participants for whom relapse was measured",
-                "Standard deviation of PTSD symptom severity of the control group",
-                "Number of participants with measurement for nausea following intervention",
-                "Sample size of PTSD symptom severity of the control group",
+                "Standard deviation of followup depression",
                 "Number of participants with measurement for sedation following intervention",
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                "Number of participants with extrapyrimidal symptoms following intervention",
+                "Number of participants with adverse events following intervention",
+                "Number of participants for whom serious adverse events were assessed",
+                "Data type: endpoint vs. baseline difference in depression symptom severity",
+                "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
+                "Mean followup anxiety",
+                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+                "Number of participants with measurement for anxiety following intervention",
+                "Standard deviation of PTSD symptom severity of the control group",
+                "Sample size of PTSD symptom severity of the treatment group",
                 "Number of participants with akathisia following intervention",
-                "Number of participants with followup measurements for depression",
-                "Number of participants with followup measurements for weight",
-                "Number of participants with followup measurements for functioning",
-                "Mean followup severity of functioning",
-                "Number of participants with measurement for insomnia following intervention",
-                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
-                "Number of participants with anxiety following intervention",
-                "Standard deviation of PTSD symptom severity of the treatment group",
-                "Data type: endpoint vs. baseline difference in anxiety symptom severity",
-                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
-                "Number of participants with headache following intervention",
-                "Number of participants with nausea following intervention",
-                "Number of participants for whom a response to treatment was measured"
+                "Vomiting",
+                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                "Number of participants with measurement for headache following intervention",
+                "Number of participants who relapsed based on study criteria",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
+                "Number of participants with QTc prolongation following intervention",
+                "Number of participants for whom relapse was measured",
+                "Mean PTSD symptom severity of the control group",
+                "Data type: endpoint vs. baseline difference in human functioning",
+                "Number of participants with agitation following intervention",
+                "Standard deviation of followup anxiety",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants with insomnia following intervention",
+                "Standard deviation of followup reward sensitivity",
+                "Standard deviation of followup cognition"
             ]
         },
         "GMHO:0000201": {
             "label": "anhedonia scale",
             "definition": "A measurement scale that is used to measure anhedonia symptom severity.",
             "variables": [
-                "Followup anhedonia scale directionality",
-                "Baseline anhedonia scale directionality",
+                "Followup anhedonia scale",
                 "Baseline anhedonia scale",
-                "Followup anhedonia scale"
+                "Baseline anhedonia scale directionality",
+                "Followup anhedonia scale directionality"
             ]
         },
         "GMHO:0000131": {
@@ -126,23 +126,23 @@
             "definition": "Symptom severity that is associated with anhedonia.",
             "variables": [
                 "Number of participants for whom followup anhedonia was measured",
-                "Number of participants for whom baseline anhedonia was measured",
-                "Timepoint of followup anhedonia measurement (weeks)",
-                "Mean followup anhedonia",
-                "Standard deviation of baseline anhedonia",
                 "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
-                "Standard deviation of followup anhedonia",
-                "Mean baseline anhedonia"
+                "Standard deviation of baseline anhedonia",
+                "Timepoint of followup anhedonia measurement (weeks)",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Mean baseline anhedonia",
+                "Mean followup anhedonia",
+                "Standard deviation of followup anhedonia"
             ]
         },
         "GMHO:0000202": {
             "label": "anxiety scale",
             "definition": "A measurement scale that is used to measure anxiety symptom severity.",
             "variables": [
-                "Followup anxiety scale",
-                "Followup anxiety scale directionality",
                 "Baseline anxiety scale",
-                "Baseline anxiety scale directionality"
+                "Followup anxiety scale",
+                "Baseline anxiety scale directionality",
+                "Followup anxiety scale directionality"
             ]
         },
         "GMHO:0000143": {
@@ -150,45 +150,45 @@
             "definition": "Symptom severity that is associated with an anxiety symptom.",
             "variables": [
                 "Data type: endpoint vs. baseline difference in anxiety symptom severity",
-                "Standard deviation of baseline anxiety",
-                "Timepoint of followup anxiety measurement (weeks)",
-                "Mean baseline anxiety",
-                "Number of participants for whom baseline anxiety was measured",
+                "Mean followup anxiety",
                 "Number of participants for whom followup anxiety was measured",
-                "Standard deviation of followup anxiety",
-                "Mean followup anxiety"
+                "Standard deviation of baseline anxiety",
+                "Number of participants for whom baseline anxiety was measured",
+                "Mean baseline anxiety",
+                "Timepoint of followup anxiety measurement (weeks)",
+                "Standard deviation of followup anxiety"
             ]
         },
         "OBI:0000679": {
             "label": "average value",
             "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data.",
             "variables": [
-                "Mean PTSD symptom severity of the control group",
-                "Mean followup anhedonia",
-                "Mean followup weight",
-                "Mean baseline anxiety",
                 "Mean followup anxiety",
-                "Mean dose delivered",
-                "Mean followup depression",
-                "Mean followup prolactin",
                 "Mean baseline functioning",
-                "Mean followup reward sensitivity",
-                "Mean baseline prolactin",
-                "Mean baseline reward sensitivity",
-                "Mean baseline cognition",
-                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-                "Mean drug dose delivered",
-                "Mean followup severity of functioning",
-                "Mean baseline anhedonia",
-                "Mean baseline depression",
-                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
-                "Mean baseline weight",
-                "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
-                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
-                "Mean PTSD symptom severity of the treatment group",
-                "Mean followup cognition",
+                "Mean followup prolactin",
                 "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
-                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis"
+                "Mean followup severity of functioning",
+                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean followup anhedonia",
+                "Mean followup depression",
+                "Mean baseline depression",
+                "Mean baseline weight",
+                "Mean baseline reward sensitivity",
+                "Mean dose delivered",
+                "Mean baseline cognition",
+                "Mean followup reward sensitivity",
+                "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
+                "Mean PTSD symptom severity of the treatment group",
+                "Mean followup weight",
+                "Mean PTSD symptom severity of the control group",
+                "Mean followup cognition",
+                "Mean drug dose delivered",
+                "Mean baseline anxiety",
+                "Mean baseline anhedonia",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean baseline prolactin"
             ]
         },
         "GMHO:0000054": {
@@ -216,29 +216,29 @@
             "label": "dizziness following intervention",
             "definition": "An adverse event following an intervention that involves experiencing dizziness.",
             "variables": [
-                "Number of participants with dizziness following intervention",
+                "Dizziness",
                 "Number of participants with measurement for dizziness following intervention",
-                "Dizziness"
+                "Number of participants with dizziness following intervention"
             ]
         },
         "GMHO:0000001": {
             "label": "dose of pharmacological substance",
             "definition": "Dose of pharmacological substance delivered to an individual.",
             "variables": [
-                "Maximum drug dose delivered",
                 "Mean dose delivered",
-                "Mean drug dose delivered",
-                "Minimum drug dose delivered"
+                "Maximum drug dose delivered",
+                "Minimum drug dose delivered",
+                "Mean drug dose delivered"
             ]
         },
         "GMHO:0000002": {
             "label": "drug name",
             "definition": "A written name intended to identify a particular drug. ",
             "variables": [
-                "Treatment",
+                "Treatment details",
                 "Drug name new",
-                "Drug name",
-                "Treatment details"
+                "Treatment",
+                "Drug name"
             ]
         },
         "GMHO:0000180": {
@@ -252,34 +252,34 @@
             "label": "duration between baseline and followup measurement",
             "definition": "A temporal interval between the time of data collection for pre-intervention data and followup data in a study.",
             "variables": [
+                "Timepoint of followup anxiety measurement (weeks)",
                 "Timepoint of followup anhedonia measurement (weeks)",
-                "Timepoint of followup reward sensitivity measurement (weeks)",
-                "Timepoint of followup anxiety measurement (weeks)"
+                "Timepoint of followup reward sensitivity measurement (weeks)"
             ]
         },
         "GMHO:0000181": {
             "label": "headache following intervention",
             "definition": "A pain following intervention that has an outcome of headache.",
             "variables": [
-                "Number of participants with headache following intervention",
                 "Headache",
-                "Number of participants with measurement for headache following intervention"
+                "Number of participants with measurement for headache following intervention",
+                "Number of participants with headache following intervention"
             ]
         },
         "GMHO:0000256": {
             "label": "data type for outcome",
             "definition": "A datatype that indicates how outcomes of an intervention were obtained. ",
             "variables": [
+                "Data type: endpoint vs. baseline difference in weight",
+                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
                 "Data type: endpoint vs. baseline difference in anxiety symptom severity",
-                "Data type: endpoint vs. baseline difference in depression symptom severity",
-                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
                 "Data type: endpoint vs. baseline difference in mental processes",
                 "Data type: endpoint vs. baseline difference in human functioning",
-                "Data type: endpoint vs. baseline difference in anhedonia symptom severity",
-                "Data type: endpoint vs. baseline difference in weight",
                 "Data type: endpoint vs. baseline difference in prolactin measurement",
-                "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
-                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity"
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
+                "Data type: endpoint vs. baseline difference in depression symptom severity"
             ]
         },
         "GMHO:0000203": {
@@ -294,23 +294,23 @@
             "definition": "An adverse event following an intervention in which there is an inability to fall asleep or to stay asleep as long as desired.",
             "variables": [
                 "Insomnia",
-                "Number of participants with insomnia following intervention",
-                "Number of participants with measurement for insomnia following intervention"
+                "Number of participants with measurement for insomnia following intervention",
+                "Number of participants with insomnia following intervention"
             ]
         },
         "GMHO:0000123": {
             "label": "intervention arm",
             "definition": "A study arm that is subject to evaluation in an intervention evaluation study.",
             "variables": [
-                "Exercise complemented with treatment as usual or therapy",
-                "Sample size of PTSD symptom severity of the treatment group",
-                "Intervention arm",
-                "Number of participants who dropped out of study arm (treatment group)",
-                "Number of intervention participants randomly allocated to an arm",
                 "Mean PTSD symptom severity of the treatment group",
-                "Intervention details",
+                "Exercise complemented with treatment as usual or therapy",
+                "Number of participants who dropped out of study arm (treatment group)",
                 "Type of exercise carried out in the intervention arm",
-                "Standard deviation of PTSD symptom severity of the treatment group"
+                "Sample size of PTSD symptom severity of the treatment group",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Intervention arm",
+                "Number of intervention participants randomly allocated to an arm",
+                "Intervention details"
             ]
         },
         "GMHO:0000005": {
@@ -325,8 +325,8 @@
             "label": "maximum value",
             "definition": "A data item which denotes the largest value found in a dataset or resulting from a calculation.",
             "variables": [
-                "Maximum drug dose delivered",
-                "Maximum planned drug dose"
+                "Maximum planned drug dose",
+                "Maximum drug dose delivered"
             ]
         },
         "BCIO:015416": {
@@ -340,123 +340,123 @@
             "label": "measurement datum at baseline",
             "definition": "Measurement datum that was recorded as baseline data in a study.",
             "variables": [
-                "Mean baseline reward sensitivity",
-                "Mean baseline cognition",
-                "Number of participants for whom baseline anhedonia was measured",
-                "Mean baseline depression",
-                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of baseline anxiety",
-                "Mean baseline functioning",
-                "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
-                "Mean baseline weight",
                 "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Mean baseline depression",
                 "Standard deviation of baseline anhedonia",
-                "Mean baseline anxiety",
+                "Mean baseline functioning",
+                "Number of participants for whom baseline anhedonia was measured",
                 "Number of participants for whom baseline anxiety was measured",
+                "Standard deviation of baseline anxiety",
                 "Number of participants for whom baseline reward sensitivity was measured",
+                "Standard deviation of baseline reward sensitivity",
+                "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
+                "Mean baseline anxiety",
+                "Mean baseline weight",
+                "Mean baseline reward sensitivity",
                 "Mean baseline anhedonia",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
                 "Mean baseline prolactin",
-                "Standard deviation of baseline reward sensitivity"
+                "Mean baseline cognition"
             ]
         },
         "GMHO:0000212": {
             "label": "measurement scale at baseline",
             "definition": "A measurement scale used to measure baseline data in a study.",
             "variables": [
-                "Baseline reward sensitivity scale directionality",
                 "Baseline anhedonia scale",
-                "Baseline anhedonia scale directionality",
-                "Baseline reward sensitivity scale",
+                "Baseline anxiety scale",
+                "Baseline reward sensitivity scale directionality",
                 "Baseline anxiety scale directionality",
-                "Baseline anxiety scale"
+                "Baseline anhedonia scale directionality",
+                "Baseline reward sensitivity scale"
             ]
         },
         "GMHO:0000205": {
             "label": "measurement scale at followup",
             "definition": "A measurement scale used to measure followup data in a study.",
             "variables": [
-                "Followup anxiety scale directionality",
-                "Followup anhedonia scale directionality",
+                "Followup reward sensitivity scale",
+                "Followup reward sensitivity scale directionality",
                 "Followup anxiety scale",
                 "Followup anhedonia scale",
-                "Followup reward sensitivity scale",
-                "Followup reward sensitivity scale directionality"
+                "Followup anhedonia scale directionality",
+                "Followup anxiety scale directionality"
             ]
         },
         "STATO:0000150": {
             "label": "minimum value",
             "definition": "A data item which denotes the smallest value found in a dataset or resulting from a calculation.",
             "variables": [
-                "Minimum drug dose delivered",
-                "Minimum planned drug dose"
+                "Minimum planned drug dose",
+                "Minimum drug dose delivered"
             ]
         },
         "GMHO:0000183": {
             "label": "nausea following intervention",
             "definition": "A digestive system adverse event following intervention that has an outcome of nausea, a gastric discomfort associated with the inclination to vomit",
             "variables": [
+                "Number of participants with measurement for nausea following intervention",
                 "Number of participants with nausea following intervention",
-                "Nausea",
-                "Number of participants with measurement for nausea following intervention"
+                "Nausea"
             ]
         },
         "GMHO:0000213": {
             "label": "number of female biological sex",
             "definition": "The number of female biological sex in a population.",
             "variables": [
-                "Number of females in study",
-                "Number of female participants"
+                "Number of female participants",
+                "Number of females in study"
             ]
         },
         "GMHO:0000206": {
             "label": "number of participants with measurement",
             "definition": "Number of intervention participants for whom a measurement was made.",
             "variables": [
-                "Number of participants for whom followup anhedonia was measured",
-                "Number of participants with measurement for QTc prolongation following intervention",
-                "Number of participants for whom baseline reward sensitivity was measured",
-                "Number of participants with measurement for hypotension following intervention",
-                "Number of participants with measurement for headache following intervention",
-                "Number of participants with measurement for agitation following intervention",
-                "Number of participants for whom relapse was measured",
-                "Number of participants for whom baseline anhedonia was measured",
-                "Number of participants with measurements for anticholinergic symptom following intervention",
                 "Number of participants for whom followup reward sensitivity was measured",
-                "Number of participants with measurement for akathisia following intervention",
-                "Number of participants with measurement for nausea following intervention",
-                "Number of participants with followup measurements for prolactin",
-                "Number of participants with measurement for anxiety following intervention",
-                "Number of participants for whom followup anxiety was measured",
-                "Sample size of PTSD symptom severity of the control group",
-                "Number of participants with measurement for sedation following intervention",
-                "Number of participants with measurement for hyperprolactinemia following intervention",
-                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
-                "Sample size of PTSD symptom severity of the treatment group",
-                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for depression",
-                "Number of participants with followup measurements for weight",
-                "Number of participants with followup measurements for functioning",
-                "Number of participants with measurement for adverse events following intervention",
-                "Number of participants with measurement for insomnia following intervention",
-                "Number of participants for whom serious adverse events were assessed",
-                "Number of participants with anxiety following intervention",
-                "Number of participants with measurement for weight increase following intervention",
-                "Number of participants with measurement for dizziness following intervention",
+                "Number of participants with measurement for QTc prolongation following intervention",
                 "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for cognition",
-                "Number of participants for whom deaths were assessed",
+                "Number of participants for whom baseline reward sensitivity was measured",
                 "Number of participants for whom baseline anxiety was measured",
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for nausea following intervention",
+                "Number of participants with measurement for adverse events following intervention",
+                "Number of participants with followup measurements for cognition",
+                "Number of participants with measurement for anxiety following intervention",
+                "Sample size of PTSD symptom severity of the treatment group",
+                "Number of participants with followup measurements for functioning",
+                "Number of participants with measurement for insomnia following intervention",
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Number of participants with measurement for hyperprolactinemia following intervention",
                 "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
-                "Number of participants for whom a response to treatment was measured"
+                "Number of participants with measurement for agitation following intervention",
+                "Number of participants with measurement for extrapyrimidal symptoms following intervention",
+                "Number of participants with followup measurements for depression",
+                "Number of participants with measurement for headache following intervention",
+                "Number of participants for whom deaths were assessed",
+                "Number of participants for whom relapse was measured",
+                "Number of participants for whom a response to treatment was measured",
+                "Number of participants with measurement for akathisia following intervention",
+                "Number of participants for whom followup anxiety was measured",
+                "Number of participants for whom baseline anhedonia was measured",
+                "Number of participants with followup measurements for prolactin",
+                "Number of participants with followup measurements for weight",
+                "Number of participants with measurements for anticholinergic symptom following intervention",
+                "Number of participants for whom followup anhedonia was measured",
+                "Number of participants with measurement for weight increase following intervention",
+                "Sample size of PTSD symptom severity of the control group",
+                "Number of participants with measurement for hypotension following intervention",
+                "Number of participants with measurement for sedation following intervention",
+                "Number of participants with measurement for dizziness following intervention",
+                "Number of participants for whom serious adverse events were assessed"
             ]
         },
         "GMHO:0000154": {
             "label": "number of randomised intervention participants",
             "definition": "Number of intervention participants who were randomly allocated to study arms within an intervention.",
             "variables": [
-                "Number of participants randomised in study",
                 "Number of intervention participants randomly allocated to an arm",
-                "Number of intervention participants randomly acllocated to an arm"
+                "Number of intervention participants randomly acllocated to an arm",
+                "Number of participants randomised in study"
             ]
         },
         "GMHO:0000200": {
@@ -486,58 +486,58 @@
             "label": "reward sensitivity",
             "definition": "A bodily disposition to detect, pursue, learn from, and derive pleasure from stimuli perceived as positive.",
             "variables": [
-                "Mean baseline reward sensitivity",
-                "Standard deviation of followup reward sensitivity",
                 "Number of participants for whom followup reward sensitivity was measured",
+                "Standard deviation of followup reward sensitivity",
                 "Number of participants for whom baseline reward sensitivity was measured",
-                "Mean followup reward sensitivity",
+                "Standard deviation of baseline reward sensitivity",
                 "Followup reward sensitivity data type",
                 "Timepoint of followup reward sensitivity measurement (weeks)",
-                "Standard deviation of baseline reward sensitivity"
+                "Mean baseline reward sensitivity",
+                "Mean followup reward sensitivity"
             ]
         },
         "GMHO:0000207": {
             "label": "reward sensitivity scale",
             "definition": "A measurement scale that is used to measure reward sensitivity.",
             "variables": [
-                "Baseline reward sensitivity scale directionality",
+                "Followup reward sensitivity scale",
                 "Followup reward sensitivity scale directionality",
                 "Baseline reward sensitivity scale",
-                "Followup reward sensitivity scale"
+                "Baseline reward sensitivity scale directionality"
             ]
         },
         "GMHO:0000208": {
             "label": "scale directionality",
             "definition": "An information content entity about the orientation of a measurement's scoring system in which higher numerical levels can indicate higher or lower levels of a construct. ",
             "variables": [
+                "Followup reward sensitivity scale directionality",
                 "Baseline reward sensitivity scale directionality",
-                "Followup anxiety scale directionality",
-                "Baseline anhedonia scale directionality",
-                "Baseline anxiety scale directionality",
                 "Followup anhedonia scale directionality",
-                "Followup reward sensitivity scale directionality"
+                "Baseline anxiety scale directionality",
+                "Followup anxiety scale directionality",
+                "Baseline anhedonia scale directionality"
             ]
         },
         "OBCS:0000077": {
             "label": "standard deviation",
             "definition": "A quantitative confidence value that measures the variability of data around the mean.",
             "variables": [
-                "Standard deviation of followup functioning",
-                "Standard deviation of followup reward sensitivity",
-                "Standard deviation of PTSD symptom severity of the control group",
-                "Standard deviation of baseline anxiety",
-                "Standard deviation of followup cognition",
-                "Standard deviation of followup prolactin",
-                "Standard deviation of PTSD symptom severity of the treatment group",
-                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of baseline anhedonia",
                 "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of followup anhedonia",
-                "Standard deviation of followup weight",
                 "Standard deviation of followup depression",
+                "Standard deviation of PTSD symptom severity of the control group",
+                "Standard deviation of baseline anhedonia",
+                "Standard deviation of followup reward sensitivity",
+                "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup prolactin",
+                "Standard deviation of baseline anxiety",
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Standard deviation of baseline reward sensitivity",
+                "Standard deviation of followup functioning",
+                "Standard deviation of followup cognition",
+                "Standard deviation of followup weight",
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
                 "Standard deviation of followup anxiety",
-                "Standard deviation of baseline reward sensitivity"
+                "Standard deviation of followup anhedonia"
             ]
         },
         "ICO:0000087": {
@@ -601,40 +601,40 @@
             "label": "positive intervention outcome",
             "definition": "An intervention outcome that is positively influenced by the intervention. ",
             "variables": [
-                "Number of participants for whom a response to treatment was measured",
-                "Number of participants who had a response to treatments"
+                "Number of participants who had a response to treatments",
+                "Number of participants for whom a response to treatment was measured"
             ]
         },
         "GMHO:0000214": {
             "label": "number of participants with specific outcome",
             "definition": "Number of intervention participants for whom an outcome has been identified within a study.",
             "variables": [
-                "Number of participants with adverse events following intervention",
-                "Number of participants with serious adverse events following intervention",
-                "Number of participants who had a response to treatments",
-                "Number of participants with hypotension following intervention",
-                "Number of participants with agitation following intervention",
-                "Number of participants with akathisia following intervention",
-                "Number of participants with QTc prolongation following intervention",
-                "Number of participant deaths",
-                "Number of participants with headache following intervention",
-                "Number of participants with insomnia following intervention",
-                "Number of participants with dizziness following intervention",
-                "Number of participants with extrapyrimidal symptoms following intervention",
-                "Number of participants with weight increase following intervention",
-                "Number of participants who relapsed based on study criteria",
                 "Number of participants with nausea following intervention",
+                "Number of participants with weight increase following intervention",
+                "Number of participants with anticholinergic symptom following intervention",
+                "Number of participants who relapsed based on study criteria",
+                "Number of participants with QTc prolongation following intervention",
                 "Number of participants with sedation following intervention",
-                "Number of participants with hyperprolactinemia following intervention",
-                "Number of participants with anticholinergic symptom following intervention"
+                "Number of participants with serious adverse events following intervention",
+                "Number of participants with dizziness following intervention",
+                "Number of participants with insomnia following intervention",
+                "Number of participants with hypotension following intervention",
+                "Number of participants who had a response to treatments",
+                "Number of participants with headache following intervention",
+                "Number of participant deaths",
+                "Number of participants with akathisia following intervention",
+                "Number of participants with agitation following intervention",
+                "Number of participants with extrapyrimidal symptoms following intervention",
+                "Number of participants with adverse events following intervention",
+                "Number of participants with hyperprolactinemia following intervention"
             ]
         },
         "ADDICTO:0001308": {
             "label": "relapsed",
             "definition": "A health status in which the symptoms of a person suffering from a disorder have reverted from a desired level to an undesired level.",
             "variables": [
-                "Number of participants who relapsed based on study criteria",
-                "Number of participants for whom relapse was measured"
+                "Number of participants for whom relapse was measured",
+                "Number of participants who relapsed based on study criteria"
             ]
         },
         "GMHO:0000075": {
@@ -665,8 +665,8 @@
             "label": "death following an intervention",
             "definition": "A serious adverse event following an intervention that has an outcome of death.",
             "variables": [
-                "Number of participant deaths",
-                "Number of participants for whom deaths were assessed"
+                "Number of participants for whom deaths were assessed",
+                "Number of participant deaths"
             ]
         },
         "GMHO:0000081": {
@@ -731,11 +731,11 @@
             "label": "psychotic disorder symptom severity",
             "definition": "Symptom severity that is associated with a psychotic disorder symptom.",
             "variables": [
-                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
-                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
                 "Mean baseline severity of symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of symptoms related to psychotic disorder diagnosis",
                 "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis"
+                "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+                "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity"
             ]
         },
         "GMHO:0000226": {
@@ -749,10 +749,10 @@
             "label": "positive psychotic disorder symptom severity",
             "definition": "Psychotic disorder symptom severity that is associated with positive psychotic disorder symptoms.",
             "variables": [
-                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
                 "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
-                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
                 "Mean baseline severity of positive symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
                 "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity"
             ]
         },
@@ -767,11 +767,11 @@
             "label": "negative psychotic disorder symptom severity",
             "definition": "Psychotic disorder symptom severity that is associated with negative psychotic disorder symptoms.",
             "variables": [
-                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis",
-                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
-                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
                 "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
-                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis"
+                "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
+                "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
+                "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                "Mean baseline severity of negative symptoms related to psychotic disorder diagnosis"
             ]
         },
         "GMHO:0000224": {
@@ -785,10 +785,10 @@
             "label": "human functioning",
             "definition": "A bodily disposition to realise processes that influence a person's life quality.",
             "variables": [
-                "Standard deviation of followup functioning",
-                "Mean baseline functioning",
-                "Data type: endpoint vs. baseline difference in human functioning",
                 "Number of participants with followup measurements for functioning",
+                "Mean baseline functioning",
+                "Standard deviation of followup functioning",
+                "Data type: endpoint vs. baseline difference in human functioning",
                 "Mean followup severity of functioning"
             ]
         },
@@ -804,11 +804,11 @@
             "definition": "A bodily process that occurs in the brain, and that can of itself be conscious, or can give rise to a process that can of itself be conscious or can give rise to behaviour.",
             "variables": [
                 "",
-                "Mean baseline cognition",
-                "Standard deviation of followup cognition",
                 "Data type: endpoint vs. baseline difference in mental processes",
+                "Standard deviation of followup cognition",
                 "Number of participants with followup measurements for cognition",
-                "Mean followup cognition"
+                "Mean followup cognition",
+                "Mean baseline cognition"
             ]
         },
         "GMHO:0000223": {
@@ -822,11 +822,11 @@
             "label": "depression symptom severity",
             "definition": "Symptom severity that is associated with a depression symptom.",
             "variables": [
-                "Data type: endpoint vs. baseline difference in depression symptom severity",
-                "Mean baseline depression",
-                "Number of participants with followup measurements for depression",
+                "Mean followup depression",
                 "Standard deviation of followup depression",
-                "Mean followup depression"
+                "Mean baseline depression",
+                "Data type: endpoint vs. baseline difference in depression symptom severity",
+                "Number of participants with followup measurements for depression"
             ]
         },
         "GMHO:0000230": {
@@ -840,11 +840,11 @@
             "label": "weight",
             "definition": "A physical quality inhering in a bearer that has mass near a gravitational body.",
             "variables": [
-                "Mean baseline weight",
+                "Data type: endpoint vs. baseline difference in weight",
                 "Mean followup weight",
+                "Mean baseline weight",
                 "Standard deviation of followup weight",
-                "Number of participants with followup measurements for weight",
-                "Data type: endpoint vs. baseline difference in weight"
+                "Number of participants with followup measurements for weight"
             ]
         },
         "GMHO:0000138": {
@@ -865,10 +865,10 @@
             "label": "prolactin measurement",
             "definition": "Quantification of prolactin in a sample.",
             "variables": [
-                "Mean followup prolactin",
                 "",
-                "Data type: endpoint vs. baseline difference in prolactin measurement",
+                "Mean followup prolactin",
                 "Number of participants with followup measurements for prolactin",
+                "Data type: endpoint vs. baseline difference in prolactin measurement",
                 "Mean baseline prolactin"
             ]
         },
@@ -891,8 +891,8 @@
             "label": "anxiousness following intervention",
             "definition": "An adverse event following an intervention that involves feeling anxiety.",
             "variables": [
-                "Number of participants with measurement for anxiety following intervention",
-                "Number of participants with anxiety following intervention"
+                "Number of participants with anxiety following intervention",
+                "Number of participants with measurement for anxiety following intervention"
             ]
         },
         "GMHO:0000229": {
@@ -923,8 +923,8 @@
             "definition": "QT interval corrected for heart rate calculated by the QT interval divided by the square root of the interval from one QRS complex to the onset of the next QRS complex measured in seconds.",
             "variables": [
                 "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition",
-                "Number of participants with measurement for QTc prolongation following intervention",
-                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (milisecond)"
+                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (milisecond)",
+                "Number of participants with measurement for QTc prolongation following intervention"
             ]
         },
         "GMHO:0000233": {
@@ -947,8 +947,8 @@
             "label": "akathisia following pharmacological intervention",
             "definition": "A drug-induced movement disorder following intervention that involves feeling restlessness, increased urges to move and reduced capability to suppress such urges.",
             "variables": [
-                "Number of participants with measurement for akathisia following intervention",
-                "Number of participants with akathisia following intervention"
+                "Number of participants with akathisia following intervention",
+                "Number of participants with measurement for akathisia following intervention"
             ]
         },
         "GMHO:0000063": {
@@ -963,16 +963,16 @@
             "label": "adverse increase in body weight",
             "definition": "An adverse change in a body weight relating to weight gain.",
             "variables": [
-                "Number of participants with measurement for weight increase following intervention",
-                "Number of participants with weight increase following intervention"
+                "Number of participants with weight increase following intervention",
+                "Number of participants with measurement for weight increase following intervention"
             ]
         },
         "GMHO:0000236": {
             "label": "midpoint estimate for the mean difference of an outcome between the intervention and comparison condition",
             "definition": "A point estimate about the mean difference between an intervention and comparison condition in a study.",
             "variables": [
-                "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition",
-                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)"
+                "Midpoint estimate for the mean difference in QTc between the intervention and comparison condition (millisecond)",
+                "Standard error for midpoint estimate regarding he mean difference in QTc between the intervention and control condition"
             ]
         },
         "STATO:0000562": {
@@ -1780,8 +1780,8 @@
             "label": "physical performance behaviour",
             "definition": "An individual human behaviour that involves maintenance or improvement of flexibility, strength, balance or cardiovascular fitness.",
             "variables": [
-                "Intensity of physical exercise behaviour",
-                "Type of exercise carried out in the intervention arm"
+                "Type of exercise carried out in the intervention arm",
+                "Intensity of physical exercise behaviour"
             ]
         },
         "GMHO:0000239": {
@@ -1802,20 +1802,20 @@
             "label": "mental health intervention content",
             "definition": "An intervention content that is part of a mental health intervention.",
             "variables": [
-                "Intervention details",
-                "Exercise complemented with treatment as usual or therapy"
+                "Exercise complemented with treatment as usual or therapy",
+                "Intervention details"
             ]
         },
         "GMHO:0000122": {
             "label": "control arm",
             "definition": "A study arm designation as a comparator to some intervention arm.",
             "variables": [
-                "Number of participants who dropped out of study arm (control group)",
+                "Sample size of PTSD symptom severity of the control group",
                 "Standard deviation of PTSD symptom severity of the control group",
                 "Mean PTSD symptom severity of the control group",
-                "Number of intervention participants randomly allocated to an arm",
+                "Number of participants who dropped out of study arm (control group)",
                 "Control group details",
-                "Sample size of PTSD symptom severity of the control group"
+                "Number of intervention participants randomly allocated to an arm"
             ]
         },
         "GMHO:0000240": {
@@ -1836,13 +1836,13 @@
             "label": "post-traumatic stress symptom severity",
             "definition": "Symptom severity relating to a post-traumatic stress symptom.",
             "variables": [
+                "Sample size of PTSD symptom severity of the control group",
+                "Mean PTSD symptom severity of the treatment group",
                 "Standard deviation of PTSD symptom severity of the control group",
                 "Sample size of PTSD symptom severity of the treatment group",
                 "Mean PTSD symptom severity of the control group",
-                "Mean PTSD symptom severity of the treatment group",
-                "Risk of bias associated with measurement of PTSD outcome data",
-                "Sample size of PTSD symptom severity of the control group",
-                "Standard deviation of PTSD symptom severity of the treatment group"
+                "Standard deviation of PTSD symptom severity of the treatment group",
+                "Risk of bias associated with measurement of PTSD outcome data"
             ]
         },
         "BCIO:050435": {
@@ -2653,178 +2653,6 @@
         ],
         "Number of crossover periods": [
             "GMHO:0000237"
-        ],
-        "": [
-            "BCIO:015327",
-            "STATO:0000599",
-            "GMHO:0000036",
-            "GMHO:0000049",
-            "GMHO:0000188",
-            "BCIO:026045",
-            "GMHO:0000130",
-            "GMHO:0000011",
-            "GMHO:0000141",
-            "GMHO:0000142",
-            "OMRSE:00000061",
-            "BCIO:006119",
-            "GMHO:0000145",
-            "BCIO:050315",
-            "ENVO:00000091",
-            "BCIO:010000",
-            "GMHO:0000053",
-            "BCIO:015105",
-            "MF:0000032",
-            "OGMS:0000060",
-            "MF:0000074",
-            "GMHO:0000056",
-            "GMHO:0000057",
-            "BCIO:026017",
-            "CHEBI:35488",
-            "CHEBI:35470",
-            "IAO:0000301",
-            "OGMS:0000123",
-            "GMHO:0000016",
-            "OGMS:0000015",
-            "GMHO:0000091",
-            "CMO:0000000",
-            "GMHO:0000020",
-            "GMHO:0000021",
-            "BCIO:026019",
-            "BCIO:026020",
-            "OBCS:0000070",
-            "BCIO:026038",
-            "ADDICTO:0001255",
-            "IAO:0000027",
-            "OBI:0200000",
-            "GMHO:0000058",
-            "GMHO:0000176",
-            "GMHO:0000061",
-            "EFO:0006842",
-            "GMHO:0000148",
-            "IAO:0000033",
-            "OBI:0000984",
-            "BCIO:026022",
-            "OBI:0500026",
-            "BCIO:035000",
-            "BCIO:050443",
-            "EFO:0000001",
-            "OGMS:0000087",
-            "OMRSE:00000062",
-            "BCIO:026039",
-            "BFO:0000024",
-            "PATO:0001035",
-            "ENVO:00000111",
-            "BFO:0000034",
-            "BFO:0000031",
-            "GAZ:00000448",
-            "EFO:0004468",
-            "ENVO:00000106",
-            "EFO:0004541",
-            "OGMS:0000096",
-            "BCIO:015092",
-            "GMHO:0000189",
-            "OMRSE:00000102",
-            "CMO:0000230",
-            "EFO:0004612",
-            "CHEBI:47775",
-            "GMHO:0000065",
-            "EFO:0004730",
-            "MF:0000016",
-            "BFO:0000141",
-            "BCIO:036000",
-            "BCIO:036100",
-            "IAO:0000030",
-            "GMHO:0000150",
-            "IAO:0000303",
-            "BCIO:037000",
-            "BCIO:023000",
-            "BCIO:038000",
-            "EFO:0004529",
-            "EFO:0005105",
-            "CHEBI:50404",
-            "BCIO:036026",
-            "EFO:0004611",
-            "CHEBI:47774",
-            "BCIO:015107",
-            "BFO:0000040",
-            "MF:0000033",
-            "MF:0000020",
-            "BCIO:026040",
-            "ADDICTO:0001265",
-            "BCIO:026044",
-            "GMHO:0000069",
-            "ADDICTO:0001292",
-            "ADDICTO:0001258",
-            "BCIO:008515",
-            "GMHO:0000152",
-            "BFO:0000027",
-            "BCIO:026037",
-            "BFO:0000038",
-            "BCIO:026046",
-            "GMHO:0000184",
-            "OBI:0500006",
-            "ENVO:00000562",
-            "BCIO:026048",
-            "OGMS:0000061",
-            "GMHO:0000190",
-            "BCIO:050300",
-            "PDRO:0000074",
-            "PATO:0001241",
-            "PATO:0001018",
-            "IAO:0000104",
-            "OBI:0000011",
-            "GMHO:0000077",
-            "GMHO:0000174",
-            "STATO:0000412",
-            "GMHO:0000166",
-            "GMHO:0000167",
-            "BCIO:026043",
-            "BFO:0000015",
-            "EFO:0007003",
-            "GMHO:0000187",
-            "GMHO:0000172",
-            "CHEBI:35471",
-            "BCIO:026042",
-            "OBI:0000071",
-            "STATO:0000184",
-            "IAO:0000640",
-            "ADDICTO:0001262",
-            "GMHO:0000191",
-            "ENVO:00000469",
-            "SEPIO:0000125",
-            "OMRSE:00000191",
-            "BCIO:026036",
-            "ENVO:00000064",
-            "OBI:0001755",
-            "ADDICTO:0000399",
-            "ADDICTO:0001271",
-            "BFO:0000029",
-            "BFO:0000006",
-            "BFO:0000020",
-            "OPMI:0000326",
-            "GMHO:0000127",
-            "OBI:0500000",
-            "GMHO:0000168",
-            "OGMS:0000020",
-            "BFO:0000008",
-            "EFO:0004574",
-            "CHEBI:35473",
-            "BCIO:026041",
-            "STATO:0000039",
-            "IAO:0000109",
-            "OBCS:0000011",
-            "BCIO:015415",
-            "STATO:0000471",
-            "BCIO:050435",
-            "GMHO:0000125",
-            "BCIO:041000",
-            "GMHO:0000178",
-            "GMHO:0000038",
-            "OntoDT:487147",
-            "GMHO:0000087 (Outcome)",
-            "GMHO:0000087 (Population)",
-            "GMHO:0000123 (PTSD)",
-            "GMHO:0000122 (PTSD)"
         ],
         "Type of exercise carried out in the intervention arm": [
             "BCIO:036042",
