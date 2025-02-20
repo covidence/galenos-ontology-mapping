@@ -129,7 +129,7 @@ def process_mapping(
 ) -> tuple[dict[str, dict], dict[str, list], dict[str, str], list[dict]]:
     hierarchy: list[dict] = []
     file_path = os.path.join(script_dir, "ontology_mapping.csv")
-    output_path = "frontend/src/data/mapping.json"
+    output_path = "output/mapping.json"
 
     with open(file_path, mode="r", encoding="utf-8") as csvfile:
         ontology_mapping = list(csv.DictReader(csvfile))
@@ -162,7 +162,7 @@ def process_mapping(
 
 
 def store_dictionary(script_dir, ontology, label_to_class):
-    output_path = "frontend/src/data/dictionary.json"
+    output_path = "output/dictionary.json"
     with open(os.path.join(script_dir, output_path), "w") as json_file:
         serializable_ontology = ontology.copy()
 
@@ -179,8 +179,8 @@ def store_dictionary(script_dir, ontology, label_to_class):
 
 
 def merge_lsr_data():
-    directory_path = "./data"
-    output_path = "./frontend/src/data/merged_data.json"
+    directory_path = "./input"
+    output_path = "./output/merged_data.json"
     lsr_files = {
         1: "df_amended_20240430.csv",
         2: "LSR2data_V1.csv",
