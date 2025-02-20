@@ -75,3 +75,5 @@ def merge_files_into_json(
         f.write(merged_json)
 
     print(f"Merged data saved to {output_json_path}")
+
+    return merged_df

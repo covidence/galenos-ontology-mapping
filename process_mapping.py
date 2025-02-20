@@ -2,18 +2,16 @@ import csv
 import os
 import json
 from merge_lsr_data import merge_files_into_json
+from colorama import Fore, Style
 
-extraction_variables: dict[str, str] = {
-    "study_name": "Study name",
-    "studlab": "Study name",
-}
-hierarchy: list[dict] = []
-ontology: dict[str, dict] = {}
-label_to_class: dict[str, list] = {}
 
 def process_ontology_mapping(
     ontology_mapping,
-):
+) -> tuple[dict[str, dict], dict[str, list], dict[str, str]]:
+    extraction_variables: dict[str, str] = {}
+    ontology: dict[str, dict] = {}
+    label_to_class: dict[str, list] = {}
+
     for mapping in ontology_mapping:
         class_id = mapping["Class ID"].strip()
         extraction_variable = mapping["Variable to extract"].strip()
@@ -28,40 +26,22 @@ def process_ontology_mapping(
         else:
             ontology[class_id]["variables"].add(variable_label)
 
-        if variable_label not in label_to_class:
-            label_to_class[variable_label] = [class_id]
-        else:
-            label = variable_label
-            if class_id not in label_to_class[label]:
-                label_to_class[label].append(class_id)
+        if variable_label:
+            if variable_label not in label_to_class:
+                label_to_class[variable_label] = [class_id]
+            else:
+                if class_id not in label_to_class[variable_label]:
+                    label_to_class[variable_label].append(class_id)
 
         if extraction_variable not in extraction_variables:
             extraction_variables[extraction_variable] = mapping[
                 "Understandable label for database"
             ]
 
+    return ontology, label_to_class, extraction_variables
 
-def get_current_variables(current_mapping, node_classes, parent, ontology_mapping_copy):
-    # current_variables = ontology[node_classes[0]]["variables"]
 
-    # if current_mapping["COMBO"]:
-    #     # get all variables that are common to both classes in the COMBO and store as first element of array
-    #     current_variables = [
-    #         ontology[class_id.strip()]["variables"] for class_id in node_classes
-    #     ]
-
-    #     # get the intersection of the variables in each class in the COMBO
-    #     current_variables = list(
-    #         set(current_variables[0]).intersection(*current_variables[1:])
-    #     )
-    # elif parent["variables"]:
-    #     current_variables = list(
-    #         filter(
-    #             lambda variable: variable in parent["variables"],
-    #             current_variables,
-    #         )
-    #     )
-
+def get_current_variables(current_mapping, parent, ontology_mapping_copy):
     variables = set()
 
     mapping_key = (current_mapping["COMBO"] or current_mapping["Class ID"]).strip()
@@ -76,14 +56,10 @@ def get_current_variables(current_mapping, node_classes, parent, ontology_mappin
             if variable:
                 variables.add(variable)
 
-    # mapped_variable = current_mapping["Understandable label for database"]
-
-    # if mapped_variable:
-    #     return [mapped_variable]
-
     return variables
 
-def get_ontology_items(classes: list):
+
+def get_ontology_items(classes: list, ontology: dict):
     return [
         {
             "id": stripped_id,
@@ -95,7 +71,7 @@ def get_ontology_items(classes: list):
     ]
 
 
-def append_children(node: dict, ontology_mapping: list):
+def append_children(node: dict, ontology_mapping: list, ontology: dict):
     key = node["key"].strip()
     for mapping in ontology_mapping:
         is_child = mapping["Organised under"].strip() == key
@@ -110,25 +86,48 @@ def append_children(node: dict, ontology_mapping: list):
                     [ontology[class_id.strip()]["label"] for class_id in classes]
                 )
 
-                ontology_mapping_copy = ontology_mapping.copy()
                 # find variables for current node
                 current_variables = get_current_variables(
-                    mapping, classes, node, ontology_mapping_copy
+                    mapping, node, ontology_mapping
                 )
 
                 current_node = {
                     "key": child_key,
-                    "classes": get_ontology_items(classes),
+                    "classes": get_ontology_items(classes, ontology),
                     "label": child_label,
                     "variables": list(current_variables),
                     "children": [],
                 }
                 node["children"].append(current_node)
-                ontology_mapping_copy.remove(mapping)
-                append_children(current_node, ontology_mapping_copy)
+                ontology_mapping.remove(mapping)
+                append_children(current_node, ontology_mapping, ontology)
 
 
-def process_mapping(script_dir):
+# get all unique variables in entire hierarchy
+def get_all_variables(node):
+    all_variables = set()
+    for child in node["children"]:
+        all_variables.update(child["variables"])
+        all_variables.update(get_all_variables(child))
+    return all_variables
+
+
+def print_leftover_variables(hierarchy, label_to_class):
+    hierarchy_variables = set()
+    for node in hierarchy:
+        hierarchy_variables.update(get_all_variables(node))
+
+    print(
+        Fore.RED + "Variables not present in hierarchy:",
+        set(label_to_class.keys()) - hierarchy_variables,
+        Style.RESET_ALL,
+    )
+
+
+def process_mapping(
+    script_dir,
+) -> tuple[dict[str, dict], dict[str, list], dict[str, str], list[dict]]:
+    hierarchy: list[dict] = []
     file_path = os.path.join(script_dir, "ontology_mapping.csv")
     output_path = "frontend/src/data/mapping.json"
 
@@ -136,7 +135,9 @@ def process_mapping(script_dir):
         ontology_mapping = list(csv.DictReader(csvfile))
 
         print("Parsing ontology classes and mapping of extraction variables...")
-        process_ontology_mapping(ontology_mapping)
+        ontology, label_to_class, extraction_variables = process_ontology_mapping(
+            ontology_mapping
+        )
 
         PICO = ["Population", "Intervention", "Outcome", "Research methods"]
 
@@ -150,18 +151,22 @@ def process_mapping(script_dir):
                 "children": [],
             }
             hierarchy.append(current_node)
-            append_children(current_node, ontology_mapping.copy())
+            ontology_mapping_copy = ontology_mapping.copy()
+            append_children(current_node, ontology_mapping_copy, ontology)
 
         with open(os.path.join(script_dir, output_path), "w") as json_file:
             json.dump(hierarchy, json_file, indent=2)
             print(f"Hierarchy saved to {output_path}")
 
-def store_dictionary(script_dir):
+    return ontology, label_to_class, extraction_variables, hierarchy
+
+
+def store_dictionary(script_dir, ontology, label_to_class):
     output_path = "frontend/src/data/dictionary.json"
     with open(os.path.join(script_dir, output_path), "w") as json_file:
         serializable_ontology = ontology.copy()
 
-        for class_id, class_data in serializable_ontology.items():
+        for class_data in serializable_ontology.values():
             class_data["variables"] = list(class_data["variables"])
 
         dictionary = {
@@ -176,13 +181,34 @@ def store_dictionary(script_dir):
 def merge_lsr_data():
     directory_path = "./data"
     output_path = "./frontend/src/data/merged_data.json"
-    lsr_files = {1: "df_amended_20240430.csv", 3: "LSR3_H_2024-01-22.xlsx"}
+    lsr_files = {
+        1: "df_amended_20240430.csv",
+        2: "LSR2data_V1.csv",
+        3: "LSR3_H_2024-01-22.xlsx",
+    }
 
     print("Merging LSR data...")
-    merge_files_into_json(directory_path, lsr_files, output_path, extraction_variables)
+    return merge_files_into_json(
+        directory_path, lsr_files, output_path, extraction_variables
+    )
+
+
+def print_missing_columns(merged_data, label_to_class):
+    missing_columns = set(label_to_class.keys()) - set(merged_data.columns)
+    print(
+        Fore.RED + "Columns not found in merged data:",
+        missing_columns,
+        Style.RESET_ALL,
+    )
+
 
 if __name__ == "__main__":
     script_dir = os.path.dirname(__file__)
-    process_mapping(script_dir)
-    store_dictionary(script_dir)
-    merge_lsr_data()
+    ontology, label_to_class, extraction_variables, hierarchy = process_mapping(
+        script_dir
+    )
+    print_leftover_variables(hierarchy, label_to_class)
+    store_dictionary(script_dir, ontology, label_to_class)
+    merged_data = merge_lsr_data()
+
+    print_missing_columns(merged_data, label_to_class)
