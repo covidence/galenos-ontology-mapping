@@ -118,7 +118,7 @@ def print_leftover_variables(hierarchy, label_to_class):
         hierarchy_variables.update(get_all_variables(node))
 
     print(
-        Fore.RED + "Variables not present in hierarchy:",
+        Fore.RED + "Mapped variables not included in hierarchy:",
         set(label_to_class.keys()) - hierarchy_variables,
         Style.RESET_ALL,
     )
@@ -196,7 +196,7 @@ def merge_lsr_data():
 def print_missing_columns(merged_data, label_to_class):
     missing_columns = set(label_to_class.keys()) - set(merged_data.columns)
     print(
-        Fore.RED + "Columns not found in merged data:",
+        Fore.RED + "Columns not found in LSR extraction sheets:",
         missing_columns,
         Style.RESET_ALL,
     )
