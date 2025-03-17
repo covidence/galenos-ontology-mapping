@@ -99,7 +99,6 @@ def append_children(node: dict, ontology_mapping: list, ontology: dict):
                     "children": [],
                 }
                 node["children"].append(current_node)
-                ontology_mapping.remove(mapping)
                 append_children(current_node, ontology_mapping, ontology)
 
 
@@ -195,6 +194,7 @@ def merge_lsr_data():
 
 def print_missing_columns(merged_data, label_to_class):
     missing_columns = set(label_to_class.keys()) - set(merged_data.columns)
+
     print(
         Fore.RED + "Columns not found in LSR extraction sheets:",
         missing_columns,

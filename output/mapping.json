@@ -36,9 +36,9 @@
         ],
         "label": "reward sensitivity - measurement datum at baseline",
         "variables": [
-          "Standard deviation of baseline reward sensitivity",
+          "Number of participants for whom baseline reward sensitivity was measured",
           "Mean baseline reward sensitivity",
-          "Number of participants for whom baseline reward sensitivity was measured"
+          "Standard deviation of baseline reward sensitivity"
         ],
         "children": [
           {
@@ -136,6 +136,21 @@
         "label": "intervention population",
         "variables": [
           "Intervention population"
+        ],
+        "children": []
+      },
+      {
+        "key": "GMHO:0000255",
+        "classes": [
+          {
+            "id": "GMHO:0000255",
+            "label": "aggregate symptom severity",
+            "definition": "A data item that is about a collection of aggregate symptom severity."
+          }
+        ],
+        "label": "aggregate symptom severity",
+        "variables": [
+          "Severity of condition"
         ],
         "children": []
       },
@@ -366,8 +381,8 @@
             ],
             "label": "number of female biological sex",
             "variables": [
-              "Number of females in study",
-              "Number of female participants"
+              "Number of female participants",
+              "Number of females in study"
             ],
             "children": []
           },
@@ -416,9 +431,9 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at baseline",
             "variables": [
-              "Mean baseline anhedonia",
+              "Number of participants for whom baseline anhedonia was measured",
               "Standard deviation of baseline anhedonia",
-              "Number of participants for whom baseline anhedonia was measured"
+              "Mean baseline anhedonia"
             ],
             "children": [
               {
@@ -437,8 +452,8 @@
                 ],
                 "label": "anhedonia scale - measurement scale at baseline",
                 "variables": [
-                  "Baseline anhedonia scale directionality",
-                  "Baseline anhedonia scale"
+                  "Baseline anhedonia scale",
+                  "Baseline anhedonia scale directionality"
                 ],
                 "children": [
                   {
@@ -521,9 +536,9 @@
             ],
             "label": "anxiety symptom severity - measurement datum at baseline",
             "variables": [
-              "Number of participants for whom baseline anxiety was measured",
+              "Mean baseline anxiety",
               "Standard deviation of baseline anxiety",
-              "Mean baseline anxiety"
+              "Number of participants for whom baseline anxiety was measured"
             ],
             "children": [
               {
@@ -853,23 +868,296 @@
               "Exercise complemented with treatment as usual or therapy",
               "Intervention details"
             ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000242",
+            "classes": [
+              {
+                "id": "GMHO:0000242",
+                "label": "intervention dose",
+                "definition": "An intervention attribute that is its amount."
+              }
+            ],
+            "label": "intervention dose",
+            "variables": [],
             "children": [
               {
-                "key": "GMHO:0000004",
+                "key": "GMHO:0000001",
                 "classes": [
                   {
-                    "id": "GMHO:0000004",
-                    "label": "intervention arm name",
-                    "definition": "A written name intended to identify a particular intervention arm."
+                    "id": "GMHO:0000001",
+                    "label": "dose of pharmacological substance",
+                    "definition": "Dose of pharmacological substance delivered to an individual."
                   }
                 ],
-                "label": "intervention arm name",
+                "label": "dose of pharmacological substance",
                 "variables": [
-                  "Intervention arm name"
+                  "Mean dose delivered",
+                  "Mean drug dose delivered",
+                  "Maximum drug dose delivered",
+                  "Minimum drug dose delivered"
+                ],
+                "children": [
+                  {
+                    "key": "OBI:0000679",
+                    "classes": [
+                      {
+                        "id": "OBI:0000679",
+                        "label": "average value",
+                        "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data."
+                      }
+                    ],
+                    "label": "average value",
+                    "variables": [
+                      "Mean dose delivered",
+                      "Mean drug dose delivered"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "STATO:0000151",
+                    "classes": [
+                      {
+                        "id": "STATO:0000151",
+                        "label": "maximum value",
+                        "definition": "A data item which denotes the largest value found in a dataset or resulting from a calculation."
+                      }
+                    ],
+                    "label": "maximum value",
+                    "variables": [
+                      "Maximum drug dose delivered"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "STATO:0000150",
+                    "classes": [
+                      {
+                        "id": "STATO:0000150",
+                        "label": "minimum value",
+                        "definition": "A data item which denotes the smallest value found in a dataset or resulting from a calculation."
+                      }
+                    ],
+                    "label": "minimum value",
+                    "variables": [
+                      "Minimum drug dose delivered"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "key": "GMHO:0000200",
+                "classes": [
+                  {
+                    "id": "GMHO:0000200",
+                    "label": "planned pharmacological substance dose",
+                    "definition": "A plan specification about the dose of pharmacological substance."
+                  }
+                ],
+                "label": "planned pharmacological substance dose",
+                "variables": [
+                  "Maximum planned drug dose",
+                  "Minimum planned drug dose"
+                ],
+                "children": [
+                  {
+                    "key": "STATO:0000151",
+                    "classes": [
+                      {
+                        "id": "STATO:0000151",
+                        "label": "maximum value",
+                        "definition": "A data item which denotes the largest value found in a dataset or resulting from a calculation."
+                      }
+                    ],
+                    "label": "maximum value",
+                    "variables": [
+                      "Maximum planned drug dose"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "STATO:0000150",
+                    "classes": [
+                      {
+                        "id": "STATO:0000150",
+                        "label": "minimum value",
+                        "definition": "A data item which denotes the smallest value found in a dataset or resulting from a calculation."
+                      }
+                    ],
+                    "label": "minimum value",
+                    "variables": [
+                      "Minimum planned drug dose"
+                    ],
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "key": "GMHO:0000247",
+            "classes": [
+              {
+                "id": "GMHO:0000247",
+                "label": "intervention technique",
+                "definition": "A planned process that is the smallest part of an intervention that is observable, replicable and on its own has the potential to influence an intervention outcome."
+              }
+            ],
+            "label": "intervention technique",
+            "variables": [],
+            "children": [
+              {
+                "key": "GMHO:0000002",
+                "classes": [
+                  {
+                    "id": "GMHO:0000002",
+                    "label": "drug name",
+                    "definition": "A written name intended to identify a particular drug. "
+                  }
+                ],
+                "label": "drug name",
+                "variables": [
+                  "Treatment details",
+                  "Drug name",
+                  "Treatment"
+                ],
+                "children": []
+              },
+              {
+                "key": "BCIO:036042",
+                "classes": [
+                  {
+                    "id": "BCIO:036042",
+                    "label": "physical performance behaviour",
+                    "definition": "An individual human behaviour that involves maintenance or improvement of flexibility, strength, balance or cardiovascular fitness."
+                  }
+                ],
+                "label": "physical performance behaviour",
+                "variables": [
+                  "Intensity of physical exercise behaviour",
+                  "Type of exercise carried out in the intervention arm"
+                ],
+                "children": [
+                  {
+                    "key": "GMHO:0000123",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000123",
+                        "label": "intervention arm",
+                        "definition": "A study arm that is subject to evaluation in an intervention evaluation study."
+                      }
+                    ],
+                    "label": "intervention arm",
+                    "variables": [
+                      "Type of exercise carried out in the intervention arm"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "BCIO:050432",
+                    "classes": [
+                      {
+                        "id": "BCIO:050432",
+                        "label": "physical exertion expended on a behaviour",
+                        "definition": "A behavioural attribute that is the level of musculoskeletal work expended on the behaviour to be enacted."
+                      }
+                    ],
+                    "label": "physical exertion expended on a behaviour",
+                    "variables": [
+                      "Intensity of physical exercise behaviour"
+                    ],
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "key": "GMHO:0000239",
+                "classes": [
+                  {
+                    "id": "GMHO:0000239",
+                    "label": "psychological treatment",
+                    "definition": "Mental health intervention content that uses communication or recommended tasks to assess and improve a person\u2019s adaptive mental or behavioural functioning."
+                  }
+                ],
+                "label": "psychological treatment",
+                "variables": [
+                  "Type of psychological treatment"
                 ],
                 "children": []
               }
             ]
+          }
+        ]
+      },
+      {
+        "key": "BCIO:045000",
+        "classes": [
+          {
+            "id": "BCIO:045000",
+            "label": "intervention delivery",
+            "definition": "A planned process by which intervention content is delivered."
+          }
+        ],
+        "label": "intervention delivery",
+        "variables": [],
+        "children": [
+          {
+            "key": "GMHO:0000245",
+            "classes": [
+              {
+                "id": "GMHO:0000245",
+                "label": "intervention schedule of delivery",
+                "definition": "An intervention attribute that involves its temporal organisation."
+              }
+            ],
+            "label": "intervention schedule of delivery",
+            "variables": [],
+            "children": [
+              {
+                "key": "GMHO:0000005",
+                "classes": [
+                  {
+                    "id": "GMHO:0000005",
+                    "label": "intervention duration",
+                    "definition": "A temporal interval between the start and end of an intervention."
+                  }
+                ],
+                "label": "intervention duration",
+                "variables": [
+                  "Intervention duration",
+                  "Intervention duration (weeks)"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "key": "GMHO:0000244",
+            "classes": [
+              {
+                "id": "GMHO:0000244",
+                "label": "intervention mode of delivery",
+                "definition": "An intervention attribute that is the physical or informational medium through which an intervention is provided."
+              }
+            ],
+            "label": "intervention mode of delivery",
+            "variables": [],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000246",
+            "classes": [
+              {
+                "id": "GMHO:0000246",
+                "label": "intervention source",
+                "definition": "A role played by a person, population or organisation that provides an intervention."
+              }
+            ],
+            "label": "intervention source",
+            "variables": [],
+            "children": []
           }
         ]
       }
@@ -897,8 +1185,8 @@
         ],
         "label": "adverse event following an intervention - measurement datum at followup",
         "variables": [
-          "Number of participants with adverse events following intervention",
           "Adverse event",
+          "Number of participants with adverse events following intervention",
           "Number of participants with measurement for adverse events following intervention"
         ],
         "children": [
@@ -918,9 +1206,9 @@
             ],
             "label": "dizziness following intervention - measurement datum at followup",
             "variables": [
+              "Number of participants with dizziness following intervention",
               "Number of participants with measurement for dizziness following intervention",
-              "Dizziness",
-              "Number of participants with dizziness following intervention"
+              "Dizziness"
             ],
             "children": [
               {
@@ -1214,8 +1502,8 @@
             ],
             "label": "anticholinergic symptom following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurements for anticholinergic symptom following intervention",
-              "Number of participants with anticholinergic symptom following intervention"
+              "Number of participants with anticholinergic symptom following intervention",
+              "Number of participants with measurements for anticholinergic symptom following intervention"
             ],
             "children": [
               {
@@ -1266,8 +1554,8 @@
             ],
             "label": "anxiousness following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for anxiety following intervention",
-              "Number of participants with anxiety following intervention"
+              "Number of participants with anxiety following intervention",
+              "Number of participants with measurement for anxiety following intervention"
             ],
             "children": [
               {
@@ -1281,8 +1569,8 @@
                 ],
                 "label": "number of participants with measurement",
                 "variables": [
-                  "Number of participants with measurement for anxiety following intervention",
-                  "Number of participants with anxiety following intervention"
+                  "Number of participants with anxiety following intervention",
+                  "Number of participants with measurement for anxiety following intervention"
                 ],
                 "children": []
               }
@@ -1356,8 +1644,8 @@
             ],
             "label": "hyperprolactinemia following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with hyperprolactinemia following intervention",
-              "Number of participants with measurement for hyperprolactinemia following intervention"
+              "Number of participants with measurement for hyperprolactinemia following intervention",
+              "Number of participants with hyperprolactinemia following intervention"
             ],
             "children": [
               {
@@ -1460,8 +1748,8 @@
             ],
             "label": "hypotension following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for hypotension following intervention",
-              "Number of participants with hypotension following intervention"
+              "Number of participants with hypotension following intervention",
+              "Number of participants with measurement for hypotension following intervention"
             ],
             "children": [
               {
@@ -1512,8 +1800,8 @@
             ],
             "label": "drug-induced movement disorder following intervention - measurement datum at followup",
             "variables": [
-              "Number of participants with measurement for extrapyrimidal symptoms following intervention",
-              "Number of participants with extrapyrimidal symptoms following intervention"
+              "Number of participants with extrapyrimidal symptoms following intervention",
+              "Number of participants with measurement for extrapyrimidal symptoms following intervention"
             ],
             "children": [
               {
@@ -1532,8 +1820,8 @@
                 ],
                 "label": "akathisia following pharmacological intervention - measurement datum at followup",
                 "variables": [
-                  "Number of participants with measurement for akathisia following intervention",
-                  "Number of participants with akathisia following intervention"
+                  "Number of participants with akathisia following intervention",
+                  "Number of participants with measurement for akathisia following intervention"
                 ],
                 "children": [
                   {
@@ -1629,8 +1917,8 @@
                 "label": "headache following intervention - measurement datum at followup",
                 "variables": [
                   "Headache",
-                  "Number of participants with measurement for headache following intervention",
-                  "Number of participants with headache following intervention"
+                  "Number of participants with headache following intervention",
+                  "Number of participants with measurement for headache following intervention"
                 ],
                 "children": [
                   {
@@ -1771,6 +2059,72 @@
                   "Vomiting"
                 ],
                 "children": []
+              }
+            ]
+          },
+          {
+            "key": "GMHO:0000038",
+            "classes": [
+              {
+                "id": "GMHO:0000038",
+                "label": "adverse change in body weight",
+                "definition": "An adverse change in a bodily measurement parameter relating to body weight."
+              }
+            ],
+            "label": "adverse change in body weight",
+            "variables": [],
+            "children": [
+              {
+                "key": "GMHO:0000232,GMHO:0000204",
+                "classes": [
+                  {
+                    "id": "GMHO:0000232",
+                    "label": "adverse increase in body weight",
+                    "definition": "An adverse change in a body weight relating to weight gain."
+                  },
+                  {
+                    "id": "GMHO:0000204",
+                    "label": "measurement datum at followup",
+                    "definition": "Measurement datum that was recorded as followup data in a study."
+                  }
+                ],
+                "label": "adverse increase in body weight - measurement datum at followup",
+                "variables": [
+                  "Number of participants with measurement for weight increase following intervention",
+                  "Number of participants with weight increase following intervention"
+                ],
+                "children": [
+                  {
+                    "key": "GMHO:0000214",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000214",
+                        "label": "number of participants with specific outcome",
+                        "definition": "Number of intervention participants for whom an outcome has been identified within a study."
+                      }
+                    ],
+                    "label": "number of participants with specific outcome",
+                    "variables": [
+                      "Number of participants with weight increase following intervention"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "GMHO:0000206",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000206",
+                        "label": "number of participants with measurement",
+                        "definition": "Number of intervention participants for whom a measurement was made."
+                      }
+                    ],
+                    "label": "number of participants with measurement",
+                    "variables": [
+                      "Number of participants with measurement for weight increase following intervention"
+                    ],
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -1952,7 +2306,23 @@
             "variables": [
               "Followup reward sensitivity scale directionality"
             ],
-            "children": []
+            "children": [
+              {
+                "key": "GMHO:0000208",
+                "classes": [
+                  {
+                    "id": "GMHO:0000208",
+                    "label": "scale directionality",
+                    "definition": "An information content entity about the orientation of a measurement's scoring system in which higher numerical levels can indicate higher or lower levels of a construct. "
+                  }
+                ],
+                "label": "scale directionality",
+                "variables": [
+                  "Followup reward sensitivity scale directionality"
+                ],
+                "children": []
+              }
+            ]
           }
         ]
       },
@@ -2024,8 +2394,8 @@
         ],
         "label": "relapsed - measurement datum at followup",
         "variables": [
-          "Number of participants for whom relapse was measured",
-          "Number of participants who relapsed based on study criteria"
+          "Number of participants who relapsed based on study criteria",
+          "Number of participants for whom relapse was measured"
         ],
         "children": [
           {
@@ -2077,9 +2447,9 @@
         "label": "human functioning - measurement datum at followup",
         "variables": [
           "Mean followup severity of functioning",
+          "Number of participants with followup measurements for functioning",
           "Standard deviation of followup functioning",
-          "Data type: endpoint vs. baseline difference in human functioning",
-          "Number of participants with followup measurements for functioning"
+          "Data type: endpoint vs. baseline difference in human functioning"
         ],
         "children": [
           {
@@ -2094,6 +2464,21 @@
             "label": "human functioning scale",
             "variables": [
               "Scale for functioning"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000206",
+            "classes": [
+              {
+                "id": "GMHO:0000206",
+                "label": "number of participants with measurement",
+                "definition": "Number of intervention participants for whom a measurement was made."
+              }
+            ],
+            "label": "number of participants with measurement",
+            "variables": [
+              "Number of participants with followup measurements for functioning"
             ],
             "children": []
           },
@@ -2161,8 +2546,8 @@
         "label": "mental process - measurement datum at followup",
         "variables": [
           "Data type: endpoint vs. baseline difference in mental processes",
-          "Mean followup cognition",
           "Number of participants with followup measurements for cognition",
+          "Mean followup cognition",
           "Standard deviation of followup cognition"
         ],
         "children": [
@@ -2178,6 +2563,21 @@
             "label": "mental process scale",
             "variables": [
               "Scale for cognition"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000206",
+            "classes": [
+              {
+                "id": "GMHO:0000206",
+                "label": "number of participants with measurement",
+                "definition": "Number of intervention participants for whom a measurement was made."
+              }
+            ],
+            "label": "number of participants with measurement",
+            "variables": [
+              "Number of participants with followup measurements for cognition"
             ],
             "children": []
           },
@@ -2244,9 +2644,9 @@
         ],
         "label": "weight - measurement datum at followup",
         "variables": [
+          "Standard deviation of followup weight",
           "Number of participants with followup measurements for weight",
           "Mean followup weight",
-          "Standard deviation of followup weight",
           "Data type: endpoint vs. baseline difference in weight"
         ],
         "children": [
@@ -2262,6 +2662,21 @@
             "label": "weight scale",
             "variables": [
               "Scale for weight"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000206",
+            "classes": [
+              {
+                "id": "GMHO:0000206",
+                "label": "number of participants with measurement",
+                "definition": "Number of intervention participants for whom a measurement was made."
+              }
+            ],
+            "label": "number of participants with measurement",
+            "variables": [
+              "Number of participants with followup measurements for weight"
             ],
             "children": []
           },
@@ -2328,9 +2743,9 @@
         ],
         "label": "prolactin measurement - measurement datum at followup",
         "variables": [
-          "Number of participants with followup measurements for prolactin",
+          "Data type: endpoint vs. baseline difference in prolactin measurement",
           "Mean followup prolactin",
-          "Data type: endpoint vs. baseline difference in prolactin measurement"
+          "Number of participants with followup measurements for prolactin"
         ],
         "children": [
           {
@@ -2345,6 +2760,21 @@
             "label": "prolactin scale",
             "variables": [
               "Scale for prolactin"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000206",
+            "classes": [
+              {
+                "id": "GMHO:0000206",
+                "label": "number of participants with measurement",
+                "definition": "Number of intervention participants for whom a measurement was made."
+              }
+            ],
+            "label": "number of participants with measurement",
+            "variables": [
+              "Number of participants with followup measurements for prolactin"
             ],
             "children": []
           },
@@ -2505,6 +2935,50 @@
         ]
       },
       {
+        "key": "MF:0000041",
+        "classes": [
+          {
+            "id": "MF:0000041",
+            "label": "belief",
+            "definition": "A mental disposition to represent a proposition to be true."
+          }
+        ],
+        "label": "belief",
+        "variables": [],
+        "children": [
+          {
+            "key": "GMHO:0000054",
+            "classes": [
+              {
+                "id": "GMHO:0000054",
+                "label": "belief about intervention acceptability",
+                "definition": "A belief about whether the delivered intervention is appropriate based on anticipated or experienced responses to the intervention."
+              }
+            ],
+            "label": "belief about intervention acceptability",
+            "variables": [
+              "Acceptability of intervention"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000055",
+            "classes": [
+              {
+                "id": "GMHO:0000055",
+                "label": "belief about tolerability of drug",
+                "definition": "A belief about the degree to which a drug results in unpleasant or bothersome bodily reactions."
+              }
+            ],
+            "label": "belief about tolerability of drug",
+            "variables": [
+              "Tolerability of intervention"
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
         "key": "GMHO:0000087 (Outcome)",
         "classes": [
           {
@@ -2532,9 +3006,9 @@
             ],
             "label": "anhedonia symptom severity - measurement datum at followup",
             "variables": [
-              "Number of participants for whom followup anhedonia was measured",
               "Mean followup anhedonia",
               "Standard deviation of followup anhedonia",
+              "Number of participants for whom followup anhedonia was measured",
               "Data type: endpoint vs. baseline difference in anhedonia symptom severity"
             ],
             "children": [
@@ -2673,10 +3147,10 @@
             ],
             "label": "anxiety symptom severity - measurement datum at followup",
             "variables": [
+              "Data type: endpoint vs. baseline difference in anxiety symptom severity",
               "Number of participants for whom followup anxiety was measured",
-              "Mean followup anxiety",
               "Standard deviation of followup anxiety",
-              "Data type: endpoint vs. baseline difference in anxiety symptom severity"
+              "Mean followup anxiety"
             ],
             "children": [
               {
@@ -2695,8 +3169,8 @@
                 ],
                 "label": "anxiety scale - measurement scale at followup",
                 "variables": [
-                  "Followup anxiety scale",
-                  "Followup anxiety scale directionality"
+                  "Followup anxiety scale directionality",
+                  "Followup anxiety scale"
                 ],
                 "children": [
                   {
@@ -2814,10 +3288,10 @@
             ],
             "label": "psychotic disorder symptom severity - measurement datum at followup",
             "variables": [
-              "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
-              "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis",
+              "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity",
               "Mean followup severity of symptoms related to psychotic disorder diagnosis",
-              "Data type: endpoint vs. baseline difference in psychotic disorder symptom severity"
+              "Standard deviation of followup severity of symptoms related to psychotic disorder diagnosis",
+              "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis"
             ],
             "children": [
               {
@@ -2832,6 +3306,21 @@
                 "label": "psychotic disorder symptom severity scale",
                 "variables": [
                   "Scale for symptoms related to psychotic disorder diagnosis"
+                ],
+                "children": []
+              },
+              {
+                "key": "GMHO:0000206",
+                "classes": [
+                  {
+                    "id": "GMHO:0000206",
+                    "label": "number of participants with measurement",
+                    "definition": "Number of intervention participants for whom a measurement was made."
+                  }
+                ],
+                "label": "number of participants with measurement",
+                "variables": [
+                  "Number of participants with followup measurements for symptoms related to psychotic disorder diagnosis"
                 ],
                 "children": []
               },
@@ -2896,10 +3385,10 @@
                 ],
                 "label": "positive psychotic disorder symptom severity - measurement datum at followup",
                 "variables": [
-                  "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
                   "Data type: endpoint vs. baseline difference in positive psychotic disorder symptom severity",
-                  "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis",
-                  "Mean followup severity of positive symptoms related to psychotic disorder diagnosis"
+                  "Mean followup severity of positive symptoms related to psychotic disorder diagnosis",
+                  "Standard deviation of followup positive severity of symptoms related to psychotic disorder diagnosis",
+                  "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis"
                 ],
                 "children": [
                   {
@@ -2914,6 +3403,21 @@
                     "label": "positive psychotic disorder symptom severity scale",
                     "variables": [
                       "Scale for positive symptoms related to psychotic disorder diagnosis"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "GMHO:0000206",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000206",
+                        "label": "number of participants with measurement",
+                        "definition": "Number of intervention participants for whom a measurement was made."
+                      }
+                    ],
+                    "label": "number of participants with measurement",
+                    "variables": [
+                      "Number of participants with followup measurements for positive symptoms related to psychotic disorder diagnosis"
                     ],
                     "children": []
                   },
@@ -2980,10 +3484,10 @@
                 ],
                 "label": "negative psychotic disorder symptom severity - measurement datum at followup",
                 "variables": [
-                  "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
-                  "Mean followup severity of negative symptoms related to psychotic disorder diagnosis",
+                  "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis",
                   "Data type: endpoint vs. baseline difference in negative psychotic disorder symptom severity",
-                  "Standard deviation of followup negative severity of symptoms related to psychotic disorder diagnosis"
+                  "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis",
+                  "Mean followup severity of negative symptoms related to psychotic disorder diagnosis"
                 ],
                 "children": [
                   {
@@ -2998,6 +3502,21 @@
                     "label": "negative psychotic disorder symptom severity scale",
                     "variables": [
                       "Scale for negative symptoms related to psychotic disorder diagnosis"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "GMHO:0000206",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000206",
+                        "label": "number of participants with measurement",
+                        "definition": "Number of intervention participants for whom a measurement was made."
+                      }
+                    ],
+                    "label": "number of participants with measurement",
+                    "variables": [
+                      "Number of participants with followup measurements for negative symptoms related to psychotic disorder diagnosis"
                     ],
                     "children": []
                   },
@@ -3066,10 +3585,10 @@
             ],
             "label": "depression symptom severity - measurement datum at followup",
             "variables": [
-              "Standard deviation of followup depression",
               "Number of participants with followup measurements for depression",
+              "Mean followup depression",
               "Data type: endpoint vs. baseline difference in depression symptom severity",
-              "Mean followup depression"
+              "Standard deviation of followup depression"
             ],
             "children": [
               {
@@ -3084,6 +3603,21 @@
                 "label": "depression symptom severity scale",
                 "variables": [
                   "Scale for depression"
+                ],
+                "children": []
+              },
+              {
+                "key": "GMHO:0000206",
+                "classes": [
+                  {
+                    "id": "GMHO:0000206",
+                    "label": "number of participants with measurement",
+                    "definition": "Number of intervention participants for whom a measurement was made."
+                  }
+                ],
+                "label": "number of participants with measurement",
+                "variables": [
+                  "Number of participants with followup measurements for depression"
                 ],
                 "children": []
               },
@@ -3150,12 +3684,12 @@
             ],
             "label": "post-traumatic stress symptom severity - measurement datum at followup",
             "variables": [
-              "Mean PTSD symptom severity of the treatment group",
-              "Sample size of PTSD symptom severity of the control group",
               "Sample size of PTSD symptom severity of the treatment group",
               "Standard deviation of PTSD symptom severity of the treatment group",
+              "Standard deviation of PTSD symptom severity of the control group",
+              "Sample size of PTSD symptom severity of the control group",
               "Mean PTSD symptom severity of the control group",
-              "Standard deviation of PTSD symptom severity of the control group"
+              "Mean PTSD symptom severity of the treatment group"
             ],
             "children": [
               {
@@ -3169,27 +3703,11 @@
                 ],
                 "label": "intervention arm",
                 "variables": [
-                  "Mean PTSD symptom severity of the treatment group",
+                  "Sample size of PTSD symptom severity of the treatment group",
                   "Standard deviation of PTSD symptom severity of the treatment group",
-                  "Sample size of PTSD symptom severity of the treatment group"
+                  "Mean PTSD symptom severity of the treatment group"
                 ],
-                "children": [
-                  {
-                    "key": "GMHO:0000004",
-                    "classes": [
-                      {
-                        "id": "GMHO:0000004",
-                        "label": "intervention arm name",
-                        "definition": "A written name intended to identify a particular intervention arm."
-                      }
-                    ],
-                    "label": "intervention arm name",
-                    "variables": [
-                      "Intervention arm name"
-                    ],
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "key": "GMHO:0000122",
@@ -3202,42 +3720,11 @@
                 ],
                 "label": "control arm",
                 "variables": [
-                  "Sample size of PTSD symptom severity of the control group",
+                  "Mean PTSD symptom severity of the control group",
                   "Standard deviation of PTSD symptom severity of the control group",
-                  "Mean PTSD symptom severity of the control group"
+                  "Sample size of PTSD symptom severity of the control group"
                 ],
-                "children": [
-                  {
-                    "key": "GMHO:0000128",
-                    "classes": [
-                      {
-                        "id": "GMHO:0000128",
-                        "label": "treatment as usual control arm",
-                        "definition": "A control arm designation where the same content and delivery is already provided as standard practice."
-                      }
-                    ],
-                    "label": "treatment as usual control arm",
-                    "variables": [
-                      "Treatment as usual"
-                    ],
-                    "children": []
-                  },
-                  {
-                    "key": "GMHO:0000240",
-                    "classes": [
-                      {
-                        "id": "GMHO:0000240",
-                        "label": "attention management control arm",
-                        "definition": "A control arm designation where the same dose of interpersonal interaction is provided as in the intervention group, but without any additional content from the intervention."
-                      }
-                    ],
-                    "label": "attention management control arm",
-                    "variables": [
-                      "Attention management control arm"
-                    ],
-                    "children": []
-                  }
-                ]
+                "children": []
               },
               {
                 "key": "GMHO:0000123 (PTSD)",
@@ -3297,6 +3784,65 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "key": "GMHO:0000122 (PTSD)",
+                "classes": [
+                  {
+                    "id": "GMHO:0000122 (PTSD)",
+                    "label": "control arm",
+                    "definition": "A study arm designation as a comparator to some intervention arm."
+                  }
+                ],
+                "label": "control arm",
+                "variables": [],
+                "children": [
+                  {
+                    "key": "GMHO:0000206",
+                    "classes": [
+                      {
+                        "id": "GMHO:0000206",
+                        "label": "number of participants with measurement",
+                        "definition": "Number of intervention participants for whom a measurement was made."
+                      }
+                    ],
+                    "label": "number of participants with measurement",
+                    "variables": [
+                      "Sample size of PTSD symptom severity of the control group"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "OBI:0000679",
+                    "classes": [
+                      {
+                        "id": "OBI:0000679",
+                        "label": "average value",
+                        "definition": "A data item that is produced as the output of an averaging data transformation and represents the average value of the input data."
+                      }
+                    ],
+                    "label": "average value",
+                    "variables": [
+                      "Mean PTSD symptom severity of the control group"
+                    ],
+                    "children": []
+                  },
+                  {
+                    "key": "OBCS:0000077",
+                    "classes": [
+                      {
+                        "id": "OBCS:0000077",
+                        "label": "standard deviation",
+                        "definition": "A quantitative confidence value that measures the variability of data around the mean."
+                      }
+                    ],
+                    "label": "standard deviation",
+                    "variables": [
+                      "Standard deviation of PTSD symptom severity of the control group"
+                    ],
+                    "children": []
+                  }
+                ]
               }
             ]
           }
@@ -3321,9 +3867,9 @@
         ],
         "label": "number of randomised intervention participants",
         "variables": [
-          "Number of intervention participants randomly acllocated to an arm",
+          "Number of participants randomised in study",
           "Number of intervention participants randomly allocated to an arm",
-          "Number of participants randomised in study"
+          "Numerical"
         ],
         "children": [
           {
@@ -3339,23 +3885,7 @@
             "variables": [
               "Number of intervention participants randomly allocated to an arm"
             ],
-            "children": [
-              {
-                "key": "GMHO:0000004",
-                "classes": [
-                  {
-                    "id": "GMHO:0000004",
-                    "label": "intervention arm name",
-                    "definition": "A written name intended to identify a particular intervention arm."
-                  }
-                ],
-                "label": "intervention arm name",
-                "variables": [
-                  "Intervention arm name"
-                ],
-                "children": []
-              }
-            ]
+            "children": []
           },
           {
             "key": "GMHO:0000122",
@@ -3370,38 +3900,7 @@
             "variables": [
               "Number of intervention participants randomly allocated to an arm"
             ],
-            "children": [
-              {
-                "key": "GMHO:0000128",
-                "classes": [
-                  {
-                    "id": "GMHO:0000128",
-                    "label": "treatment as usual control arm",
-                    "definition": "A control arm designation where the same content and delivery is already provided as standard practice."
-                  }
-                ],
-                "label": "treatment as usual control arm",
-                "variables": [
-                  "Treatment as usual"
-                ],
-                "children": []
-              },
-              {
-                "key": "GMHO:0000240",
-                "classes": [
-                  {
-                    "id": "GMHO:0000240",
-                    "label": "attention management control arm",
-                    "definition": "A control arm designation where the same dose of interpersonal interaction is provided as in the intervention group, but without any additional content from the intervention."
-                  }
-                ],
-                "label": "attention management control arm",
-                "variables": [
-                  "Attention management control arm"
-                ],
-                "children": []
-              }
-            ]
+            "children": []
           }
         ]
       },
@@ -3416,8 +3915,8 @@
         ],
         "label": "publication year textual entity",
         "variables": [
-          "Numerical",
-          "Year of publication"
+          "Year of publication",
+          "Numerical"
         ],
         "children": []
       },
@@ -3462,9 +3961,9 @@
         ],
         "label": "number of participant drop-out from intervention",
         "variables": [
-          "Number of participants who dropped out of study arm (control group)",
           "Number of participants who dropped out of study",
-          "Number of participants who dropped out of study arm (treatment group)"
+          "Number of participants who dropped out of study arm (treatment group)",
+          "Number of participants who dropped out of study arm (control group)"
         ],
         "children": [
           {
@@ -3481,6 +3980,37 @@
               "Number of participants for whom drop out was assessed"
             ],
             "children": []
+          },
+          {
+            "key": "GMHO:0000072",
+            "classes": [
+              {
+                "id": "GMHO:0000072",
+                "label": "number of participant drop-out due to adverse events",
+                "definition": "Number of participant drop-out from the intervention as a result the participants experiencing some adverse event."
+              }
+            ],
+            "label": "number of participant drop-out due to adverse events",
+            "variables": [
+              "Number of participants who dropped out of study due to adverse events"
+            ],
+            "children": [
+              {
+                "key": "GMHO:0000258",
+                "classes": [
+                  {
+                    "id": "GMHO:0000258",
+                    "label": "number of participants with drop-out assessment",
+                    "definition": "Number of intervention participants for whom a drop-out assessment was made."
+                  }
+                ],
+                "label": "number of participants with drop-out assessment",
+                "variables": [
+                  "Number of participants for whom drop out due to adverse events was assessed"
+                ],
+                "children": []
+              }
+            ]
           },
           {
             "key": "GMHO:0000123",
@@ -3544,6 +4074,21 @@
             "children": []
           },
           {
+            "key": "GMHO:0000217",
+            "classes": [
+              {
+                "id": "GMHO:0000217",
+                "label": "risk of bias associated with intervention",
+                "definition": "An intervention evaluation study risk of bias or error associated with the delivery of the  intervention."
+              }
+            ],
+            "label": "risk of bias associated with intervention",
+            "variables": [
+              "Doman 2 risk of bias score (RoB2)"
+            ],
+            "children": []
+          },
+          {
             "key": "GMHO:0000219",
             "classes": [
               {
@@ -3555,21 +4100,6 @@
             "label": "risk of bias associated with missing outcome data",
             "variables": [
               "Doman 3 risk of bias score (RoB2)"
-            ],
-            "children": []
-          },
-          {
-            "key": "GMHO:0000220",
-            "classes": [
-              {
-                "id": "GMHO:0000220",
-                "label": "risk of bias associated with selective outcome reporting",
-                "definition": "An intervention evaluation study risk of bias or error associated with selective reporting of outcomes in the study report."
-              }
-            ],
-            "label": "risk of bias associated with selective outcome reporting",
-            "variables": [
-              "Doman 5 risk of bias score (RoB2)"
             ],
             "children": []
           },
@@ -3604,6 +4134,21 @@
                 "children": []
               }
             ]
+          },
+          {
+            "key": "GMHO:0000220",
+            "classes": [
+              {
+                "id": "GMHO:0000220",
+                "label": "risk of bias associated with selective outcome reporting",
+                "definition": "An intervention evaluation study risk of bias or error associated with selective reporting of outcomes in the study report."
+              }
+            ],
+            "label": "risk of bias associated with selective outcome reporting",
+            "variables": [
+              "Doman 5 risk of bias score (RoB2)"
+            ],
+            "children": []
           }
         ]
       },
@@ -3676,6 +4221,108 @@
             "label": "control arm",
             "variables": [
               "Control group details"
+            ],
+            "children": []
+          },
+          {
+            "key": "GMHO:0000123 (StudyArm)",
+            "classes": [
+              {
+                "id": "GMHO:0000123 (StudyArm)",
+                "label": "intervention arm",
+                "definition": "A study arm that is subject to evaluation in an intervention evaluation study."
+              }
+            ],
+            "label": "intervention arm",
+            "variables": [],
+            "children": [
+              {
+                "key": "GMHO:0000004",
+                "classes": [
+                  {
+                    "id": "GMHO:0000004",
+                    "label": "intervention arm name",
+                    "definition": "A written name intended to identify a particular intervention arm."
+                  }
+                ],
+                "label": "intervention arm name",
+                "variables": [
+                  "Intervention arm name"
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "key": "GMHO:0000122 (StudyArm)",
+            "classes": [
+              {
+                "id": "GMHO:0000122 (StudyArm)",
+                "label": "control arm",
+                "definition": "A study arm designation as a comparator to some intervention arm."
+              }
+            ],
+            "label": "control arm",
+            "variables": [],
+            "children": [
+              {
+                "key": "GMHO:0000128",
+                "classes": [
+                  {
+                    "id": "GMHO:0000128",
+                    "label": "treatment as usual control arm",
+                    "definition": "A control arm designation where the same content and delivery is already provided as standard practice."
+                  }
+                ],
+                "label": "treatment as usual control arm",
+                "variables": [
+                  "Treatment as usual"
+                ],
+                "children": []
+              },
+              {
+                "key": "GMHO:0000240",
+                "classes": [
+                  {
+                    "id": "GMHO:0000240",
+                    "label": "attention management control arm",
+                    "definition": "A control arm designation where the same dose of interpersonal interaction is provided as in the intervention group, but without any additional content from the intervention."
+                  }
+                ],
+                "label": "attention management control arm",
+                "variables": [
+                  "Attention management control arm"
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "OBI:0500000",
+        "classes": [
+          {
+            "id": "OBI:0500000",
+            "label": "study design",
+            "definition": "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution."
+          }
+        ],
+        "label": "study design",
+        "variables": [],
+        "children": [
+          {
+            "key": "ADDICTO:0001267",
+            "classes": [
+              {
+                "id": "ADDICTO:0001267",
+                "label": "interventional study design",
+                "definition": "A study design that includes specification of some intervention as part of the study process."
+              }
+            ],
+            "label": "interventional study design",
+            "variables": [
+              "Study design"
             ],
             "children": []
           }
