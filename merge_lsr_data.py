@@ -59,7 +59,7 @@ def merge_files_into_json(
         if os.path.isfile(file_path) and filename.endswith((".csv", ".xls", ".xlsx")):
             print(f"Processing file: {filename}")
             df = read_file(file_path)
-            df = translate_and_combine_columns(df, extraction_variables)
+            df = translate_and_combine_columns(df, extraction_variables[str(index)])
             df.insert(0, "LSR #", index)
             all_columns.update(df.columns)
             dataframes.append(df)

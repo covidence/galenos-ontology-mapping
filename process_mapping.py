@@ -7,12 +7,13 @@ from colorama import Fore, Style
 
 def process_ontology_mapping(
     ontology_mapping,
-) -> tuple[dict[str, dict], dict[str, list], dict[str, str]]:
-    extraction_variables: dict[str, str] = {}
+) -> tuple[dict[str, dict], dict[str, list], dict[str, dict[str, str]]]:
+    extraction_variables: dict[str, dict[str, str]] = {}
     ontology: dict[str, dict] = {}
     label_to_class: dict[str, list] = {}
 
     for mapping in ontology_mapping:
+        lsr_number = mapping["LSR no."].strip()
         class_id = mapping["Class ID"].strip()
         extraction_variable = mapping["Variable to extract"].strip()
         variable_label = mapping["Understandable label for database"].strip()
@@ -33,8 +34,11 @@ def process_ontology_mapping(
                 if class_id not in label_to_class[variable_label]:
                     label_to_class[variable_label].append(class_id)
 
-        if extraction_variable not in extraction_variables:
-            extraction_variables[extraction_variable] = mapping[
+        if lsr_number not in extraction_variables:
+            extraction_variables[lsr_number] = {}
+
+        if extraction_variable not in extraction_variables[lsr_number]:
+            extraction_variables[lsr_number][extraction_variable] = mapping[
                 "Understandable label for database"
             ]
 
