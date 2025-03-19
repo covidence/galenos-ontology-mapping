@@ -120,16 +120,25 @@ def print_leftover_variables(hierarchy, label_to_class):
     for node in hierarchy:
         hierarchy_variables.update(get_all_variables(node))
 
+    left_over_variables = set(label_to_class.keys()) - hierarchy_variables
+
+    if not left_over_variables:
+        print(
+            Fore.GREEN + "All mapped variables are included in hierarchy.",
+            Style.RESET_ALL,
+        )
+        return
+
     print(
         Fore.RED + "Mapped variables not included in hierarchy:",
-        set(label_to_class.keys()) - hierarchy_variables,
+        left_over_variables,
         Style.RESET_ALL,
     )
 
 
 def process_mapping(
     script_dir,
-) -> tuple[dict[str, dict], dict[str, list], dict[str, str], list[dict]]:
+) -> tuple[dict[str, dict], dict[str, list], dict[str, dict[str, str]], list[dict]]:
     hierarchy: list[dict] = []
     file_path = os.path.join(script_dir, "ontology_mapping.csv")
     output_path = "output/mapping.json"
@@ -187,7 +196,7 @@ def merge_lsr_data():
     lsr_files = {
         1: "df_amended_20240430.csv",
         2: "LSR2data_V1.csv",
-        3: "LSR3_H_2024-01-22.xlsx",
+        3: "data_2024-01-22_LSR3_H.xlsx",
     }
 
     print("Merging LSR data...")
@@ -198,6 +207,13 @@ def merge_lsr_data():
 
 def print_missing_columns(merged_data, label_to_class):
     missing_columns = set(label_to_class.keys()) - set(merged_data.columns)
+
+    if not missing_columns:
+        print(
+            Fore.GREEN + "All mapped columns are found in LSR extraction sheets.",
+            Style.RESET_ALL,
+        )
+        return
 
     print(
         Fore.RED + "Columns not found in LSR extraction sheets:",
