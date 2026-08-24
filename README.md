@@ -1,3 +1,7 @@
+> ⚠️ **This repository has been archived and is no longer maintained.**
+>
+> Development has moved to [galenos-data-repo](https://github.com/covidence/galenos-data-repo). Please use that repository for current code, issues, pull requests, and documentation.
+
 # GALENOS Ontology Mapping
 
 ## Process mapping CSV
